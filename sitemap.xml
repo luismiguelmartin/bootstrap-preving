@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/01-introduccion/</loc>
-</url>
-<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/getting-started/accessibility/</loc>
 </url>
 <url>
@@ -58,7 +55,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/collapse/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/colores/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/colores/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/colors/</loc>
@@ -97,7 +94,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/bootstrap-preving/hola/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/iconos/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/iconos/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/extend/icons/</loc>
@@ -109,16 +106,19 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/content/images/</loc>
 </url>
 <url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/blog/</loc>
+</url>
+<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/carousel/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/checkout/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/blog/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/dashboard/</loc>
@@ -145,7 +145,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbars/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/offcanvas/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/cover/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/pricing/</loc>
@@ -169,13 +169,13 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/cover/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/offcanvas/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/input-group/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/introduccion/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/getting-started/introduction/</loc>
@@ -190,7 +190,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/list-group/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/maquetacion/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/media-object/</loc>
