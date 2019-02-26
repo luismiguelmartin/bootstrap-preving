@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/01-introduccion/</loc>
+</url>
+<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/getting-started/accessibility/</loc>
 </url>
 <url>
@@ -55,6 +58,9 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/collapse/</loc>
 </url>
 <url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/colores/</loc>
+</url>
+<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/colors/</loc>
 </url>
 <url>
@@ -89,6 +95,9 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/bootstrap-preving/hola/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/iconos/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/extend/icons/</loc>
@@ -139,7 +148,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/offcanvas/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/pricing/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/product/</loc>
@@ -160,16 +169,13 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/</loc>
 </url>
 <url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
+</url>
+<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/cover/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/pricing/</loc>
-</url>
-<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/input-group/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/introduccion/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/getting-started/introduction/</loc>
@@ -182,6 +188,9 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/list-group/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/02-conceptos-basicos/maquetacion/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/media-object/</loc>
