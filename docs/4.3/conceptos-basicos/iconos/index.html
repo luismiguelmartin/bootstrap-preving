@@ -22,6 +22,7 @@
 
 
 <link href="/preving-bootstrap/docs/4.3/assets/css/docs.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="/preving-bootstrap/docs/4.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -462,9 +463,37 @@
 
 <p>Para añadir un icono es necesario incluir dos clases: 1) el nombre del icono prefijado por <code class="highlighter-rouge">fa-</code> y 2) el tipo de icono que se desea incorporar: solid (<code class="highlighter-rouge">fas</code>), regular (<code class="highlighter-rouge">far</code>), ligth (<code class="highlighter-rouge">fal</code>) o brands (<code class="highlighter-rouge">fab</code>).</p>
 
-<blockquote>
-  <p>la clase <code class="highlighter-rouge">fa</code> se considera obsoleto en la versión 5 de <em>FontAwesome</em>. El nuevo valor predeterminado es <code class="highlighter-rouge">fas</code> (solid) y <code class="highlighter-rouge">fab</code> para los logos de marcas.</p>
-</blockquote>
+<p>La clase <code class="highlighter-rouge">fa</code> se considera obsoleto en la versión 5 de <em>FontAwesome</em>. El nuevo valor predeterminado es <code class="highlighter-rouge">fas</code> (solid) y <code class="highlighter-rouge">fab</code> para los logos de marcas.</p>
+
+<div class="bd-example">
+<p>Distintos tipos de iconos:</p>
+  <i class="fas fa-heart"></i>
+  <i class="far fa-heart"></i>
+  <span class="fas fa-info-circle"></span>
+  <em class="fab fa-font-awesome"></em>
+<br /><br />
+<p>Son facilmente personalizables tanto en color como en tamaño:</p>
+<h3>
+  <i class="fas fa-heart text-danger"></i>
+  <i class="far fa-heart text-success"></i>
+  <span class="fas fa-info-circle text-primary"></span>
+  <i class="fab fa-font-awesome text-warning"></i>
+</h3>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Distintos tipos de iconos:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome"</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;p&gt;</span>Son facilmente personalizables tanto en color como en tamaño:<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h3&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle text-primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/h3&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
