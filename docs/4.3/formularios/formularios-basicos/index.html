@@ -481,6 +481,7 @@
 <p>Ejemplo de formulario:</p>
 
 <div class="bd-example">
+
 <form>
   <p>
     <label for="exampleInputEmail1">Email o Usuario</label>
@@ -518,6 +519,7 @@
 <p>Boostrap contiene multitud cantidad de componentes y disposiciones de elementos de formulario que nos permiten elaborar interfaces de forma rápida y con una base de desarrollo común.</p>
 
 <div class="bd-example">
+
 <form>
   <div class="form-group">
     <label for="exampleInputEmail2">Email o Usuario</label>
@@ -558,6 +560,7 @@
 <p>Los elementos <code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;select&gt;</code> y <code class="highlighter-rouge">&lt;textarea&gt;</code> se estilan mediante la clase <code>.form-control</code>. Esta clase proporciona la apariencia general, cambios de estado, tamaño y otros…</p>
 
 <div class="bd-example">
+
 <form>
   <div class="form-group">
     <label for="exampleFormControlInput1">Correo electrónico</label>
@@ -593,6 +596,7 @@
 <p>Sin embargo, los elementos <code class="highlighter-rouge">&lt;input type="file"&gt;</code>, selectores de archivos, se estilan mediante la clase <code>.form-control-file</code>. En el ejemplo que sigue se muestra junto con varios elementos.</p>
 
 <div class="bd-example">
+
 <form>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Ejempo select</label>
@@ -652,27 +656,26 @@
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
 <h3 id="campos-en-solo-lectura-deshabilitados-o-en-texto-plano">Campos en solo lectura, deshabilitados o en texto-plano</h3>
+
 <p>Añadiendo el atributo <code>readonly</code> a un campo de formulario podemos evitar que se modifique el valor del campo. Los campos en modo solo lectura aparecen sombreados (como los campos deshabilitados) pero permiten retener el foco y el cursor del ratón.</p>
 
 <p>Si queremos tener elementos <code class="highlighter-rouge">&lt;input readonly&gt;</code> pero formateados como texto plano, podemos usar la clase <code>.form-control-plaintext</code> para eliminar el formato del campo de formulario pero preservar el espaciado.</p>
 
 <div class="bd-example">
-<form class="container">
+
+<div class="container">
 <div class="row">
   <div class="col-6 pr-5">
-
-
+  <form class="container">
       <div class="form-group row">
         <input class="form-control" type="text" placeholder="Campo en solo lectura…" readonly="" />
       </div>
       <div class="form-group row">
         <input class="form-control" type="text" placeholder="Campo deshabilitado…" disabled="" />
       </div>
-    &lt;/form&gt;
-
+  </form>
   </div>
   <div class="col-6 pl-5">
-
     <form>
       <div class="form-group row">
         <label for="staticEmail" class="col-sm-2 col-form-label text-right"><b>USER</b></label>
@@ -687,26 +690,24 @@
         </div>
       </div>
 
-  &lt;/div&gt;
-&lt;/div&gt;
-</form>
+    </form>
+  </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 pr-5"</span><span class="nt">&gt;</span>
-
-
+  <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Campo en solo lectura…"</span> <span class="na">readonly</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"Campo deshabilitado…"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-
+  <span class="nt">&lt;/form&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 pl-5"</span><span class="nt">&gt;</span>
-
     <span class="nt">&lt;form&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"staticEmail"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label text-right"</span><span class="nt">&gt;&lt;b&gt;</span>USER<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
@@ -721,9 +722,9 @@
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
 
+    <span class="nt">&lt;/form&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
 ### Checkboxes y radio buttons
@@ -732,6 +733,7 @@ Del mismo modo que en los elementos anteriores, las casillas de verificación y 
 
 
 <div class="bd-example">
+
 <div class="row">
   <div class="col">
     <p><strong>CASILLAS - Permite marcar últiples opciones:</strong></p>
@@ -838,6 +840,7 @@ Por otro lado, si no queremos que dispongan de etiqueta podemos omitirla y añad
 
 
 <div class="bd-example">
+
 <div class="row">
   <div class="col">
     <p><strong>Casillas en línea:</strong></p>
@@ -934,7 +937,7 @@ Por otro lado, si no queremos que dispongan de etiqueta podemos omitirla y añad
 
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-</label></div></form></div>
+</label></div>
 
         </main>
       </div>
