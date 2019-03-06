@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Learn how to include Bootstrap in your project using Webpack.">
+<meta name="description" content="Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Webpack · Preving Bootstrap</title>
+<title>Navegación superior · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/getting-started/webpack/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -180,12 +180,12 @@
               Paginación de resultados
             </a>
           </li></ul>
-    </div><div class="bd-toc-item">
+    </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
         Navegación
       </a>
 
-      <ul class="nav bd-sidenav"><li>
+      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
             <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
               Navegación superior de la aplicación
             </a>
@@ -208,7 +208,7 @@
               hola
             </a>
           </li></ul>
-    </div><div class="bd-toc-item active">
+    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/getting-started/introduction/">
         Getting started
       </a>
@@ -241,7 +241,7 @@
             <a href="/preving-bootstrap/docs/4.3/getting-started/build-tools/">
               Build tools
             </a>
-          </li><li class="active bd-sidenav-active">
+          </li><li>
             <a href="/preving-bootstrap/docs/4.3/getting-started/webpack/">
               Webpack
             </a>
@@ -509,12 +509,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#installing-bootstrap">Installing Bootstrap</a></li>
-<li class="toc-entry toc-h2"><a href="#importing-javascript">Importing JavaScript</a></li>
-<li class="toc-entry toc-h2"><a href="#importing-styles">Importing Styles</a>
+<li class="toc-entry toc-h2"><a href="#navegación-superior-básica">Navegación superior básica</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#importing-precompiled-sass">Importing Precompiled Sass</a></li>
-<li class="toc-entry toc-h3"><a href="#importing-compiled-css">Importing Compiled CSS</a></li>
+<li class="toc-entry toc-h3"><a href="#navegación-con-selector">Navegación con selector</a></li>
+<li class="toc-entry toc-h3"><a href="#navegación-combinada">Navegación combinada</a></li>
 </ul>
 </li>
 </ul>
@@ -522,80 +520,178 @@
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Webpack</h1>
-          <p class="bd-lead">Learn how to include Bootstrap in your project using Webpack.</p>
-          <h2 id="installing-bootstrap">Installing Bootstrap</h2>
+          <h1 class="bd-title" id="content">Navegación superior</h1>
+          <p class="bd-lead">Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.</p>
+          <p>Para que la barra se pegue al borde superior de la web es necesario añadir la clase <code class="highlighter-rouge">.fixed-top</code> en la etiqueta <code class="highlighter-rouge">nav</code>.</p>
 
-<p><a href="/preving-bootstrap/docs/4.3/getting-started/download/#npm">Install bootstrap</a> as a Node.js module using npm.</p>
+<p>Quedaría de la siguiente forma:</p>
 
-<h2 id="importing-javascript">Importing JavaScript</h2>
+<p><code class="highlighter-rouge">&lt;nav class="navbar navbar-expand bg-primary navbar-dark fixed-top shadow-sm"&gt;</code></p>
 
-<p>Import <a href="/preving-bootstrap/docs/4.3/getting-started/javascript/">Bootstrap’s JavaScript</a> by adding this line to your app’s entry point (usually <code class="highlighter-rouge">index.js</code> or <code class="highlighter-rouge">app.js</code>):</p>
+<h2 id="navegación-superior-básica">Navegación superior básica</h2>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap'</span><span class="p">;</span></code></pre></figure>
+<p>Cualquier elemento tipo enlace, button o input (tipo button, reset o submit) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
 
-<p>Alternatively, you may <strong>import plugins individually</strong> as needed:</p>
+<div class="bd-example">
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap/js/dist/util'</span><span class="p">;</span>
-<span class="k">import</span> <span class="s1">'bootstrap/js/dist/alert'</span><span class="p">;</span>
-<span class="p">...</span></code></pre></figure>
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#">Clientes</a> </li> <!-- Activo -->
+        <li class="nav-item"> <a class="nav-link" href="#">Información de Interés</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Jornadas y Cursos</a> </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="#">Cerrar Sesión</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Cambiar Aplicación</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
 
-<p>Bootstrap dependends on <a href="https://popper.js.org/">Popper</a>, which is speicified in the <code class="highlighter-rouge">peerDependencies</code> property.
-This means that you will have to make sure to add both of them to your <code class="highlighter-rouge">package.json</code> using <code class="highlighter-rouge">npm install popper.js</code>.</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span> <span class="c">&lt;!-- Activo --&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav ml-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cerrar Sesión<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cambiar Aplicación<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
 
-<h2 id="importing-styles">Importing Styles</h2>
+<h3 id="navegación-con-selector">Navegación con selector</h3>
 
-<h3 id="importing-precompiled-sass">Importing Precompiled Sass</h3>
+<p>En aquellos casos en los que haya múltiples opciones, se puede sustituir el menú superior con un selector para “saltar” directamente a cada apartado.</p>
 
-<p>To enjoy the full potential of Bootstrap and customize it to your needs, use the source files as a part of your project’s bundling process.</p>
+<div class="bd-example">
 
-<p>First, create your own <code class="highlighter-rouge">_custom.scss</code> and use it to override the <a href="/preving-bootstrap/docs/4.3/getting-started/theming/">built-in custom variables</a>. Then, use your main Sass file to import your custom variables, followed by Bootstrap:</p>
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item input-group pt-2 ">
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">"custom"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"~bootstrap/scss/bootstrap"</span><span class="p">;</span></code></pre></figure>
+          <select class="form-control form-control-sm" id="inputGroupSelect01">
+            <option value="0" selected="">Inicio</option>
+            <option value="1">Clientes</option>
+            <option value="2">Información de Interés</option>
+            <option value="3">Jornadas y Cursos</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
 
-<p>For Bootstrap to compile, make sure you install and use the required loaders: <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a>, <a href="https://github.com/postcss/postcss-loader">postcss-loader</a> with <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>. With minimal setup, your webpack config should include this rule or similar:</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">...</span>
-<span class="p">{</span>
-  <span class="nl">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.(</span><span class="sr">scss</span><span class="se">)</span><span class="sr">$/</span><span class="p">,</span>
-  <span class="nx">use</span><span class="p">:</span> <span class="p">[{</span>
-    <span class="na">loader</span><span class="p">:</span> <span class="s1">'style-loader'</span><span class="p">,</span> <span class="c1">// inject CSS to page</span>
-  <span class="p">},</span> <span class="p">{</span>
-    <span class="na">loader</span><span class="p">:</span> <span class="s1">'css-loader'</span><span class="p">,</span> <span class="c1">// translates CSS into CommonJS modules</span>
-  <span class="p">},</span> <span class="p">{</span>
-    <span class="na">loader</span><span class="p">:</span> <span class="s1">'postcss-loader'</span><span class="p">,</span> <span class="c1">// Run postcss actions</span>
-    <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">plugins</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span> <span class="c1">// postcss plugins, can be exported to postcss.config.js</span>
-        <span class="k">return</span> <span class="p">[</span>
-          <span class="nx">require</span><span class="p">(</span><span class="s1">'autoprefixer'</span><span class="p">)</span>
-        <span class="p">];</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">},</span> <span class="p">{</span>
-    <span class="na">loader</span><span class="p">:</span> <span class="s1">'sass-loader'</span> <span class="c1">// compiles Sass to CSS</span>
-  <span class="p">}]</span>
-<span class="p">},</span>
-<span class="p">...</span></code></pre></figure>
+          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
 
-<h3 id="importing-compiled-css">Importing Compiled CSS</h3>
+<h3 id="navegación-combinada">Navegación combinada</h3>
 
-<p>Alternatively, you may use Bootstrap’s ready-to-use CSS by simply adding this line to your project’s entry point:</p>
+<p>También se puede combinar el selector desplegable con opciones de menú.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">import</span> <span class="s1">'bootstrap/dist/css/bootstrap.min.css'</span><span class="p">;</span></code></pre></figure>
+<div class="bd-example">
 
-<p>In this case you may use your existing rule for <code class="highlighter-rouge">css</code> without any special modifications to webpack config, except you don’t need <code class="highlighter-rouge">sass-loader</code> just <a href="https://github.com/webpack-contrib/style-loader">style-loader</a> and <a href="https://github.com/webpack-contrib/css-loader">css-loader</a>.</p>
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item input-group pt-2 ">
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">...</span>
-<span class="nx">module</span><span class="p">:</span> <span class="p">{</span>
-  <span class="nl">rules</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="na">test</span><span class="p">:</span> <span class="sr">/</span><span class="se">\.</span><span class="sr">css$/</span><span class="p">,</span>
-      <span class="na">use</span><span class="p">:</span> <span class="p">[</span><span class="s1">'style-loader'</span><span class="p">,</span> <span class="s1">'css-loader'</span><span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-<span class="p">...</span></code></pre></figure>
+          <select class="form-control form-control-sm" id="inputGroupSelect01">
+            <option value="0" selected="">Inicio</option>
+            <option value="1">Clientes</option>
+            <option value="2">Información de Interés</option>
+            <option value="3">Jornadas y Cursos</option>
+          </select>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;1</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
+
+          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
 
 
         </main>
