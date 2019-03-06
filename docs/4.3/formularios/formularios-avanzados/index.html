@@ -461,6 +461,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#agrupación-de-elementos">Agrupación de elementos</a></li>
+<li class="toc-entry toc-h2"><a href="#disposición-en-retícula">Disposición en retícula</a></li>
+<li class="toc-entry toc-h2"><a href="#formularios-complejos">Formularios complejos</a></li>
+<li class="toc-entry toc-h2"><a href="#formularios-horizontales">Formularios horizontales</a></li>
 </ul>
           </div>
         
@@ -468,7 +472,313 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Formularios Avanzados</h1>
           <p class="bd-lead">Los formularios son los elementos principales de interacción de usuario. Por ello, serializar y estandarizar los distintos elementos es fundamental.</p>
-          
+          <h2 id="agrupación-de-elementos">Agrupación de elementos</h2>
+
+<p>La clase <code class="highlighter-rouge">.form-group</code> es el método más sencillo de añadir estructura a los formularios. Facilita la agrupación y disposición de etiquetas, controles, textos auxiliares de ayuda o mensajes de validación. Se puede emplear con  etiquetas <code class="highlighter-rouge">&lt;fieldset&gt;</code>, <code class="highlighter-rouge">&lt;div&gt;</code> u otras.</p>
+
+<p><em>En el ejemplo se ha recuadrado de verde el elemento <code class="highlighter-rouge">.form-group</code>, para que sea visualizable.</em></p>
+
+<div class="bd-example">
+
+<form>
+  <div class="text-success pb-3">.form-group</div>
+  <div class="form-group border border-success p-4">
+    <label for="formGroupExampleInput">label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="input" />
+  </div>
+</form>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-success pb-3"</span><span class="nt">&gt;</span>.form-group<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group border border-success p-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"formGroupExampleInput"</span><span class="nt">&gt;</span>label<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"formGroupExampleInput"</span> <span class="na">placeholder=</span><span class="s">"input"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<h2 id="disposición-en-retícula">Disposición en retícula</h2>
+
+<p>Pueden construirse formularios más complejos empleando las clases de retícula (<code class="highlighter-rouge">.row</code> y <code class="highlighter-rouge">.col-...</code>), ya que permiten crear formularios de múltiples columnas, con anchos distintos y opciones adicionales de alineación.</p>
+
+<div class="bd-example">
+
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nombre" />
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Apellidos" />
+    </div>
+  </div>
+</form>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Nombre"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Apellidos"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<p>En lugar de la clase <code class="highlighter-rouge">.row</code> se puede la clase <code class="highlighter-rouge">.form-row</code>, que es una variación de la retícula estándar de Bootstrap que reduce los espacios entre columnas para realizar formularios más compactos.</p>
+
+<div class="bd-example">
+
+<form>
+  <div class="row-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nombre" />
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Apellidos" />
+    </div>
+  </div>
+</form>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Nombre"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Apellidos"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<h2 id="formularios-complejos">Formularios complejos</h2>
+
+<p>Juntando todo lo anterior (<code class="highlighter-rouge">.form-group</code>, <code class="highlighter-rouge">.row-form</code>, distribución en retícula, etc.) podemos elaborar rápidamente formularios más complejos.</p>
+
+<div class="bd-example">
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Usuario/Email \*</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Contraseña \*</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputAddress">Dirección \*</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Dirección (segunda línea)</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, bajo o planta" />
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="inputZip">CP \*</label>
+      <input type="text" class="form-control" id="inputZip" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputCity">Ciudad \*</label>
+      <input type="text" class="form-control" id="inputCity" />
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Provincia \*</label>
+      <select id="inputState" class="form-control">
+        <option selected="">Selecciona</option>
+        <option>...</option>
+      </select>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" />
+      <label class="form-check-label" for="gridCheck">
+        Acepto el <a href="#">Aviso Legal</a>
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail4"</span><span class="nt">&gt;</span>Usuario/Email \*<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputEmail4"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword4"</span><span class="nt">&gt;</span>Contraseña \*<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword4"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputAddress"</span><span class="nt">&gt;</span>Dirección \*<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputAddress"</span> <span class="na">placeholder=</span><span class="s">"1234 Main St"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputAddress2"</span><span class="nt">&gt;</span>Dirección (segunda línea)<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputAddress2"</span> <span class="na">placeholder=</span><span class="s">"Apartamento, bajo o planta"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputZip"</span><span class="nt">&gt;</span>CP \*<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputZip"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputCity"</span><span class="nt">&gt;</span>Ciudad \*<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputCity"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputState"</span><span class="nt">&gt;</span>Provincia \*<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"inputState"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Selecciona<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>...<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"gridCheck"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"gridCheck"</span><span class="nt">&gt;</span>
+        Acepto el <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Aviso Legal<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
+<h2 id="formularios-horizontales">Formularios horizontales</h2>
+
+<p>Se pueden crear formularios horizontales con la retícula añadiendo la clase <code class="highlighter-rouge">.row</code> y usando las clases <code class="highlighter-rouge">.col-...</code> para especificar el ancho de las etiquetas y controles. Es necesario añadir la clase <code class="highlighter-rouge">.col-form-label</code> a los <code class="highlighter-rouge">&lt;label&gt;</code> para que tengan la alineación vertical correcta.</p>
+
+<p>En ocasiones, será necesario emplear las utilidades de <em>margin</em> y <em>padding</em> para crear el alineamiento perfecto. En el ejemplo, se ha eliminado el <em>padding-top</em> de la etiqueta (‘Opciones’) del grupo de opciones para para mantenerla alineada con la primera opción.</p>
+
+<div class="bd-example">
+
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" />
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Opciones</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="" />
+          <label class="form-check-label" for="gridRadios1">
+            Primera opción
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" />
+          <label class="form-check-label" for="gridRadios2">
+            Segunda opción
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="" />
+          <label class="form-check-label" for="gridRadios3">
+            Tercera opción (deshabilitada)
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Casilla</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1" />
+        <label class="form-check-label" for="gridCheck1">
+          Casilla de ejemplo
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row mb-3">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+</form>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail3"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword3"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Contraseña<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword3"</span> <span class="na">placeholder=</span><span class="s">"Contraseña"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"col-form-label col-sm-2 pt-0"</span><span class="nt">&gt;</span>Opciones<span class="nt">&lt;/legend&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gridRadios"</span> <span class="na">id=</span><span class="s">"gridRadios1"</span> <span class="na">value=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"gridRadios1"</span><span class="nt">&gt;</span>
+            Primera opción
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gridRadios"</span> <span class="na">id=</span><span class="s">"gridRadios2"</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"gridRadios2"</span><span class="nt">&gt;</span>
+            Segunda opción
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check disabled"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"gridRadios"</span> <span class="na">id=</span><span class="s">"gridRadios3"</span> <span class="na">value=</span><span class="s">"option3"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"gridRadios3"</span><span class="nt">&gt;</span>
+            Tercera opción (deshabilitada)
+          <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/fieldset&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-2"</span><span class="nt">&gt;</span>Casilla<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"gridCheck1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"gridCheck1"</span><span class="nt">&gt;</span>
+          Casilla de ejemplo
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row mb-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
