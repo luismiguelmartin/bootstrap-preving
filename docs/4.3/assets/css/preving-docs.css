@@ -39,6 +39,34 @@ figure.highlight{
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Cabeceras */
+
+.bd-example h1, .bd-example h2, .bd-example h3, .bd-example h4, .bd-example h5, .bd-example h6,
+.bd-example .h1, .bd-example .h2, .bd-example .h3, .bd-example .h4, .bd-example .h5, .bd-example .h6 {
+  margin-bottom: 0.25rem;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333; }
+
+.bd-example h1, .bd-example .h1 {
+  font-size: 2rem; }
+
+.bd-example h2, .bd-example .h2 {
+  font-size: 1.6rem; }
+
+.bd-example h3, .bd-example .h3 {
+  font-size: 1.4rem; }
+
+.bd-example h4, .bd-example .h4 {
+  font-size: 1.2rem; }
+
+.bd-example h5, .bd-example .h5 {
+  font-size: 1rem; }
+
+.bd-example h6, .bd-example .h6 {
+  font-size: 0.8rem; }
+
 /* Tablas */
 .bd-example .table-striped tbody tr:nth-of-type(odd) {
    background-color: rgba(0, 0, 0, 0) !important;
