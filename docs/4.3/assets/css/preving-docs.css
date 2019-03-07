@@ -10,14 +10,10 @@ figure.highlight{
   font-size:0.85rem;
   }
 .bd-example {
-  font-size:0.8rem !important;
-/* }
-.bd-example { */
   font-family: Roboto;
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000;
+  font-size: 13px;
+  /* font-weight: 400;
+  line-height: 1.5; */
 }
 
 /* Navegación Superior */
