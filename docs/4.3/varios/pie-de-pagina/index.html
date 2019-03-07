@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.">
+<meta name="description" content="En aquellos listados donde no se utilice DataTables puede emplearse un buscador para recuperar información. Este puede ser básico, con cabecera y/o con filtros.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Navegación superior · Preving Bootstrap</title>
+<title>Pies de página · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/varios/pie-de-pagina/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -170,26 +170,36 @@
               Buscadores de registros
             </a>
           </li></ul>
-    </div><div class="bd-toc-item active">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
         Navegación
       </a>
 
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
-            <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-superior-de-la-aplicacion/">
-              Navegación superior de la aplicación
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
+              Navegación de la aplicación
             </a>
           </li><li>
-            <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-con-tabs-pills-y-cards/">
-              Navegación con tabs, pills y cards
+            <a href="/preving-bootstrap/docs/4.3/navegacion/tabs-pills-y-cards/">
+              Tabs, pills y cards
             </a>
           </li><li>
-            <a href="/preving-bootstrap/docs/4.3/navegacion/navegador-de-registros/">
-              Navegador de registros
+            <a href="/preving-bootstrap/docs/4.3/navegacion/moviendonos-entre-registros/">
+              Moviéndonos entre registros
             </a>
           </li><li>
             <a href="/preving-bootstrap/docs/4.3/navegacion/paginacion-de-resultados/">
               Paginación de resultados
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/varios/pies-de-pagina/">
+        Varios
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/varios/pies-de-pagina/">
+              Pies de página
             </a>
           </li></ul>
     </div><div class="bd-toc-item">
@@ -493,189 +503,64 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#navegación-superior-básica">Navegación superior básica</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#navegación-con-selector">Navegación con selector</a></li>
-<li class="toc-entry toc-h3"><a href="#navegación-combinada">Navegación combinada</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#pie-de-página">Pie de página</a></li>
+<li class="toc-entry toc-h2"><a href="#pie-de-página-con-log">Pie de página (con log)</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Navegación superior</h1>
-          <p class="bd-lead">Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.</p>
-          <p>Para que la barra se pegue al borde superior de la web es necesario añadir la clase <code class="highlighter-rouge">.fixed-top</code> en la etiqueta <code class="highlighter-rouge">nav</code>.</p>
+          <h1 class="bd-title" id="content">Pies de página</h1>
+          <p class="bd-lead">En aquellos listados donde no se utilice DataTables puede emplearse un buscador para recuperar información. Este puede ser básico, con cabecera y/o con filtros.</p>
+          <h2 id="pie-de-página">Pie de página</h2>
 
-<p>Quedaría de la siguiente forma:</p>
+<p>Por homogeneidad con el resto de las aplicaciones se incluirá el siguiente pie de página.</p>
 
-<p><code class="highlighter-rouge">&lt;nav class="navbar navbar-expand bg-primary navbar-dark fixed-top shadow-sm"&gt;</code></p>
-
-<h2 id="navegación-superior-básica">Navegación superior básica</h2>
-
-<p>Cualquier elemento tipo enlace, button o input (tipo button, reset o submit) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
+<p>Se construirá sobre la etiqueta <code class="highlighter-rouge">&lt;footer&gt;</code> y siempre incluirá la clase <code class="highlighter-rouge">.fixed-bottom</code> (aunque se haya eliminado en los ejemplos para que se pueda visualizar correctamente). La clase <code class="highlighter-rouge">.container-fluid</code> hace que se ajuste al ancho completo de la web. El código sería el siguiente:</p>
 
 <div class="bd-example">
 
-<!-- TopNav  -->
-<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbars">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
-        <li class="nav-item active"> <a class="nav-link" href="#">Clientes</a> </li> <!-- Activo -->
-        <li class="nav-item"> <a class="nav-link" href="#">Información de Interés</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Jornadas y Cursos</a> </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="#">Cerrar Sesión</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Cambiar Aplicación</a> </li>
-      </ul>
+<!-- Footer -->
+<footer class="footer container-fluid">
+    <div class="row">
+      <p class="col text-center mb-0">CopyRight © 2018 <b>Grupo Preving</b> | Todos los derechos reservados | <a href="mailto:fj.montesinos@preving.com">Soporte</a></p>
     </div>
-  </div>
-</nav>
-<!-- /TopNav  -->
+</footer>
+<!-- /Footer -->
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span> <span class="c">&lt;!-- Activo --&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav ml-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cerrar Sesión<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cambiar Aplicación<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Footer --&gt;</span>
+<span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"col text-center mb-0"</span><span class="nt">&gt;</span>CopyRight © 2018 <span class="nt">&lt;b&gt;</span>Grupo Preving<span class="nt">&lt;/b&gt;</span> | Todos los derechos reservados | <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:fj.montesinos@preving.com"</span><span class="nt">&gt;</span>Soporte<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
+<span class="nt">&lt;/footer&gt;</span>
+<span class="c">&lt;!-- /Footer --&gt;</span></code></pre></figure>
 
-<h3 id="navegación-con-selector">Navegación con selector</h3>
+<h2 id="pie-de-página-con-log">Pie de página (con log)</h2>
 
-<p>En aquellos casos en los que haya múltiples opciones, se puede sustituir el menú superior con un selector para “saltar” directamente a cada apartado.</p>
+<p>Opcionalmente, se puede crear el pie de página con la información de acceso.</p>
 
 <div class="bd-example">
 
-<!-- TopNav  -->
-<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbars">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
-        <li class="nav-item input-group pt-2 ">
-
-          <select class="form-control form-control-sm" id="inputGroupSelect01">
-            <option value="0" selected="">Inicio</option>
-            <option value="1">Clientes</option>
-            <option value="2">Información de Interés</option>
-            <option value="3">Jornadas y Cursos</option>
-          </select>
-        </li>
-      </ul>
-    </div>
+<!-- Footer -->
+<footer class="footer container-fluid">
+  <div class="row small">
+    <p class="col mb-0">© <b>Grupo Preving</b> 2018 | Todos los derechos reservados | <a href="mailto:fj.montesinos@preving.com">Soporte</a></p>
+    <p class="col-7 text-right mb-0"> Empleado: <b>LUIS MIGUEL MARTIN SANCHEZ</b> | Inicio de sesión: <b>13-12-2018 (11:19)</b> | IP: <b>83.56.27.179</b></p>
   </div>
-</nav>
-<!-- /TopNav  -->
+</footer>
+<!-- /Footer -->
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
-
-          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
-          <span class="nt">&lt;/select&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Footer --&gt;</span>
+<span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer container-fluid"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row small"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"col mb-0"</span><span class="nt">&gt;</span>© <span class="nt">&lt;b&gt;</span>Grupo Preving<span class="nt">&lt;/b&gt;</span> 2018 | Todos los derechos reservados | <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:fj.montesinos@preving.com"</span><span class="nt">&gt;</span>Soporte<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"col-7 text-right mb-0"</span><span class="nt">&gt;</span> Empleado: <span class="nt">&lt;b&gt;</span>LUIS MIGUEL MARTIN SANCHEZ<span class="nt">&lt;/b&gt;</span> | Inicio de sesión: <span class="nt">&lt;b&gt;</span>13-12-2018 (11:19)<span class="nt">&lt;/b&gt;</span> | IP: <span class="nt">&lt;b&gt;</span>83.56.27.179<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
-
-<h3 id="navegación-combinada">Navegación combinada</h3>
-
-<p>También se puede combinar el selector desplegable con opciones de menú.</p>
-
-<div class="bd-example">
-
-<!-- TopNav  -->
-<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbars">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
-        <li class="nav-item input-group pt-2 ">
-
-          <select class="form-control form-control-sm" id="inputGroupSelect01">
-            <option value="0" selected="">Inicio</option>
-            <option value="1">Clientes</option>
-            <option value="2">Información de Interés</option>
-            <option value="3">Jornadas y Cursos</option>
-          </select>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;1</a></li>
-        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;2</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- /TopNav  -->
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
-<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
-
-          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
-            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
-          <span class="nt">&lt;/select&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-      <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
-<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
+<span class="nt">&lt;/footer&gt;</span>
+<span class="c">&lt;!-- /Footer --&gt;</span></code></pre></figure>
 
 
         </main>

@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Iconos…">
+<meta name="description" content="Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Iconos · Preving Bootstrap</title>
+<title>Navegación superior · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/conceptos-basicos/iconos/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -114,7 +114,7 @@
       </a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item active">
+    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/colores/">
         Conceptos Básicos
       </a>
@@ -127,7 +127,7 @@
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
               Maquetación
             </a>
-          </li><li class="active bd-sidenav-active">
+          </li><li>
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/iconos/">
               Iconos
             </a>
@@ -170,12 +170,12 @@
               Buscadores de registros
             </a>
           </li></ul>
-    </div><div class="bd-toc-item">
+    </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
         Navegación
       </a>
 
-      <ul class="nav bd-sidenav"><li>
+      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
             <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
               Navegación de la aplicación
             </a>
@@ -503,9 +503,10 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#fontawesome">FontAwesome</a>
+<li class="toc-entry toc-h2"><a href="#navegación-superior-básica">Navegación superior básica</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#incorporación-de-iconos">Incorporación de iconos</a></li>
+<li class="toc-entry toc-h3"><a href="#navegación-con-selector">Navegación con selector</a></li>
+<li class="toc-entry toc-h3"><a href="#navegación-combinada">Navegación combinada</a></li>
 </ul>
 </li>
 </ul>
@@ -513,46 +514,178 @@
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Iconos</h1>
-          <p class="bd-lead">Iconos…</p>
-          <h2 id="fontawesome">FontAwesome</h2>
+          <h1 class="bd-title" id="content">Navegación superior</h1>
+          <p class="bd-lead">Es la barra superior de todas las aplicaciones. Permite acceder al inicio de la aplicación, a los apartados principales así como cambiar de aplicación o cerrar sesión.</p>
+          <p>Para que la barra se pegue al borde superior de la web es necesario añadir la clase <code class="highlighter-rouge">.fixed-top</code> en la etiqueta <code class="highlighter-rouge">nav</code>.</p>
 
-<p>Para el desarrollo se van a emplear los iconos <em>FontAwesome</em> 5, ya que se pueden aplicar a botones, iconos, texto,… Se generan de forma sencilla incluyendo un elemento <em>inline</em> (tipo <code class="highlighter-rouge">&lt;i&gt;</code>, <code class="highlighter-rouge">&lt;span&gt;</code>, <code class="highlighter-rouge">&lt;button&gt;</code>,…) más un par de clases CSS:un prefijo de estilo y el nombre del ícono. Los iconos aparecen junto al texto de forma natural adquiriendo las características de “su entorno” (tamaño y color de texto, interlinado, etc.).</p>
+<p>Quedaría de la siguiente forma:</p>
 
-<h3 id="incorporación-de-iconos">Incorporación de iconos</h3>
+<p><code class="highlighter-rouge">&lt;nav class="navbar navbar-expand bg-primary navbar-dark fixed-top shadow-sm"&gt;</code></p>
 
-<p>Para añadir un icono es necesario incluir dos clases: 1) el nombre del icono prefijado por <code class="highlighter-rouge">fa-</code> y 2) el tipo de icono que se desea incorporar: solid (<code class="highlighter-rouge">fas</code>), regular (<code class="highlighter-rouge">far</code>), ligth (<code class="highlighter-rouge">fal</code>) o brands (<code class="highlighter-rouge">fab</code>).</p>
+<h2 id="navegación-superior-básica">Navegación superior básica</h2>
 
-<p>La clase <code class="highlighter-rouge">fa</code> se considera obsoleto en la versión 5 de <em>FontAwesome</em>. El nuevo valor predeterminado es <code class="highlighter-rouge">fas</code> (solid) y <code class="highlighter-rouge">fab</code> para los logos de marcas.</p>
+<p>Cualquier elemento tipo enlace, button o input (tipo button, reset o submit) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
 
 <div class="bd-example">
-<p>Distintos tipos de iconos:</p>
-  <i class="fas fa-heart"></i>
-  <i class="far fa-heart"></i>
-  <span class="fas fa-info-circle"></span>
-  <em class="fab fa-font-awesome"></em>
-<br /><br />
-<p>Son facilmente personalizables tanto en color como en tamaño:</p>
-<h3>
-  <i class="fas fa-heart text-danger"></i>
-  <i class="far fa-heart text-success"></i>
-  <span class="fas fa-info-circle text-primary"></span>
-  <i class="fab fa-font-awesome text-warning"></i>
-</h3>
+
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#">Clientes</a> </li> <!-- Activo -->
+        <li class="nav-item"> <a class="nav-link" href="#">Información de Interés</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Jornadas y Cursos</a> </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="#">Cerrar Sesión</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Cambiar Aplicación</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
+
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Distintos tipos de iconos:<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome"</span><span class="nt">&gt;&lt;/em&gt;</span>
-<span class="nt">&lt;br&gt;&lt;br&gt;</span>
-<span class="nt">&lt;p&gt;</span>Son facilmente personalizables tanto en color como en tamaño:<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;h3&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle text-primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
-<span class="nt">&lt;/h3&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span> <span class="c">&lt;!-- Activo --&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav ml-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cerrar Sesión<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cambiar Aplicación<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
+
+<h3 id="navegación-con-selector">Navegación con selector</h3>
+
+<p>En aquellos casos en los que haya múltiples opciones, se puede sustituir el menú superior con un selector para “saltar” directamente a cada apartado.</p>
+
+<div class="bd-example">
+
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item input-group pt-2 ">
+
+          <select class="form-control form-control-sm" id="inputGroupSelect01">
+            <option value="0" selected="">Inicio</option>
+            <option value="1">Clientes</option>
+            <option value="2">Información de Interés</option>
+            <option value="3">Jornadas y Cursos</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
+
+          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
+
+<h3 id="navegación-combinada">Navegación combinada</h3>
+
+<p>También se puede combinar el selector desplegable con opciones de menú.</p>
+
+<div class="bd-example">
+
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-primary navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item input-group pt-2 ">
+
+          <select class="form-control form-control-sm" id="inputGroupSelect01">
+            <option value="0" selected="">Inicio</option>
+            <option value="1">Clientes</option>
+            <option value="2">Información de Interés</option>
+            <option value="3">Jornadas y Cursos</option>
+          </select>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;1</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#">Opción&nbsp;2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- TopNav  --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand bg-primary navbar-dark shadow-sm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler navbar-toggler-right border-0"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbar11"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbars"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav mr-auto"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link font-weight-bold"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>SAJP<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item input-group pt-2 "</span><span class="nt">&gt;</span>
+
+          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">selected</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>Clientes<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Información de Interés<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Jornadas y Cursos<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Opción<span class="ni">&amp;nbsp;</span>2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- /TopNav  --&gt;</span></code></pre></figure>
 
 
         </main>
