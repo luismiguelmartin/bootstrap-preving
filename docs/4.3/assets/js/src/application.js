@@ -91,7 +91,7 @@
     })
 
   // Insert copy to clipboard button before .highlight
-  var btnHtml = '<div class="bd-clipboard"><button type="button" class="btn-clipboard" title="Copy to clipboard">Copy</button></div>'
+  var btnHtml = '<div class="bd-clipboard"><button type="button" class="btn-clipboard" title="Copiar al portapales">Copiar</button></div>'
   bootstrap.Util.makeArray(document.querySelectorAll('figure.highlight, div.highlight'))
     .forEach(function (element) {
       element.insertAdjacentHTML('beforebegin', btnHtml)
@@ -118,25 +118,25 @@
   clipboard.on('success', function (e) {
     var tooltipBtn = bootstrap.Tooltip._getInstance(e.trigger)
 
-    e.trigger.setAttribute('title', 'Copied!')
+    e.trigger.setAttribute('title', '¡Copiado!')
     tooltipBtn._fixTitle()
     tooltipBtn.show()
 
-    e.trigger.setAttribute('title', 'Copy to clipboard')
+    e.trigger.setAttribute('title', 'Copiar al portapales')
     tooltipBtn._fixTitle()
     e.clearSelection()
   })
 
   clipboard.on('error', function (e) {
     var modifierKey = /Mac/i.test(navigator.userAgent) ? '\u2318' : 'Ctrl-'
-    var fallbackMsg = 'Press ' + modifierKey + 'C to copy'
+    var fallbackMsg = 'Pulsar ' + modifierKey + 'C para copiar'
     var tooltipBtn = bootstrap.Tooltip._getInstance(e.trigger)
 
     e.trigger.setAttribute('title', fallbackMsg)
     tooltipBtn._fixTitle()
     tooltipBtn.show()
 
-    e.trigger.setAttribute('title', 'Copy to clipboard')
+    e.trigger.setAttribute('title', 'Copiar al portapales')
     tooltipBtn._fixTitle()
   })
 
