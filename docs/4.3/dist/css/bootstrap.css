@@ -1800,7 +1800,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
 }
 
@@ -1825,7 +1825,7 @@ select.form-control:focus::-ms-value {
 .form-control-sm {
   height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -1918,7 +1918,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
@@ -2041,7 +2041,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
@@ -2826,7 +2826,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3115,7 +3115,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -3409,7 +3409,7 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3646,7 +3646,7 @@ input[type="button"].btn-block {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .custom-select-lg {
@@ -4695,7 +4695,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   line-height: 1.5;
 }
 
@@ -5718,7 +5718,7 @@ a.close.disabled {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5831,7 +5831,7 @@ a.close.disabled {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
