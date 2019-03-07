@@ -493,12 +493,7 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#paginación-por-defecto">Paginación por defecto</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#paginación-a-la-izquierda">Paginación a la izquierda</a></li>
-<li class="toc-entry toc-h3"><a href="#paginación-a-la-derecha">Paginación a la derecha</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#paginación-por-defecto">Paginación por defecto</a></li>
 <li class="toc-entry toc-h2"><a href="#paginación-alternativa">Paginación Alternativa</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#paginación-alternativa-a-la-izquierda">Paginación alternativa a la izquierda</a></li>
@@ -517,16 +512,6 @@
 <p>La paginación por defecto se crea añadiendo la clase <code class="highlighter-rouge">pagination</code>. Según interese puede ubicarse centrada o a la derecha, añadiendo <code class="highlighter-rouge">justify-content-center</code> o <code class="highlighter-rouge">justify-content-end</code>, respectivamente.</p>
 
 <p>Opcionalmente, se pueden sustituir las flechas por las palabras <em>Anterior</em> y <em>Siguiente</em>.</p>
-
-<div class="row">
-  <div class="col-md-8">
-    <p>Some text.</p>
-  </div>
-  <div class="col-md-4">
-
-    <p><img height="600px" class="center-block" src="../img/folder/blah.jpg" /></p>
-  </div>
-</div>
 
 <div class="bd-example">
 
@@ -561,75 +546,88 @@
 <span class="nt">&lt;/div&gt;</span>
 <span class="c">&lt;!-- /Pagination --&gt;</span></code></pre></figure>
 
-<h3 id="paginación-a-la-izquierda">Paginación a la izquierda</h3>
-
-<div class="bd-example">
-
-<!-- Pagination -->
 <div class="row">
   <div class="col">
-    <ul class="pagination">
-      <li class="page-item"> <a class="page-link" href="#"> <span>«</span></a> </li>
-      <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">4</a> </li>
-      <li class="page-item"> <a class="page-link" href="#"> <span>»</span></a> </li>
-    </ul>
+
+    <p>### Paginación a la izquierda</p>
+
+    <div class="bd-example">
+
+  <!-- Pagination -->
+  <div class="row">
+    <div class="col">
+      <ul class="pagination">
+        <li class="page-item"> <a class="page-link" href="#"> <span>«</span></a> </li>
+        <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">4</a> </li>
+        <li class="page-item"> <a class="page-link" href="#"> <span>»</span></a> </li>
+      </ul>
+    </div>
   </div>
-</div>
-<!-- /Pagination -->
+  <!-- /Pagination -->
 
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Pagination --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>«<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>»<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
+  </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="c">&lt;!-- Pagination --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>«<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>»<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="c">&lt;!-- /Pagination --&gt;</span></code></pre></figure>
+  <span class="c">&lt;!-- /Pagination --&gt;</span>
 
-<h3 id="paginación-a-la-derecha">Paginación a la derecha</h3>
+  </code></pre></figure>
 
-<div class="bd-example">
-
-<!-- Pagination -->
-<div class="row">
+  </div>
   <div class="col">
-    <ul class="pagination justify-content-end">
-      <li class="page-item"> <a class="page-link" href="#"> <span>«</span></a> </li>
-      <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">2</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">3</a> </li>
-      <li class="page-item"> <a class="page-link" href="#">4</a> </li>
-      <li class="page-item"> <a class="page-link" href="#"> <span>»</span></a> </li>
-    </ul>
+
+    <p>### Paginación a la derecha</p>
+
+    <div class="bd-example">
+
+  <!-- Pagination -->
+  <div class="row">
+    <div class="col">
+      <ul class="pagination justify-content-end">
+        <li class="page-item"> <a class="page-link" href="#"> <span>«</span></a> </li>
+        <li class="page-item active"> <a class="page-link" href="#">1</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">3</a> </li>
+        <li class="page-item"> <a class="page-link" href="#">4</a> </li>
+        <li class="page-item"> <a class="page-link" href="#"> <span>»</span></a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /Pagination -->
+
+  </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="c">&lt;!-- Pagination --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination justify-content-end"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>«<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>»<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="c">&lt;!-- /Pagination --&gt;</span>
+
+  </code></pre></figure>
+
   </div>
 </div>
-<!-- /Pagination -->
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Pagination --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"pagination justify-content-end"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>«<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item active"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"page-item"</span><span class="nt">&gt;</span> <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"page-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span> <span class="nt">&lt;span&gt;</span>»<span class="nt">&lt;/span&gt;&lt;/a&gt;</span> <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="c">&lt;!-- /Pagination --&gt;</span></code></pre></figure>
 
 <h2 id="paginación-alternativa">Paginación Alternativa</h2>
 
