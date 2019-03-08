@@ -677,7 +677,7 @@ Concretamente, se cambiado <code class="highlighter-rouge">.input-group-addon</c
         <span class="na">placeholder</span><span class="p">:</span> <span class="s1">'Comienza a escribir o pulsa para seleccionar sectores/CNAE.'</span>
       <span class="p">});</span>
     <span class="p">});</span>
-  <span class="nt">&lt;/script&gt;</span>&gt;</code></pre></figure>
+  <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 
         </main>
@@ -702,7 +702,26 @@ Concretamente, se cambiado <code class="highlighter-rouge">.input-group-addon</c
       autoclose: "true",
       weekStart: 1
     });
-  </script><script src="/preving-bootstrap/docs/4.3/assets/js/vendor/anchor.min.js"></script>
+  </script>
+
+  <!-- Librerías externas -->
+  <!--
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  -->
+  <!-- Librerías locales -->
+  <link href="/preving-bootstrap/docs/4.3/assets/select2/css/select2.css" rel="stylesheet" />
+  <script src="/preving-bootstrap/docs/4.3/assets/select2/js/select2.min.js"></script>
+
+  <!-- Cambiamos los .simple-select2 -->
+
+    <script>
+      $(document).ready(function() {
+        $('.simple-select2').select2({
+          placeholder: 'Comienza a escribir o pulsa para seleccionar sectores/CNAE.'
+        });
+      });
+    </script><script src="/preving-bootstrap/docs/4.3/assets/js/vendor/anchor.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/clipboard.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/bs-custom-file-input.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/src/application.js"></script>
