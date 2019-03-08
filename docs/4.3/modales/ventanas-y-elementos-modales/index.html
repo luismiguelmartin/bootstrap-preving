@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="es_ES">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Las ventanas modales son elementos versátiles que se pueden utilizar para agregar cuadros de diálogo, confirmaciones y notificaciones a los usuarios o cualquier otro tipo de contenido completamente personalizado.">
+<meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
+<meta name="generator" content="Jekyll v3.8.5">
+
+<meta name="docsearch:language" content="es">
+<meta name="docsearch:version" content="4.3">
+
+<title>Ventanas y elementos modales · Preving Bootstrap</title>
+
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/modales/ventanas-y-elementos-modales/">
+
+<!-- Bootstrap core CSS -->
+<link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/preving-bootstrap/docs/4.3/assets/css/preving-docs.css" rel="stylesheet"><!-- Documentation extras -->
+
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+
+
+<link href="/preving-bootstrap/docs/4.3/assets/css/docs.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/preving-bootstrap/docs/4.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/preving-bootstrap/docs/4.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/preving-bootstrap/docs/4.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/preving-bootstrap/docs/4.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/preving-bootstrap/docs/4.3/assets/img/favicons/safari-pinned-tab.svg" color="#004C67">
+<link rel="icon" href="/preving-bootstrap/favicon.ico">
+<meta name="msapplication-config" content="/preving-bootstrap/docs/4.3/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#004C67">
+
+
+  </head>
+  <body>
+    <a class="skippy sr-only sr-only-focusable" href="#content">
+  <span class="skippy-text">Saltar al contenido</span>
+</a>
+
+
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2" href="/preving-bootstrap/" aria-label="Preving Bootstrap">
+	<img src="/preving-bootstrap/docs/4.3/assets/img/favicons/logoPreving.png" width="36" height="36" class="d-block" alt="Preving Bootstrap">
+  </a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link " href="/preving-bootstrap/" >Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/preving-bootstrap/docs/4.3/introduccion/">Guía de Estilos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/preving-bootstrap/docs/4.3/examples/">Ejemplos</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
+        v4.3
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="/preving-bootstrap/docs/4.3/">Bootstrap (4.3.x)</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.2/">v4.2.1</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/">v4.0.0</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/preving-bootstrap/docs/versions/">Versiones de Bootstrap</a>
+      </div>
+    </li>
+<!--
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/grupopreving" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener" aria-label="Slack"><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 512" role="img"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://opencollective.com/bootstrap/" target="_blank" rel="noopener" aria-label="Open Collective"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg></a>
+    </li>
+-->
+  </ul>
+
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/preving-bootstrap/docs/4.3/getting-started/download/">Descargar</a>
+
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <form class="bd-search d-flex align-items-center">
+  <!--<input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.3">-->
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg></button>
+</form>
+
+<nav class="collapse bd-links" id="bd-docs-nav"><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/introduccion/">
+        Introducción
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/colores/">
+        Conceptos Básicos
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/colores/">
+              Colores
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
+              Maquetación
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/iconos/">
+              Iconos
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/formularios/formularios-basicos/">
+        Formularios
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/formularios/formularios-basicos/">
+              Formularios Básicos
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/formularios/formularios-avanzados/">
+              Formularios Avanzados
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/formularios/plugins-para-formularios/">
+              Plugins para Formularios
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/botones/botones-en-aplicaciones-preving/">
+        Botones
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/botones/botones-en-aplicaciones-preving/">
+              Botones en aplicaciones Preving
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/buscadores/buscadores-de-registros/">
+        Buscadores
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/buscadores/buscadores-de-registros/">
+              Buscadores de registros
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/tablas/tablas-de-datos/">
+        Tablas
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/tablas/tablas-de-datos/">
+              Tablas de datos
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
+        Navegación
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
+              Navegación de la aplicación
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/tabs-pills-y-cards/">
+              Tabs, pills y cards
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/moviendonos-entre-registros/">
+              Moviéndonos entre registros
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/paginacion-de-resultados/">
+              Paginación de resultados
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/varios/pies-de-pagina/">
+        Varios
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/varios/pies-de-pagina/">
+              Pies de página
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/getting-started/introduction/">
+        Getting started
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/introduction/">
+              Introduction
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/download/">
+              Download
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/contents/">
+              Contents
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/browsers-devices/">
+              Browsers & devices
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/javascript/">
+              JavaScript
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/theming/">
+              Theming
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/build-tools/">
+              Build tools
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/webpack/">
+              Webpack
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/getting-started/accessibility/">
+              Accessibility
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/layout/overview/">
+        Layout
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/layout/overview/">
+              Overview
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/layout/grid/">
+              Grid
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/layout/utilities-for-layout/">
+              Utilities for layout
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/content/reboot/">
+        Content
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/content/reboot/">
+              Reboot
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/content/typography/">
+              Typography
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/content/code/">
+              Code
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/content/images/">
+              Images
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/content/tables/">
+              Tables
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/content/figures/">
+              Figures
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/components/alerts/">
+        Components
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/components/alerts/">
+              Alerts
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/badge/">
+              Badge
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/breadcrumb/">
+              Breadcrumb
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/buttons/">
+              Buttons
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/button-group/">
+              Button group
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/card/">
+              Card
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/carousel/">
+              Carousel
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/collapse/">
+              Collapse
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/dropdowns/">
+              Dropdowns
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/forms/">
+              Forms
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/input-group/">
+              Input group
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/jumbotron/">
+              Jumbotron
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/list-group/">
+              List group
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/media-object/">
+              Media object
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/modal/">
+              Modal
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/navs/">
+              Navs
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/navbar/">
+              Navbar
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/pagination/">
+              Pagination
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/popovers/">
+              Popovers
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/progress/">
+              Progress
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/scrollspy/">
+              Scrollspy
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/spinners/">
+              Spinners
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/toasts/">
+              Toasts
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/components/tooltips/">
+              Tooltips
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/utilities/borders/">
+        Utilities
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/borders/">
+              Borders
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/clearfix/">
+              Clearfix
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/close-icon/">
+              Close icon
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/colors/">
+              Colors
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/display/">
+              Display
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/embed/">
+              Embed
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/flex/">
+              Flex
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/float/">
+              Float
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/image-replacement/">
+              Image replacement
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/overflow/">
+              Overflow
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/position/">
+              Position
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/screen-readers/">
+              Screen readers
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/shadows/">
+              Shadows
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/sizing/">
+              Sizing
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/spacing/">
+              Spacing
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/stretched-link/">
+              Stretched link
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/text/">
+              Text
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/vertical-align/">
+              Vertical align
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/utilities/visibility/">
+              Visibility
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/extend/approach/">
+        Extend
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/extend/approach/">
+              Approach
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/extend/icons/">
+              Icons
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/migration/">
+        Migration
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div></nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#modal-básica">Modal básica</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#opciones-de-modales">Opciones de modales</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#modales-avanzadas">Modales avanzadas</a></li>
+</ul>
+          </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Ventanas y elementos modales</h1>
+          <p class="bd-lead">Las ventanas modales son elementos versátiles que se pueden utilizar para agregar cuadros de diálogo, confirmaciones y notificaciones a los usuarios o cualquier otro tipo de contenido completamente personalizado.</p>
+          <p>Los elementos de cabecera y pie, <code class="highlighter-rouge">.modal-header</code> y <code class="highlighter-rouge">.modal-footer</code> respectivamente, son opcionales.</p>
+
+<h2 id="modal-básica">Modal básica</h2>
+
+<p>La modal por defecto tendrá el color primario de la aplicación, <code class="highlighter-rouge">.bg-primary</code> junto a <code class="highlighter-rouge">.modal-header</code> y reducido el padding del <code class="highlighter-rouge">.modal-footer</code> añadiéndole la clase <code class="highlighter-rouge">.p-4</code>. También se ha eliminado el botón de cerrar en la parte superior, respecto a la modal de Bootstrap.</p>
+
+<div class="bd-example">
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalPreving">
+    <strong>MODAL PREVING</strong>
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalBootstrap">
+    Modal Bootstrap
+  </button>
+</div>
+
+<!-- MODAL PREVING -->
+<div class="modal fade" id="exampleModalPreving" tabindex="-1" role="dialog" aria-labelledby="exampleModalPrevingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalPrevingLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL NORMAL BOOTSTRAP -->
+<div class="modal fade" id="exampleModalBootstrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalBootstrapLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalBootstrapLabel">Modal normal</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalPreving"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strong&gt;</span>MODAL PREVING<span class="nt">&lt;/strong&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalBootstrap"</span><span class="nt">&gt;</span>
+    Modal Bootstrap
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL PREVING --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalPreving"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalPrevingLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalPrevingLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL NORMAL BOOTSTRAP --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalBootstrap"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalBootstrapLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalBootstrapLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Cerrar"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="opciones-de-modales">Opciones de modales</h3>
+
+<p>Se puede cambiar el tamaño añadiendo las clases <code class="highlighter-rouge">.modal-lg</code> y <code class="highlighter-rouge">.modal-sm</code> junto a la de <code class="highlighter-rouge">.modal-dialog</code>, para hacerlas más grandes o más pequeñas, respectivamente. También, si añadimos la clase <code class="highlighter-rouge">.modal-dialog-centered</code> se centraría verticalmente.</p>
+
+<div class="bd-example">
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalGrande">
+    Modal grande
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalPequena">
+    Modal pequeña
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentrada">
+    Modal centrada
+  </button>
+</div>
+
+<!-- MODAL GRANDE -->
+<div class="modal fade" id="exampleModalGrande" tabindex="-1" role="dialog" aria-labelledby="exampleModalGrandeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalGrandeLabel">Modal grande</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PEQUEÑA -->
+<div class="modal fade" id="exampleModalPequena" tabindex="-1" role="dialog" aria-labelledby="exampleModalPequenaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalPequenaLabel">Modal pequeña</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CENTRADA -->
+<div class="modal fade" id="exampleModalCentrada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCentradaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalCentradaLabel">Modal centrada verticalmente</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalGrande"</span><span class="nt">&gt;</span>
+    Modal grande
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalPequena"</span><span class="nt">&gt;</span>
+    Modal pequeña
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalCentrada"</span><span class="nt">&gt;</span>
+    Modal centrada
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL GRANDE --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalGrande"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalGrandeLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-lg"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalGrandeLabel"</span><span class="nt">&gt;</span>Modal grande<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cerrar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL PEQUEÑA --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalPequena"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalPequenaLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalPequenaLabel"</span><span class="nt">&gt;</span>Modal pequeña<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cerrar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL CENTRADA --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalCentrada"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalCentradaLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalCentradaLabel"</span><span class="nt">&gt;</span>Modal centrada verticalmente<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cerrar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="modales-avanzadas">Modales avanzadas</h2>
+
+<p>Combinando opciones podemos hacer ventanas informativas, diálogos de confirmación o alerta, texto con scroll,… <strong>Es importante mantener la coherencia en todas las modales: igual color de cabecera, sin botón cerrar, botones del pie correctos, etc.</strong></p>
+
+<div class="bd-example">
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Confirmación
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalAlert">
+    Alerta
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalDanger">
+    Guardar
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalProgress">
+    Progreso
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScroll">
+    Scroll
+  </button>
+</div>
+
+<!-- MODAL CONFIRMACIÓN -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body text-center">
+        A continuación se va a proceder a guardar los datos introducidos y generar el informe.
+        <br /><br />
+        <span class="small"><strong>18-12-2018 (10:52)</strong> | IP: <strong>83.56.27.179</strong></span>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL ALERTA -->
+<div class="modal fade" id="exampleModalAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalAlertLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalAlertLabel">Alerta</h5>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger mb-0" role="alert">
+          <strong>¿Seguro que desea eliminar el cliente?</strong><br />
+          Esta operación no tiene vuelta atrás.
+        </div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Borrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL GUARDAR -->
+<div class="modal fade" id="exampleModalDanger" tabindex="-1" role="dialog" aria-labelledby="exampleModalDangerLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalDangerLabel">Confirmación</h5>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-info mb-0" role="alert">
+          <strong>¿Seguro que desea guardar los cambios?</strong><br />
+          Se guardarán los cambios realizados en la ficha.
+        </div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Cancelar</button>
+        <button type="button" class="btn btn-success"><i class="fas fa-check-circle"></i> Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL BARRA PROGRESO -->
+<div class="modal fade" id="exampleModalProgress" tabindex="-1" role="dialog" aria-labelledby="exampleModalProgressLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalProgressLabel">Cargando...</h5>
+      </div>
+      <div class="modal-body">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SCROLL -->
+<div class="modal fade" id="exampleModalScroll" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalScrollLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet varius mi a finibus. Sed lobortis dui risus, quis eleifend arcu tempor gravida. Maecenas cursus condimentum orci, sed egestas mauris luctus a. Ut aliquet libero eget elit fringilla sagittis. Phasellus sit amet metus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur, enim ut semper commodo, sem ipsum tincidunt sapien, sed vulputate purus augue vel augue. In volutpat molestie fringilla. Donec semper vel neque at posuere. Nulla imperdiet, mauris eu ultricies pharetra, ex libero imperdiet quam, in pretium eros dui nec ante. Nulla sit amet enim ac ex tempus finibus. Pellentesque sodales lacus in sapien tempus convallis.
+        <br /><br />
+        Aliquam erat volutpat. Aliquam vestibulum nisl quis libero cursus ullamcorper. Sed et mauris eget felis mollis ornare nec ut lacus. Cras ac turpis quis nisi pretium dictum. Vivamus lacinia laoreet sapien quis malesuada. Praesent auctor lectus id sollicitudin elementum. Integer volutpat ultrices ligula, at interdum massa pulvinar sed. Vivamus nec nisi vitae felis rutrum pulvinar semper quis augue. Suspendisse malesuada mi lectus, sit amet accumsan arcu auctor non. Quisque tincidunt, turpis at interdum accumsan, enim sapien vestibulum odio, vehicula sagittis nunc lorem non purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ut purus et mauris maximus mattis. Etiam viverra libero sit amet diam varius, et molestie justo maximus.
+        <br /><br />
+        Maecenas varius efficitur enim eget sagittis. Sed laoreet lobortis tempus. Aliquam magna mauris, mattis nec convallis sit amet, feugiat molestie turpis. Nunc viverra orci malesuada porttitor congue. Morbi eget ipsum sit amet nisi lobortis ultricies. Pellentesque tellus lacus, varius eu odio euismod, suscipit faucibus enim. Vivamus ut finibus sapien, ut consequat justo. Maecenas blandit augue consectetur metus dignissim finibus. Morbi pellentesque pretium quam id vehicula. Vivamus placerat tincidunt leo, sed porta neque tincidunt vel.
+        <br /><br />
+        Fusce ut velit id ligula vehicula molestie eget vitae lacus. Curabitur fringilla lorem vitae leo venenatis elementum egestas et odio. Sed laoreet pellentesque nulla et feugiat. Integer semper finibus dolor, eu mattis ipsum condimentum eget. Nam nec lorem in mi pulvinar malesuada. Aliquam accumsan lacus sed libero fringilla tempor. Curabitur luctus, erat nec bibendum rutrum, ipsum velit convallis libero, eget ullamcorper massa turpis at elit. Fusce dapibus vehicula bibendum. Nulla nec feugiat ipsum. Ut hendrerit pellentesque egestas. Etiam nec cursus risus. Maecenas vel ipsum maximus, congue eros eu, imperdiet velit. Aliquam fermentum arcu quis fringilla sagittis.
+        <br /><br />
+        Ut vestibulum sit amet risus quis pharetra. Suspendisse maximus mauris eget quam pellentesque volutpat. Suspendisse auctor mi nec mauris aliquam laoreet. Maecenas turpis leo, convallis vitae ornare at, laoreet ac ligula. Ut tempor maximus ex, eget molestie diam vulputate non. Mauris viverra orci magna, ac aliquam quam suscipit a. In iaculis congue est, nec facilisis magna eleifend sed. Phasellus placerat erat non purus maximus, sit amet maximus orci convallis. Proin vel dictum nisi, sed pharetra purus. Nunc ut metus a urna dictum maximus. Vestibulum ultricies vestibulum urna quis hendrerit.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModal"</span><span class="nt">&gt;</span>
+    Confirmación
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalAlert"</span><span class="nt">&gt;</span>
+    Alerta
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalDanger"</span><span class="nt">&gt;</span>
+    Guardar
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalProgress"</span><span class="nt">&gt;</span>
+    Progreso
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalScroll"</span><span class="nt">&gt;</span>
+    Scroll
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL CONFIRMACIÓN --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
+        A continuación se va a proceder a guardar los datos introducidos y generar el informe.
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;&lt;strong&gt;</span>18-12-2018 (10:52)<span class="nt">&lt;/strong&gt;</span> | IP: <span class="nt">&lt;strong&gt;</span>83.56.27.179<span class="nt">&lt;/strong&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-save"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL ALERTA --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalAlert"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalAlertLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalAlertLabel"</span><span class="nt">&gt;</span>Alerta<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger mb-0"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;strong&gt;</span>¿Seguro que desea eliminar el cliente?<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+          Esta operación no tiene vuelta atrás.
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-trash-alt"</span><span class="nt">&gt;&lt;/i&gt;</span> Borrar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL GUARDAR --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalDanger"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalDangerLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalDangerLabel"</span><span class="nt">&gt;</span>Confirmación<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info mb-0"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;strong&gt;</span>¿Seguro que desea guardar los cambios?<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+          Se guardarán los cambios realizados en la ficha.
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-times-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL BARRA PROGRESO --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalProgress"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalProgressLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalProgressLabel"</span><span class="nt">&gt;</span>Cargando...<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped progress-bar-animated"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL SCROLL --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalScroll"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalScrollLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalScrollLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet varius mi a finibus. Sed lobortis dui risus, quis eleifend arcu tempor gravida. Maecenas cursus condimentum orci, sed egestas mauris luctus a. Ut aliquet libero eget elit fringilla sagittis. Phasellus sit amet metus sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur, enim ut semper commodo, sem ipsum tincidunt sapien, sed vulputate purus augue vel augue. In volutpat molestie fringilla. Donec semper vel neque at posuere. Nulla imperdiet, mauris eu ultricies pharetra, ex libero imperdiet quam, in pretium eros dui nec ante. Nulla sit amet enim ac ex tempus finibus. Pellentesque sodales lacus in sapien tempus convallis.
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        Aliquam erat volutpat. Aliquam vestibulum nisl quis libero cursus ullamcorper. Sed et mauris eget felis mollis ornare nec ut lacus. Cras ac turpis quis nisi pretium dictum. Vivamus lacinia laoreet sapien quis malesuada. Praesent auctor lectus id sollicitudin elementum. Integer volutpat ultrices ligula, at interdum massa pulvinar sed. Vivamus nec nisi vitae felis rutrum pulvinar semper quis augue. Suspendisse malesuada mi lectus, sit amet accumsan arcu auctor non. Quisque tincidunt, turpis at interdum accumsan, enim sapien vestibulum odio, vehicula sagittis nunc lorem non purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ut purus et mauris maximus mattis. Etiam viverra libero sit amet diam varius, et molestie justo maximus.
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        Maecenas varius efficitur enim eget sagittis. Sed laoreet lobortis tempus. Aliquam magna mauris, mattis nec convallis sit amet, feugiat molestie turpis. Nunc viverra orci malesuada porttitor congue. Morbi eget ipsum sit amet nisi lobortis ultricies. Pellentesque tellus lacus, varius eu odio euismod, suscipit faucibus enim. Vivamus ut finibus sapien, ut consequat justo. Maecenas blandit augue consectetur metus dignissim finibus. Morbi pellentesque pretium quam id vehicula. Vivamus placerat tincidunt leo, sed porta neque tincidunt vel.
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        Fusce ut velit id ligula vehicula molestie eget vitae lacus. Curabitur fringilla lorem vitae leo venenatis elementum egestas et odio. Sed laoreet pellentesque nulla et feugiat. Integer semper finibus dolor, eu mattis ipsum condimentum eget. Nam nec lorem in mi pulvinar malesuada. Aliquam accumsan lacus sed libero fringilla tempor. Curabitur luctus, erat nec bibendum rutrum, ipsum velit convallis libero, eget ullamcorper massa turpis at elit. Fusce dapibus vehicula bibendum. Nulla nec feugiat ipsum. Ut hendrerit pellentesque egestas. Etiam nec cursus risus. Maecenas vel ipsum maximus, congue eros eu, imperdiet velit. Aliquam fermentum arcu quis fringilla sagittis.
+        <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+        Ut vestibulum sit amet risus quis pharetra. Suspendisse maximus mauris eget quam pellentesque volutpat. Suspendisse auctor mi nec mauris aliquam laoreet. Maecenas turpis leo, convallis vitae ornare at, laoreet ac ligula. Ut tempor maximus ex, eget molestie diam vulputate non. Mauris viverra orci magna, ac aliquam quam suscipit a. In iaculis congue est, nec facilisis magna eleifend sed. Phasellus placerat erat non purus maximus, sit amet maximus orci convallis. Proin vel dictum nisi, sed pharetra purus. Nunc ut metus a urna dictum maximus. Vestibulum ultricies vestibulum urna quis hendrerit.
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+        </main>
+      </div>
+    </div>
+
+    <script src="/preving-bootstrap/docs/4.3/dist/js/bootstrap.bundle.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/preving-bootstrap/docs/4.3/assets/js/vendor/anchor.min.js"></script>
+  <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/bs-custom-file-input.min.js"></script>
+  <script src="/preving-bootstrap/docs/4.3/assets/js/src/application.js"></script>
+  <script src="/preving-bootstrap/docs/4.3/assets/js/src/search.js"></script>
+  </body>
+</html>
