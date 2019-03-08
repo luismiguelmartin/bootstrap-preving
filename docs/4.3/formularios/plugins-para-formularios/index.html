@@ -715,13 +715,16 @@ Concretamente, se cambiado <code class="highlighter-rouge">.input-group-addon</c
 
   <!-- Cambiamos los .simple-select2 -->
 
-    <script>
-      $(document).ready(function() {
+  <script type="text/javascript">
+        $(document).ready(function() {
+          $('.simple-select2').select2({
+            placeholder: 'Comienza a escribir o pulsa para seleccionar sectores/CNAE.'
+          });
+        });
         $('.simple-select2').select2({
           placeholder: 'Comienza a escribir o pulsa para seleccionar sectores/CNAE.'
         });
-      });
-    </script><script src="/preving-bootstrap/docs/4.3/assets/js/vendor/anchor.min.js"></script>
+  </script><script src="/preving-bootstrap/docs/4.3/assets/js/vendor/anchor.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/clipboard.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/vendor/bs-custom-file-input.min.js"></script>
   <script src="/preving-bootstrap/docs/4.3/assets/js/src/application.js"></script>
