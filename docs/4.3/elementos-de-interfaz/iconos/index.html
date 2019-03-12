@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Los formularios son los elementos principales de interacción de usuario. Por ello, serializar y estandarizar los distintos elementos es fundamental.">
+<meta name="description" content="Iconos…">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Botones en aplicaciones Preving · Preving Bootstrap</title>
+<title>Iconos · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/botones/botones-en-aplicaciones-preving/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/elementos-de-interfaz/iconos/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -114,22 +114,32 @@
       </a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/colores/">
+    </div><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
         Conceptos Básicos
       </a>
 
       <ul class="nav bd-sidenav"><li>
-            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/colores/">
-              Colores
-            </a>
-          </li><li>
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
               Maquetación
             </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/elementos-de-interfaz/colores/">
+        Elementos de Interfaz
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/elementos-de-interfaz/colores/">
+              Colores
+            </a>
           </li><li>
-            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/iconos/">
+            <a href="/preving-bootstrap/docs/4.3/elementos-de-interfaz/iconos/">
               Iconos
+            </a>
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/elementos-de-interfaz/botones-en-aplicaciones-preving/">
+              Botones en aplicaciones Preving
             </a>
           </li></ul>
     </div><div class="bd-toc-item">
@@ -148,16 +158,6 @@
           </li><li>
             <a href="/preving-bootstrap/docs/4.3/formularios/plugins-para-formularios/">
               Plugins para Formularios
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item active">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/botones/botones-en-aplicaciones-preving/">
-        Botones
-      </a>
-
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
-            <a href="/preving-bootstrap/docs/4.3/botones/botones-en-aplicaciones-preving/">
-              Botones en aplicaciones Preving
             </a>
           </li></ul>
     </div><div class="bd-toc-item">
@@ -181,16 +181,6 @@
             </a>
           </li></ul>
     </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/modales/ventanas-y-elementos-modales/">
-        Modales
-      </a>
-
-      <ul class="nav bd-sidenav"><li>
-            <a href="/preving-bootstrap/docs/4.3/modales/ventanas-y-elementos-modales/">
-              Ventanas y elementos modales
-            </a>
-          </li></ul>
-    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
         Navegación
       </a>
@@ -210,6 +200,16 @@
           </li><li>
             <a href="/preving-bootstrap/docs/4.3/navegacion/paginacion-de-resultados/">
               Paginación de resultados
+            </a>
+          </li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/modales/ventanas-y-elementos-modales/">
+        Modales
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="/preving-bootstrap/docs/4.3/modales/ventanas-y-elementos-modales/">
+              Ventanas y elementos modales
             </a>
           </li></ul>
     </div><div class="bd-toc-item">
@@ -523,178 +523,56 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#botones-básicos">Botones básicos</a></li>
-<li class="toc-entry toc-h2"><a href="#botones-estándar-en-aplicaciones">Botones estándar en aplicaciones</a></li>
-<li class="toc-entry toc-h2"><a href="#variaciones-de-tamaño">Variaciones de tamaño</a>
+<li class="toc-entry toc-h2"><a href="#fontawesome">FontAwesome</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#botones-pequeños">Botones pequeños</a></li>
-<li class="toc-entry toc-h3"><a href="#botones-ancho-100">Botones ancho 100%</a></li>
+<li class="toc-entry toc-h3"><a href="#incorporación-de-iconos">Incorporación de iconos</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#iconos-en-botones">Iconos en botones</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Botones en aplicaciones Preving</h1>
-          <p class="bd-lead">Los formularios son los elementos principales de interacción de usuario. Por ello, serializar y estandarizar los distintos elementos es fundamental.</p>
-          <p>Por defecto, su comportamiento siempre es <em>inline</em>. Se recomienda que los botones de las aplicaciones sean todos tipo info, con la clase <code class="highlighter-rouge">.btn-info</code>, y el botón de la acción principal (enviar, guardar, etc.) con el color primario de la aplicación sustituyendo la clase anterior por <code class="highlighter-rouge">.btn-primary</code>.</p>
+          <h1 class="bd-title" id="content">Iconos</h1>
+          <p class="bd-lead">Iconos…</p>
+          <h2 id="fontawesome">FontAwesome</h2>
 
-<div class="bd-callout bd-callout-warning">
-<h5 id="los-colores-con-el-color-de-la-app-estarán-restringidos">Los colores con el color de la app estarán restringidos</h5>
+<p>Para el desarrollo se van a emplear los iconos <em>FontAwesome</em> 5, ya que se pueden aplicar a botones, iconos, texto,… Se generan de forma sencilla incluyendo un elemento <em>inline</em> (tipo <code class="highlighter-rouge">&lt;i&gt;</code>, <code class="highlighter-rouge">&lt;span&gt;</code>, <code class="highlighter-rouge">&lt;button&gt;</code>,…) más un par de clases CSS:un prefijo de estilo y el nombre del ícono. Los iconos aparecen junto al texto de forma natural adquiriendo las características de “su entorno” (tamaño y color de texto, interlinado, etc.).</p>
 
-<p>Por regla general solamente se emplearan botones de color para la acción principal de la página en la que estemos, estado o modal. El resto de botones serán de color gris claro.</p>
-</div>
+<h3 id="incorporación-de-iconos">Incorporación de iconos</h3>
 
-<h2 id="botones-básicos">Botones básicos</h2>
+<p>Para añadir un icono es necesario incluir dos clases: 1) el nombre del icono prefijado por <code class="highlighter-rouge">fa-</code> y 2) el tipo de icono que se desea incorporar: solid (<code class="highlighter-rouge">fas</code>), regular (<code class="highlighter-rouge">far</code>), ligth (<code class="highlighter-rouge">fal</code>) o brands (<code class="highlighter-rouge">fab</code>).</p>
 
-<p>Cualquier elemento tipo enlace, button o input (tipo button, reset o submit) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
+<p>La clase <code class="highlighter-rouge">fa</code> se considera obsoleto en la versión 5 de <em>FontAwesome</em>. El nuevo valor predeterminado es <code class="highlighter-rouge">fas</code> (solid) y <code class="highlighter-rouge">fab</code> para los logos de marcas.</p>
 
 <div class="bd-example">
-
-<a class="btn btn-info" href="#" role="button">Enlace convertido en botón</a>
-<button class="btn btn-info" type="submit">Button</button>
-<input class="btn btn-info" type="button" value="Input - Button" />
-<input class="btn btn-primary" type="submit" value="Input - Submit" />
-<input class="btn btn-info" type="reset" value="Input - Reset" />
-
+<p>Distintos tipos de iconos:</p>
+  <i class="fas fa-heart"></i>
+  <i class="far fa-heart"></i>
+  <span class="fas fa-info-circle"></span>
+  <em class="fab fa-font-awesome"></em>
+<br /><br />
+<p>Son facilmente personalizables tanto en color como en tamaño:</p>
+<h3>
+  <i class="fas fa-heart text-danger"></i>
+  <i class="far fa-heart text-success"></i>
+  <span class="fas fa-info-circle text-primary"></span>
+  <i class="fab fa-font-awesome text-warning"></i>
+</h3>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Enlace convertido en botón<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Input - Button"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Input - Submit"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Input - Reset"</span><span class="nt">&gt;</span></code></pre></figure>
-
-<h2 id="botones-estándar-en-aplicaciones">Botones estándar en aplicaciones</h2>
-
-<p>Añadiendo distintas clases podemos definir la acción principal, la confirmaciones, avisos, etc.</p>
-
-<div class="bd-example">
-
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-<h2 id="variaciones-de-tamaño">Variaciones de tamaño</h2>
-
-<h3 id="botones-pequeños">Botones pequeños</h3>
-
-<p>Añadiendo la clase <code class="highlighter-rouge">.btn-sm</code> podemos cambiarle el tamaño; pero no deben mezclarse en una misma barra de botones.</p>
-
-<div class="bd-example">
-
-<button type="button" class="btn btn-info">Botón Normal</button>
-<button type="button" class="btn btn-primary btn-sm">Botón Pequeño</button>
-<button type="button" class="btn btn-info btn-sm">Botón Pequeño</button>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>Botón Pequeño<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info btn-sm"</span><span class="nt">&gt;</span>Botón Pequeño<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-<h3 id="botones-ancho-100">Botones ancho 100%</h3>
-
-<p>Añadiendo la clase <code class="highlighter-rouge">.btn-block</code>. Cambia el comportamiento del botón a <em>block</em>.</p>
-
-<div class="bd-example">
-
-<button type="button" class="btn btn-primary btn-block">Botón tipo bloque</button>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span><span class="nt">&gt;</span>Botón tipo bloque<span class="nt">&lt;/button&gt;</span></code></pre></figure>
-
-<h2 id="iconos-en-botones">Iconos en botones</h2>
-
-<p>Se recomienda incluir iconos en los botones principales (enviar formulario, guardar datos, borrar, etc.), con el fin de enfatizar su acción.</p>
-
-<div class="bd-example">
-
-<!-- Botones estándar -->
-<div class="text-center mb-3">
-  <button type="button" class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
-  <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> BUSCAR</button>
-  <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i> BORRAR</button>
-  <button type="button" class="btn btn-info"><i class="fas fa-filter"></i> Filtrar</button>
-  <button type="button" class="btn btn-danger"><i class="fas fa-times-circle"></i> Cancelar</button>
-  <button type="button" class="btn btn-success"><i class="fas fa-check-circle"></i> Guardar</button>
-</div>
-
-<!-- Botones pequeños -->
-<div class="text-center mb-3">
-  <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-save"></i> Guardar</button>
-  <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-search"></i> BUSCAR</button>
-  <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> BORRAR</button>
-  <button type="button" class="btn btn-info btn-sm"><i class="fas fa-filter"></i> Filtrar</button>
-  <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Cancelar</button>
-  <button type="button" class="btn btn-success btn-sm"><i class="fas fa-check-circle"></i> Guardar</button>
-</div>
-
-<!-- Botones de bloque -->
-<div class="text-center mb-3 row">
-  <div class="col">
-    <button type="button" class="btn btn-info btn-block"><i class="fas fa-arrow-left"></i> ANTERIOR</button>
-  </div>
-  <div class="col">
-    <button type="button" class="btn btn-outline-primary btn-block" title="Cargar más"><i class="fas fa-sync-alt"></i></button>
-  </div>
-  <div class="col">
-    <button type="button" class="btn btn-info btn-block">SIGUIENTE <i class="fas fa-arrow-right"></i></button>
-  </div>
-</div>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Botones estándar --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-save"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span> BUSCAR<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-trash-alt"</span><span class="nt">&gt;&lt;/i&gt;</span> BORRAR<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-filter"</span><span class="nt">&gt;&lt;/i&gt;</span> Filtrar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-times-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Cancelar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="c">&lt;!-- Botones pequeños --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-save"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span> BUSCAR<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-trash-alt"</span><span class="nt">&gt;&lt;/i&gt;</span> BORRAR<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-filter"</span><span class="nt">&gt;&lt;/i&gt;</span> Filtrar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-times-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Cancelar<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success btn-sm"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> Guardar<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="c">&lt;!-- Botones de bloque --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center mb-3 row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info btn-block"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-left"</span><span class="nt">&gt;&lt;/i&gt;</span> ANTERIOR<span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-block"</span> <span class="na">title=</span><span class="s">"Cargar más"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-sync-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info btn-block"</span><span class="nt">&gt;</span>SIGUIENTE <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<div class="alert alert-info" role="alert">
-<strong>Se desaconseja el uso masivo de botones con iconos.</strong>
-</div>
-
-<div class="bd-callout bd-callout-warning">
-<h5 id="se-debe-evitar-el-uso-masivo-con-botones-con-iconos">Se debe evitar el uso masivo con botones con iconos</h5>
-
-<p>Su uso recomendado es el de apoyar el botón de acción principal de una página (en un buscador, por ejemplo, el botón de acción). O en una botonera, en la que cada botón o pestaña lleve a un apartado distinto con fin de hacerlos más identificables.</p>
-</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Distintos tipos de iconos:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome"</span><span class="nt">&gt;&lt;/em&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<span class="nt">&lt;p&gt;</span>Son facilmente personalizables tanto en color como en tamaño:<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h3&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle text-primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/h3&gt;</span></code></pre></figure>
 
 
         </main>
