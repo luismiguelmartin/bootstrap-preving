@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Use these shorthand utilities for quickly configuring the position of an element.">
+<meta name="description" content="Pasos a seguir para comenzar una aplicación con Preving Bootstrap.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Position · Preving Bootstrap</title>
+<title>Primeros pasos · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/utilities/position/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/primeros-pasos/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -114,7 +114,7 @@
       </a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
+    </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/primeros-pasos/">
         Primeros Pasos
       </a>
@@ -420,7 +420,7 @@
               Tooltips
             </a>
           </li></ul>
-    </div><div class="bd-toc-item active">
+    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/utilities/borders/">
         Utilities
       </a>
@@ -465,7 +465,7 @@
             <a href="/preving-bootstrap/docs/4.3/utilities/overflow/">
               Overflow
             </a>
-          </li><li class="active bd-sidenav-active">
+          </li><li>
             <a href="/preving-bootstrap/docs/4.3/utilities/position/">
               Position
             </a>
@@ -529,46 +529,33 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#common-values">Common values</a></li>
-<li class="toc-entry toc-h2"><a href="#fixed-top">Fixed top</a></li>
-<li class="toc-entry toc-h2"><a href="#fixed-bottom">Fixed bottom</a></li>
-<li class="toc-entry toc-h2"><a href="#sticky-top">Sticky top</a></li>
+<li class="toc-entry toc-h2"><a href="#creación-de">Creación de</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Position</h1>
-          <p class="bd-lead">Use these shorthand utilities for quickly configuring the position of an element.</p>
-          <h2 id="common-values">Common values</h2>
+          <h1 class="bd-title" id="content">Primeros pasos</h1>
+          <p class="bd-lead">Pasos a seguir para comenzar una aplicación con Preving Bootstrap.</p>
+          <h2 id="creación-de">Creación de</h2>
 
-<p>Quick positioning classes are available, though they are not responsive.</p>
+<ol>
+  <li>Establecer el color principal de la aplicación.
+    <ul>
+      <li>Establecer los colores secundarios (si fueran distintos de los especificados más adelante).</li>
+      <li>Generar el compilado del archivo Bootstrap.</li>
+    </ul>
+  </li>
+  <li>Incluirlo en la cabecera en el componente de la cabecera HTML.</li>
+  <li>Incluir los librerías de JavaScript correspondientes en el componente de pie HTML.</li>
+  <li>…</li>
+</ol>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-static"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-relative"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-absolute"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-fixed"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-sticky"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<div class="bd-callout bd-callout-info">
+<h5 id="cambios-en-el-theming-de-boostrap">Cambios en el <em>theming</em> de Boostrap</h5>
 
-<h2 id="fixed-top">Fixed top</h2>
-
-<p>Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fixed-top"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h2 id="fixed-bottom">Fixed bottom</h2>
-
-<p>Position an element at the bottom of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add additional CSS.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"fixed-bottom"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h2 id="sticky-top">Sticky top</h2>
-
-<p>Position an element at the top of the viewport, from edge to edge, but only after you scroll past it. The <code class="highlighter-rouge">.sticky-top</code> utility uses CSS’s <code class="highlighter-rouge">position: sticky</code>, which isn’t fully supported in all browsers.</p>
-
-<p><strong>IE11 and IE10 will render <code class="highlighter-rouge">position: sticky</code> as <code class="highlighter-rouge">position: relative</code>.</strong> As such, we wrap the styles in a <code class="highlighter-rouge">@supports</code> query, limiting the stickiness to only browsers that can render it properly.</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sticky-top"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<p>Una de las novedades de Boostrap 4 es que apuesta por la compilación personalizada, a partir de variables de sus variables SASS/SCSS, frente a la creación de un archivo CSS aparte para la personalización que se empleaba en Bootstrap 3.</p>
+</div>
 
 
         </main>
