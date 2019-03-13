@@ -603,13 +603,11 @@
 
 <div class="bd-example">
 
-<button type="button" class="btn btn-light btn-lg">Botón Normal</button>
 <button type="button" class="btn btn-primary">Botón Normal</button>
 <button type="button" class="btn btn-light btn-sm">Botón Pequeño</button>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light btn-lg"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light btn-sm"</span><span class="nt">&gt;</span>Botón Pequeño<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <p>Añadiendo la clase <code class="highlighter-rouge">.btn-block</code>. Cambia el comportamiento del botón a <em>block</em> (100% ancho).</p>
@@ -620,6 +618,12 @@
 
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-block"</span><span class="nt">&gt;</span>Botón tipo bloque (ancho completo)<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="tamaño-de-los-botones">Tamaño de los botones</h5>
+
+<p>Nunca se emplearán botones grandes en la interfaces. Se recomiendan los botones normales o incluso pequeños cuando haya que dispone</p>
+</div>
 
 <h2 id="iconos-en-botones">Iconos en botones</h2>
 
@@ -732,7 +736,7 @@
 <div class="btn-toolbar" role="toolbar" aria-label="Barra con grupos de botones">
   <div class="btn-group mr-2" role="group" aria-label="Edición">
     <button type="button" class="btn btn-light">Duplicar</button>
-    <button type="button" class="btn btn-lignt">Validar</button>
+    <button type="button" class="btn btn-light">Validar</button>
     <button type="button" class="btn btn-light">Bloquear</button>
     <button type="button" class="btn btn-light">Desbloquear</button>
   </div>
@@ -750,7 +754,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-toolbar"</span> <span class="na">role=</span><span class="s">"toolbar"</span> <span class="na">aria-label=</span><span class="s">"Barra con grupos de botones"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group mr-2"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"Edición"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Duplicar<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lignt"</span><span class="nt">&gt;</span>Validar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Validar<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Bloquear<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Desbloquear<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -769,27 +773,20 @@
 <p>Si queremos variar el tamaño de un grupo de botones, en lugar de aplicar clases de tamaño a cada botón de un grupo, se deben  añadir las <code class="highlighter-rouge">.btn-group-*</code> a cada <code class="highlighter-rouge">.btn-group</code>, incluyendo cada uno al agrupar varios grupos.</p>
 
 <div class="bd-example">
-  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-    <button type="button" class="btn btn-secondary">Izquierda</button>
-    <button type="button" class="btn btn-secondary">Centro</button>
-    <button type="button" class="btn btn-secondary">Derecha</button>
-  </div>
-  <br />
   <div class="btn-group" role="group" aria-label="Default button group">
-    <button type="button" class="btn btn-secondary">Izquierda</button>
-    <button type="button" class="btn btn-secondary">Centro</button>
-    <button type="button" class="btn btn-secondary">Derecha</button>
+    <button type="button" class="btn btn-light">Izquierda</button>
+    <button type="button" class="btn btn-light">Centro</button>
+    <button type="button" class="btn btn-light">Derecha</button>
   </div>
   <br />
   <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-    <button type="button" class="btn btn-secondary">Izquierda</button>
-    <button type="button" class="btn btn-secondary">Centro</button>
-    <button type="button" class="btn btn-secondary">Derecha</button>
+    <button type="button" class="btn btn-light">Izquierda</button>
+    <button type="button" class="btn btn-light">Centro</button>
+    <button type="button" class="btn btn-light">Derecha</button>
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-lg"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
