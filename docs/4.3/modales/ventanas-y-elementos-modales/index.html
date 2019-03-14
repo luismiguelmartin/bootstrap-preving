@@ -539,7 +539,7 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#modales-avanzadas">Modales avanzadas</a></li>
 <li class="toc-entry toc-h2"><a href="#modales-de-validación">Modales de validación</a></li>
-<li class="toc-entry toc-h2"><a href="#modales-para-mostrar-resultados">Modales para mostrar resultados</a></li>
+<li class="toc-entry toc-h2"><a href="#modales-genéricas">Modales genéricas</a></li>
 </ul>
           </div>
         
@@ -1195,37 +1195,71 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="modales-para-mostrar-resultados">Modales para mostrar resultados</h2>
+<h2 id="modales-genéricas">Modales genéricas</h2>
 
-<p>Del mismo modo que las modales de validación, pensadas para pequeñas validaciones, se pueden emplear modales para mostrar resultados de validaciones más complejas.</p>
+<p>Del mismo modo que las modales de validación, pensadas para pequeñas validaciones, se pueden emplear modales un poco más complejas para mostrar resultados de validaciones, cominicar avisos y errores, mostrar información,…</p>
 
 <div class="bd-example">
 
 <!-- Button trigger modal -->
 <div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionConErrores">
-    Validación con Errores
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionSuccess">
+    Validación correcta
   </button>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionSinErrores">
-    Validación sin Errores
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionDanger">
+    Errores detectados
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionWarning">
+    Aviso
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalValidacionInfo">
+    Información
   </button>
 </div>
 
-<!-- MODAL VALIDACIÓN CLIENTE OK -->
-<div class="modal fade" id="exampleModalConfirmOK" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmOKLabel" aria-hidden="true">
+<!-- MODAL VALIDACIÓN CORRECTA -->
+<div class="modal fade" id="exampleModalValidacionSuccesss" tabindex="-1" role="dialog" aria-labelledby="exampleModalValidacionSuccessLabel" aria-hidden="true">
   <div class="modal-dialog  modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header bg-primary">
-        <h5 class="modal-title text-white" id="exampleModalConfirmOKLabel">Validar cliente</h5>
+        <h5 class="modal-title text-white" id="exampleModalValidacionSuccessLabel">Validación cliente</h5>
       </div>
       <div class="modal-body">
       <div class="row">
-        <div class="col-4" style="font-size:4rem;">
-          <i class="far fa-check-circle text-success"></i>
+        <div class="col-3" style="font-size:4rem;">
+          <i class="fas fa-check-circle text-success"></i>
         </div>
-        <div class="col-8">
-          <p><strong>Se han producido los siguientes errores en la validación del cliente:</strong></p>
-          <ul>
+        <div class="col-9">
+          <p class="my-3"><strong>La validación del cliente se ha realizado correctamente.</strong></p>
+          <ul class="my-0">
+          <li>No se han detectado errores.</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL ERRORES -->
+<div class="modal fade" id="exampleModalValidacionDanger" tabindex="-1" role="dialog" aria-labelledby="exampleModalValidacionDangerLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalValidacionDangerLabel">Validación cliente</h5>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+        <div class="col-3" style="font-size:4rem;">
+          <i class="fas fa-exclamation-circle text-danger"></i>
+        </div>
+        <div class="col-9">
+          <p class="my-3"><strong>Se han producido los siguientes errores en la validación del cliente:</strong></p>
+          <ul class="my-0">
           <li>Dirección postal incorrecta.</li>
           <li>Centros de trabajo pendientes de validar. </li>
           </ul>
@@ -1240,21 +1274,58 @@
   </div>
 </div>
 
-<!-- MODAL VALIDACIÓN CLIENTE KO -->
-<div class="modal fade" id="exampleModalConfirmKO" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmKOLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+<!-- MODAL AVISO-->
+<div class="modal fade" id="exampleModalValidacionWarning" tabindex="-1" role="dialog" aria-labelledby="exampleModalValidacionWarningLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header bg-primary">
-        <h5 class="modal-title text-white" id="exampleModalConfirmKOLabel">Resultado incorrecto</h5>
+        <h5 class="modal-title text-white" id="exampleModalValidacionWarningLabel">Validación cliente</h5>
       </div>
-      <div class="modal-body text-center">
-        <div style="font-size:4rem;">
-          <i class="far fa-times-circle text-danger"></i>
+      <div class="modal-body">
+      <div class="row">
+        <div class="col-3" style="font-size:4rem;">
+          <i class="fas fa-exclamation-triangle text-warning"></i>
         </div>
-        <div><strong>Validación incorrecta (Error: 1024)</strong></div>
+        <div class="col-9">
+          <p class="my-3"><strong>El cliente que va a validar ya ha sido validado previamente:</strong></p>
+          <ul class="my-0">
+          <li>Validado el 02/03/2019 - 10:33</li>
+          </ul>
+        </div>
+      </div>
       </div>
       <div class="modal-footer p-4">
-        <button type="button" class="btn btn-info" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL INFORMACIÓN -->
+<div class="modal fade" id="exampleModalValidacionInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalValidacionInfoLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalValidacionInfoLabel">Validar cliente</h5>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+        <div class="col-3" style="font-size:4rem;">
+          <i class="fas fa-info-circle text-primary"></i>
+        </div>
+        <div class="col-9">
+          <p class="my-3"><strong>Se han producido los siguientes errores en la validación del cliente:</strong></p>
+          <ul class="my-0">
+          <li>Dirección postal incorrecta.</li>
+          <li>Centros de trabajo pendientes de validar. </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal">Volver</button>
       </div>
     </div>
   </div>
@@ -1263,29 +1334,63 @@
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionConErrores"</span><span class="nt">&gt;</span>
-    Validación con Errores
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionSuccess"</span><span class="nt">&gt;</span>
+    Validación correcta
   <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionSinErrores"</span><span class="nt">&gt;</span>
-    Validación sin Errores
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionDanger"</span><span class="nt">&gt;</span>
+    Errores detectados
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionWarning"</span><span class="nt">&gt;</span>
+    Aviso
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalValidacionInfo"</span><span class="nt">&gt;</span>
+    Información
   <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="c">&lt;!-- MODAL VALIDACIÓN CLIENTE OK --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOK"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmOKLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- MODAL VALIDACIÓN CORRECTA --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionSuccesss"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalValidacionSuccessLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog  modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOKLabel"</span><span class="nt">&gt;</span>Validar cliente<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionSuccessLabel"</span><span class="nt">&gt;</span>Validación cliente<span class="nt">&lt;/h5&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;p&gt;&lt;strong&gt;</span>Se han producido los siguientes errores en la validación del cliente:<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-          <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-3"</span><span class="nt">&gt;&lt;strong&gt;</span>La validación del cliente se ha realizado correctamente.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"my-0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>No se han detectado errores.<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Volver<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL ERRORES --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionDanger"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalValidacionDangerLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog  modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionDangerLabel"</span><span class="nt">&gt;</span>Validación cliente<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-exclamation-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-3"</span><span class="nt">&gt;&lt;strong&gt;</span>Se han producido los siguientes errores en la validación del cliente:<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"my-0"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;li&gt;</span>Dirección postal incorrecta.<span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;li&gt;</span>Centros de trabajo pendientes de validar. <span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/ul&gt;</span>
@@ -1300,21 +1405,58 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="c">&lt;!-- MODAL VALIDACIÓN CLIENTE KO --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKO"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmKOLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- MODAL AVISO--&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionWarning"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalValidacionWarningLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog  modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKOLabel"</span><span class="nt">&gt;</span>Resultado incorrecto<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionWarningLabel"</span><span class="nt">&gt;</span>Validación cliente<span class="nt">&lt;/h5&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-times-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-exclamation-triangle text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Validación incorrecta (Error: 1024)<span class="nt">&lt;/strong&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-3"</span><span class="nt">&gt;&lt;strong&gt;</span>El cliente que va a validar ya ha sido validado previamente:<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"my-0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>Validado el 02/03/2019 - 10:33<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Volver<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL INFORMACIÓN --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionInfo"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalValidacionInfoLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog  modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalValidacionInfoLabel"</span><span class="nt">&gt;</span>Validar cliente<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-info-circle text-primary"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"my-3"</span><span class="nt">&gt;&lt;strong&gt;</span>Se han producido los siguientes errores en la validación del cliente:<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"my-0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>Dirección postal incorrecta.<span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>Centros de trabajo pendientes de validar. <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Volver<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
