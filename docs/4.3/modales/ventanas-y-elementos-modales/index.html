@@ -539,11 +539,8 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#modales-avanzadas">Modales avanzadas</a></li>
 <li class="toc-entry toc-h2"><a href="#modales-de-validación">Modales de validación</a></li>
-<li class="toc-entry toc-h2"><a href="#modales-informativas">Modales informativas</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#modal-con-log">Modal con log</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#modales-informativas">Modales informativas</a></li>
+<li class="toc-entry toc-h2"><a href="#modal-con-log">Modal con log</a></li>
 </ul>
           </div>
         
@@ -1466,7 +1463,7 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="modal-con-log">Modal con log</h3>
+<h2 id="modal-con-log">Modal con log</h2>
 
 <p>Para ciertos elementos como logs, registros anteriores, etc., es interesante mostrarlos a través de una ventana modal.</p>
 
@@ -1482,7 +1479,7 @@
 
 <!-- MODAL CENTRADA -->
 <div class="modal fade" id="exampleModalLog" tabindex="-1" role="dialog" aria-labelledby="exampleModalLogLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header bg-primary">
         <h5 class="modal-title text-white" id="exampleModalLogLabel">Log de acciones</h5>
@@ -1499,16 +1496,16 @@
         	<th scope="col">Motivo</th>
         	<th scope="col">Descripción</th>
         </tr>
-          </thead>
+        </thead>
         <tr>
-          <th class="text-right">09-08-2019 13:28&lt;/td&gt;
+          <td class="text-right">09-08-2019 13:28</td>
         	<td>Desbloquear</td>
         	<td>Contrato</td>
         	&lt;td class="text-right&gt;1854&lt;/td&gt;
         	<td>Danielle Parrish</td>
         	<td>Impago</td>
         	<td>Nulla semper tellus id nunc interdum feugiat. Sed nec metus facilisis lorem</td>
-        &lt;/tr&gt;
+        </tr>
         <tr>
         	&lt;td class="text-right&gt;12-01-2020 03:33&lt;/td&gt;
         	<td>Cancelado</td>
@@ -1653,16 +1650,16 @@
         	<td>Cancelación</td>
         	<td>nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices</td>
         </tr>
-      &lt;/table&gt;
-      &lt;/div&gt;
+      </table>
+      </div>
       <div class="modal-footer p-4">
         <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
       </div>
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+    </div>
+  </div>
+</div>
 
-&lt;/div&gt;
+</div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalLogLabel"</span><span class="nt">&gt;</span>
@@ -1673,7 +1670,7 @@
 
 <span class="c">&lt;!-- MODAL CENTRADA --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalLog"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalLogLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-lg"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-lg"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalLogLabel"</span><span class="nt">&gt;</span>Log de acciones<span class="nt">&lt;/h5&gt;</span>
@@ -1690,9 +1687,9 @@
         	<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Motivo<span class="nt">&lt;/th&gt;</span>
         	<span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Descripción<span class="nt">&lt;/th&gt;</span>
         <span class="nt">&lt;/tr&gt;</span>
-          <span class="nt">&lt;/thead&gt;</span>
+        <span class="nt">&lt;/thead&gt;</span>
         <span class="nt">&lt;tr&gt;</span>
-          <span class="nt">&lt;th</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>09-08-2019 13:28<span class="nt">&lt;/td&gt;</span>
+          <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>09-08-2019 13:28<span class="nt">&lt;/td&gt;</span>
         	<span class="nt">&lt;td&gt;</span>Desbloquear<span class="nt">&lt;/td&gt;</span>
         	<span class="nt">&lt;td&gt;</span>Contrato<span class="nt">&lt;/td&gt;</span>
         	<span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right&gt;1854&lt;/td&gt;
@@ -1853,7 +1850,6 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-</th></tr></table></div></div></div></div></div>
 
         </main>
       </div>
