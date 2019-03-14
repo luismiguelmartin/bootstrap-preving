@@ -538,6 +538,7 @@
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#modales-avanzadas">Modales avanzadas</a></li>
+<li class="toc-entry toc-h2"><a href="#modales-con-formularios">Modales con formularios</a></li>
 <li class="toc-entry toc-h2"><a href="#modales-de-validación">Modales de validación</a></li>
 <li class="toc-entry toc-h2"><a href="#modales-informativas">Modales informativas</a></li>
 <li class="toc-entry toc-h2"><a href="#modal-con-log">Modal con log</a></li>
@@ -1084,6 +1085,110 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="modales-con-formularios">Modales con formularios</h2>
+
+<p>Se pueden añadir formularios, y cualquier otro contenido, en las ventanas modales para</p>
+
+<div class="bd-example">
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalFormulario">
+    Modal con formulario
+  </button>
+</div>
+
+<!-- MODAL FORMULARIO OK -->
+<div class="modal fade" id="exampleModalConfirmOK" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmOKLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalConfirmOKLabel">Resultado correcto</h5>
+      </div>
+      <div class="modal-body">
+
+      <form>
+      <p>Va a proceder a desbloquear la facturación del cliente:<br />
+      <strong>PREVING CONSULTORES, SLU (B06290241)</strong><br />
+      <strong>Nº Cliente (ID): 11608 (31015)</strong></p>
+        <div class="form-group">
+          <label for="motivoBloqueo"><strong>Indique el motivo del bloqueo *:</strong></label>
+          <select class="form-control" id="motivoBloqueo">
+            <option selected="">Seleccione...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="descripcionBloqueo">Descripción *:</label>
+          <textarea class="form-control" id="descripcionBloqueo" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalFormulario"</span><span class="nt">&gt;</span>
+    Modal con formulario
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL FORMULARIO OK --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOK"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmOKLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOKLabel"</span><span class="nt">&gt;</span>Resultado correcto<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Va a proceder a desbloquear la facturación del cliente:<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>PREVING CONSULTORES, SLU (B06290241)<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Nº Cliente (ID): 11608 (31015)<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"motivoBloqueo"</span><span class="nt">&gt;&lt;strong&gt;</span>Indique el motivo del bloqueo *:<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+          <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"motivoBloqueo"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Seleccione...<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>2<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>3<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>4<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"descripcionBloqueo"</span><span class="nt">&gt;</span>Descripción *:<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"descripcionBloqueo"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
