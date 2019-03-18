@@ -530,6 +530,21 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#creación-de-bootstrap-personalizado">Creación de Bootstrap personalizado</a></li>
+<li class="toc-entry toc-h2"><a href="#inicio-rápido">Inicio rápido</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+<li class="toc-entry toc-h3"><a href="#js">JS</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#plantilla-html-inicial">Plantilla HTML inicial</a></li>
+<li class="toc-entry toc-h2"><a href="#configuraciones-globales-y-consideraciones-finales">Configuraciones globales y consideraciones finales</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
+<li class="toc-entry toc-h3"><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+<li class="toc-entry toc-h3"><a href="#tamaño-de-caja">Tamaño de caja</a></li>
+<li class="toc-entry toc-h3"><a href="#reset-css">Reset CSS</a></li>
+</ul>
+</li>
 </ul>
           </div>
         
@@ -542,12 +557,12 @@
 <ol>
   <li>Establecer el color principal de la aplicación.
     <ul>
-      <li>Establecer los colores secundarios (si fueran distintos de los especificados más adelante).</li>
-      <li>Generar el compilado del archivo Bootstrap.</li>
+      <li>Establecer los colores secundarios (si fueran distintos de los especificados).</li>
+      <li>Generar el compilado del archivo Bootstrap añadiendo el color de la aplicación como nueva variale de color: $color-app</li>
     </ul>
   </li>
   <li>Incluirlo en la cabecera en el componente de la cabecera HTML.</li>
-  <li>Incluir los librerías de JavaScript correspondientes en el componente de pie HTML.</li>
+  <li>Incluir los librerías de JavaScript correspondientes antes del cierre de la etiqueta <code class="highlighter-rouge">&lt;body&gt;</code> en la plantilla HTML.</li>
   <li>…</li>
 </ol>
 
@@ -555,6 +570,106 @@
 <h5 id="cambios-en-el-theming-de-boostrap">Cambios en el <em>theming</em> de Boostrap</h5>
 
 <p>Una de las novedades de Boostrap 4 es que apuesta por la compilación personalizada, a partir de variables de sus variables SASS/SCSS, frente a la creación de un archivo CSS aparte para la personalización que se empleaba en Bootstrap 3.</p>
+
+<p>Para cada proyecto, se compilará el código SCSS/SASS y se generarán todos los estilos de la base con el color establecido para la aplicación.</p>
+</div>
+
+<h2 id="inicio-rápido">Inicio rápido</h2>
+
+<p>La manera más rápida de usar Preving Boostrap (o Boostrap) en un proyecto es enlazar los archivos CSS y JS necesarios. <strong>En el caso de incluir una versión personalizada de Preving Bootstrap, compilada para la aplicación, no será necesario enlazar Bootstrap.</strong></p>
+
+<h3 id="css">CSS</h3>
+
+<p>Incluir la hoja de estilo CSS mediante la etiqueta <code class="highlighter-rouge">&lt;link&gt;</code> en el <code class="highlighter-rouge">&lt;head&gt;</code> del documento, antes de cualquier otra hoja de estilo.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/css/preving-bootstrap.min.css"</span> <span class="nt">&gt;</span></code></pre></figure>
+
+<p><em>URL superior no real</em></p>
+
+<h3 id="js">JS</h3>
+
+<p>Muchos de los componentes de Bootstrap requieren el uso de JavaScript para funcionar. Concretamente, son necesarios <a href="https://jquery.com/">jQuery</a>, <a href="https://popper.js.org/">Popper.js</a> y los propios complementos de Bootstrap.</p>
+
+<p>Para ello, hay que incluir los siguientes scripts -en ese orden- al final de la página, justo antes de la etiqueta de cierre <code class="highlighter-rouge">&lt;/body&gt;</code>, para habilitarlos. jQuery debe aparecer primero, luego Popper.js, y luego nuestros complementos de JavaScript.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/jquery-3.3.1.slim.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/popper-1.14.7.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p><em>URLs superiores no reales</em></p>
+
+<p>Los archivos <code class="highlighter-rouge">bootstrap.bundle.js</code> y <code class="highlighter-rouge">bootstrap.bundle.min.js</code> ya incluyen <a href="https://popper.js.org/">Popper</a>, pero no <a href="https://jquery.com/">jQuery</a>.</p>
+
+<h2 id="plantilla-html-inicial">Plantilla HTML inicial</h2>
+
+<p>Es importante configurar la aplicación para que pueda aprovechar los últimos estándares de diseño y desarrollo. Eso significa usar un doctype HTML5 e incluir una metaetiqueta de viewport para obtener el comportamiento adecuado. Todo junto debería verse así:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="c">&lt;!-- Etiquetas requeridas: emplear el charset adecuado --&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Preving Bootstrap CSS --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/css/preving-bootstrap.min.css"</span> <span class="nt">&gt;</span>
+
+    <span class="nt">&lt;title&gt;</span>Ejemplo Preving Bootstrap<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Preving Boostrap<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="c">&lt;!-- Archivos JavaScript --&gt;</span>
+    <span class="c">&lt;!-- Primero jQuery, después Popper.js, finalmente Bootstrap JS --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/jquery-3.3.1.slim.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/popper-1.14.7.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h2 id="configuraciones-globales-y-consideraciones-finales">Configuraciones globales y consideraciones finales</h2>
+
+<p>Bootstrap emplea un conjunto de configuraciones globales que es necesario conocer antes de usuarlos; los cuales están casi exclusivamente orientados hacia la <em>normalización</em> de los estilos  <em>crossbrowser</em> (para que funcione en el mayor rango de navegadores posible).</p>
+
+<h3 id="html5-doctype">HTML5 doctype</h3>
+
+<p>Es necesario emplear el doctype HTML5. Sin él puede que el aspecto visual se muestre incompleto; incluirlo no debería causar ningún problema considerable.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h3 id="responsive-meta-tag">Responsive meta tag</h3>
+
+<p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, <strong>add the responsive viewport meta tag</strong> to your <code class="highlighter-rouge">&lt;head&gt;</code>.</p>
+
+<p>Bootstrap está desarrollado con la concepción <em>mobile first</em>, una estrategia en la que se optimiza primero el código dispositivos móviles y luego se escalan los componentes -según sea necesario- mediante <em>media queries</em> CSS. Para garantizar una visualización adecuada y el zoom táctil para todos los dispositivos, <strong>es necesario agregar la siguiente metaetiqueta</strong> dentro de la cabecera de la plantilla HTML (<code class="highlighter-rouge">&lt;head&gt;</code>).</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Ella permite el comportamiento <em>responsive</em> del documento.</p>
+
+<h3 id="tamaño-de-caja">Tamaño de caja</h3>
+
+<p>Para trabajar de forma más sencilla, Bootstrap cambiar el valor del tamaño de caja por defecto, <code class="highlighter-rouge">content-box</code> a <code class="highlighter-rouge">border-box</code>. Esto garantiza que el <code class="highlighter-rouge">padding</code> no afecte el ancho final computado de un elemento, pero puede causar problemas con algún software de terceros como Google Maps y Google Custom Search Engine.</p>
+
+<p>En las raras ocasiones en que se necesite anular, se puede usar lo siguiente:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.selector-for-some-widget</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Con el fragmento de código anterior, los elementos anidados heredarán el tamaño de caja especificado.</p>
+
+<h3 id="reset-css">Reset CSS</h3>
+
+<p>Para mejorar la representación en múltiples navegadores, y versiones de los mismos, Bootstrap incorpora un <em>reset CSS</em>. Esto corrige ciertas inconsistencias en los navegadores y dispositivos, a la vez que restablece las propiedades de los elementos  mismo tiempo que brindamos restablecimientos de opinión más comunes a elementos HTML comunes.</p>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="las-urls-empleadas-en-los-ejemplos-no-son-reales">las URLs empleadas en los ejemplos no son reales</h5>
+
+<p>Todas las URLs de los ejemplos, https://intranet.preving.com/ejemplo-app/libs/css o https://intranet.preving.com/ejemplo-app/libs/js/, no son reales y no deben confundirse con las URLs de producción de cada app.</p>
 </div>
 
 
