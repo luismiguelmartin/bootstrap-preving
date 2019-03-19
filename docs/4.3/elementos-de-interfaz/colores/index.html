@@ -530,7 +530,15 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#colores-preving">Colores Preving</a></li>
-<li class="toc-entry toc-h2"><a href="#colores-de-aplicaciones">Colores de aplicaciones</a></li>
+<li class="toc-entry toc-h2"><a href="#colores-de-aplicaciones">Colores de aplicaciones</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#ejemplos-colores-aplicados">Ejemplos colores aplicados</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
           </div>
         
@@ -540,7 +548,7 @@
           <p class="bd-lead">Colores corporativos de Grupo Preving, colores de aplicaciones y empleo de los mismos.</p>
           <h2 id="colores-preving">Colores Preving</h2>
 
-<p>Colores corporativos (3) / Color de texto / Color Aplicación Ejemplo (primary)
+<p>Colores corporativos (3) / Color de texto / Color App Ejemplo (primary)<br />
 Colores al 100%, 75% y 50%</p>
 
 <div class="container-fluid mb-5 text-white text-center">
@@ -698,6 +706,134 @@ Colores al 100%, 75% y 50%</p>
   <div class="col py-4 m-3 rounded" style="background-color:#0103E4"><p><br />OPETEC</p>
     <p><span class="border rounded py-2 px-3 mt-1">#0103E4</span></p>
   </div>
+  </div>
+</div>
+
+<h3 id="ejemplos-colores-aplicados">Ejemplos colores aplicados</h3>
+
+<p>En base a los colores incorporados en Preving Boostrap se pueden generar componentes de forma rápida aplicando los colores de las apps.</p>
+
+<h5 id="botones">Botones</h5>
+
+<p><button type="button" class="btn btn-app-vigilancia">Vigilancia de la Salud</button>
+<button type="button" class="btn btn-app-administracion">Administración</button>
+<button type="button" class="btn btn-app-formacion">Formación</button>
+<button type="button" class="btn btn-app-totaldat">Protección de Datos</button>
+<button type="button" class="btn btn-light">Por defecto</button></p>
+
+<h5 id="tablas">Tablas</h5>
+
+<!-- Código de la tabla -->
+<table class="table table-striped table-sm" style="width:100%">
+  <thead>
+    <tr class="bg-app-totaldat text-white">
+      <th scope="col" class="text-center">ID</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Usuario</th>
+      <th scope="col" class="text-right">Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">1</td>
+      <td>Usuario</td>
+      <td>Luis Miguel Martín</td>
+      <td class="text-right">21-10-2018</td>
+    </tr>
+    <tr>
+      <td class="text-center">2</td>
+      <td>Usuario</td>
+      <td>Luis Miguel Martín</td>
+      <td class="text-right">21-10-2018</td>
+    </tr>
+    <tr>
+      <td class="text-center">3</td>
+      <td>Usuario</td>
+      <td>Luis Miguel Martín</td>
+      <td class="text-right">21-10-2018</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="modales">Modales</h5>
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-app-vigilancia" data-toggle="modal" data-target="#exampleModalPreving">
+    <strong>MODAL PREVING</strong>
+  </button>
+</div>
+
+<!-- MODAL PREVING -->
+<div class="modal fade" id="exampleModalPreving" tabindex="-1" role="dialog" aria-labelledby="exampleModalPrevingLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-app-vigilancia">
+        <h5 class="modal-title text-white" id="exampleModalPrevingLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-app-vigilancia">Guardar</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5 id="menú-aplicación">Menú aplicación</h5>
+
+<!-- TopNav  -->
+<nav class="navbar navbar-expand bg-app-formacion navbar-dark shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbars">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#">Clientes</a> </li> <!-- Activo -->
+        <li class="nav-item"> <a class="nav-link" href="#">Información de Interés</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Jornadas y Cursos</a> </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="#">Cerrar Sesión</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Cambiar Aplicación</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /TopNav  -->
+
+<h5 id="buscador">Buscador</h5>
+
+<div class="card">
+  <div class="card-header record bg-app-administracion text-white">
+    <!-- TitleSection-->
+    <h5 class="py-3 mb-0">Clientes / Búsqueda de Clientes</h5>
+    <!-- /TitleSection-->
+  </div>
+  <div class="card-body">
+    <!-- Buscador -->
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center"><b>Puede buscar clientes por nombre de la empresa, apellidos, NIF/CIF o identificador. </b></p>
+      </div>
+    </div>
+    <form class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="form-row">
+          <div class="col-9">
+            <input type="text" class="form-control" id="buscadorClientes3" placeholder="Nombre, NIF/CIF o ID cliente" />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-app-administracion w-100"><i class="fas fa-search"></i> BUSCAR</button> </div>
+        </div>
+      </div>
+    </form>
+    <!-- /Buscador -->
   </div>
 </div>
 
