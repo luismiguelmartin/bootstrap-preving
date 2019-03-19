@@ -532,11 +532,7 @@
 <li class="toc-entry toc-h2"><a href="#colores-preving">Colores Preving</a></li>
 <li class="toc-entry toc-h2"><a href="#colores-de-aplicaciones">Colores de aplicaciones</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#ejemplos-colores-aplicados">Ejemplos colores aplicados</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h3"><a href="#ejemplos-colores-aplicados">Ejemplos colores aplicados</a></li>
 </ul>
 </li>
 </ul>
@@ -723,6 +719,7 @@ Colores al 100%, 75% y 50%</p>
 
 <h5 id="tablas">Tablas</h5>
 
+<div class="bd-example">
 <!-- Código de la tabla -->
 <table class="table table-striped table-sm" style="width:100%">
   <thead>
@@ -754,22 +751,33 @@ Colores al 100%, 75% y 50%</p>
     </tr>
   </tbody>
 </table>
+</div>
 
 <h5 id="modales">Modales</h5>
 
+<div class="bd-example">
 <!-- Button trigger modal -->
 <div class="text-center">
-  <button type="button" class="btn btn-app-vigilancia" data-toggle="modal" data-target="#exampleModalPreving">
-    <strong>MODAL PREVING</strong>
+  <button type="button" class="btn btn-app-vigilancia" data-toggle="modal" data-target="#exampleVigilancia">
+    Vigilancia
+  </button>
+  <button type="button" class="btn btn-app-administracion" data-toggle="modal" data-target="#exampleAdministracion">
+    Vigilancia
+  </button>
+  <button type="button" class="btn btn-app-formacion" data-toggle="modal" data-target="#exampleFormacion">
+    Vigilancia
+  </button>
+  <button type="button" class="btn btn-app-totaldat" data-toggle="modal" data-target="#exampleTotaldat">
+    Vigilancia
   </button>
 </div>
 
-<!-- MODAL PREVING -->
-<div class="modal fade" id="exampleModalPreving" tabindex="-1" role="dialog" aria-labelledby="exampleModalPrevingLabel" aria-hidden="true">
+<!-- MODAL VIGILANCIA -->
+<div class="modal fade" id="exampleVigilancia" tabindex="-1" role="dialog" aria-labelledby="exampleVigilanciaLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header bg-app-vigilancia">
-        <h5 class="modal-title text-white" id="exampleModalPrevingLabel">Modal normal</h5>
+        <h5 class="modal-title text-white" id="exampleVigilanciaLabel">Modal normal</h5>
       </div>
       <div class="modal-body">
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
@@ -783,8 +791,68 @@ Colores al 100%, 75% y 50%</p>
   </div>
 </div>
 
+<!-- MODAL ADMINISTRACIÓN -->
+<div class="modal fade" id="exampleAdministracion" tabindex="-1" role="dialog" aria-labelledby="exampleAdministracionLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-app-administracion">
+        <h5 class="modal-title text-white" id="exampleAdministracionLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-app-adminitracion">Guardar</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL FORMACIÓN -->
+<div class="modal fade" id="exampleFormacion" tabindex="-1" role="dialog" aria-labelledby="exampleFormacionLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-app-formacion">
+        <h5 class="modal-title text-white" id="exampleFormacionLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-app-formacion">Guardar</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL TOTALDAT -->
+<div class="modal fade" id="exampleTotaldat" tabindex="-1" role="dialog" aria-labelledby="exampleTotaldatLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-app-totaldat">
+        <h5 class="modal-title text-white" id="exampleTotaldatLabel">Modal normal</h5>
+      </div>
+      <div class="modal-body">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-app-totaldat">Guardar</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 <h5 id="menú-aplicación">Menú aplicación</h5>
 
+<div class="bd-example">
 <!-- TopNav  -->
 <nav class="navbar navbar-expand bg-app-formacion navbar-dark shadow-sm">
   <div class="container">
@@ -793,7 +861,7 @@ Colores al 100%, 75% y 50%</p>
     </button>
     <div class="collapse navbar-collapse" id="navbars">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">SAJP</a></li>
+        <li class="nav-item"> <a class="nav-link font-weight-bold" href="#">FORMACIÓN</a></li>
         <li class="nav-item active"> <a class="nav-link" href="#">Clientes</a> </li> <!-- Activo -->
         <li class="nav-item"> <a class="nav-link" href="#">Información de Interés</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Jornadas y Cursos</a> </li>
@@ -806,9 +874,11 @@ Colores al 100%, 75% y 50%</p>
   </div>
 </nav>
 <!-- /TopNav  -->
+</div>
 
 <h5 id="buscador">Buscador</h5>
 
+<div class="bd-example">
 <div class="card">
   <div class="card-header record bg-app-administracion text-white">
     <!-- TitleSection-->
@@ -835,6 +905,7 @@ Colores al 100%, 75% y 50%</p>
     </form>
     <!-- /Buscador -->
   </div>
+</div>
 </div>
 
         </main>
