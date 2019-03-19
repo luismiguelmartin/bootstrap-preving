@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Los formularios son los elementos principales de interacción de usuario. Por ello, serializar y estandarizar los distintos elementos es fundamental.">
+<meta name="description" content="Los botones son los elementos de acción principales en la interacción, pues son los desencadenantes de las acciones y/o validaciones de información en la mayor parte de los casos.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
@@ -546,18 +546,12 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Botones en aplicaciones Preving</h1>
-          <p class="bd-lead">Los formularios son los elementos principales de interacción de usuario. Por ello, serializar y estandarizar los distintos elementos es fundamental.</p>
+          <p class="bd-lead">Los botones son los elementos de acción principales en la interacción, pues son los desencadenantes de las acciones y/o validaciones de información en la mayor parte de los casos.</p>
           <p>Por defecto, su comportamiento siempre es <em>inline</em>. Se recomienda que los botones de las aplicaciones sean todos tipo info, con la clase <code class="highlighter-rouge">.btn-info</code>, y el botón de la acción principal (enviar, guardar, etc.) con el color primario de la aplicación sustituyendo la clase anterior por <code class="highlighter-rouge">.btn-primary</code>.</p>
-
-<div class="bd-callout bd-callout-warning">
-<h5 id="los-botones-con-el-color-de-la-app-estarán-restringidos">Los botones con el color de la app estarán restringidos</h5>
-
-<p>Por regla general solamente se emplearan botones de color para la acción principal de la página en la que estemos, estado o modal. El resto de botones serán de color gris claro.</p>
-</div>
 
 <h2 id="botones-básicos">Botones básicos</h2>
 
-<p>Cualquier elemento tipo enlace, button o input (tipo button, reset o submit) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
+<p>Cualquier elemento tipo enlace, <code class="highlighter-rouge">button</code> o <code class="highlighter-rouge">input</code> (tipo <code class="highlighter-rouge">button</code>, <code class="highlighter-rouge">reset</code> o <code class="highlighter-rouge">submit</code>) puede convertirse en un botón de aplicación añadiendo las clases CSS citadas anteriormente.</p>
 
 <div class="bd-example">
 
@@ -581,7 +575,7 @@
 <div class="bd-example">
 
 <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-warning">Warning</button>
@@ -593,7 +587,7 @@
 
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
@@ -603,17 +597,25 @@
 
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
+<div class="bd-callout bd-callout-warning">
+<h5 id="los-botones-con-el-color-de-la-app-estarán-restringidos">Los botones con el color de la app estarán restringidos</h5>
+
+<p>Por regla general solamente se emplearan botones de color para la acción principal de la página en la que estemos, estado o modal. El resto de botones serán de color gris claro.</p>
+</div>
+
 <h2 id="tamaños">Tamaños</h2>
 
 <p>Añadiendo la clases <code class="highlighter-rouge">.btn-sm</code> o <code class="highlighter-rouge">.btn-lg</code> podemos cambiarles el tamaño a los botones; pequeño o grande respectivamente. <strong>No deben mezclarse en una misma barra de botones.</strong></p>
 
 <div class="bd-example">
 
+<button type="button" class="btn btn-light btn-lg">Botón Grande</button>
 <button type="button" class="btn btn-primary">Botón Normal</button>
 <button type="button" class="btn btn-light btn-sm">Botón Pequeño</button>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light btn-lg"</span><span class="nt">&gt;</span>Botón Grande<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botón Normal<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light btn-sm"</span><span class="nt">&gt;</span>Botón Pequeño<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <p>Añadiendo la clase <code class="highlighter-rouge">.btn-block</code>. Cambia el comportamiento del botón a <em>block</em> (100% ancho).</p>
