@@ -530,7 +530,11 @@
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#botones-básicos">Botones básicos</a></li>
-<li class="toc-entry toc-h2"><a href="#botones-estándar-en-aplicaciones">Botones estándar en aplicaciones</a></li>
+<li class="toc-entry toc-h2"><a href="#botones-estándar-en-aplicaciones">Botones estándar en aplicaciones</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#personalización-de-los-botones">Personalización de los botones</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#tamaños">Tamaños</a></li>
 <li class="toc-entry toc-h2"><a href="#iconos-en-botones">Iconos en botones</a></li>
 <li class="toc-entry toc-h2"><a href="#grupos-de-botones">Grupos de botones</a>
@@ -596,6 +600,26 @@
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
 
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="personalización-de-los-botones">Personalización de los botones</h3>
+
+<p>En lugar de emplear los botones superiores, se emplearán solamente los botones <code class="highlighter-rouge">btn-primary</code> (botón con el color de la aplicación apps antiguas), <code class="highlighter-rouge">btn-light</code> (botón gris “por defecto”) y <code class="highlighter-rouge">btn-app-xxx</code> (siendo <code class="highlighter-rouge">xxx</code> el nombre de la aplicación).</p>
+
+<p>De esta manera tendríamos redefinidos el estilo de los botones. De forma similar se hará con el aspecto de los componentes.</p>
+
+<div class="bd-example">
+
+<button type="button" class="btn btn-app-vigilancia">Vigilancia de la Salud</button>
+<button type="button" class="btn btn-app-administracion">Administración</button>
+<button type="button" class="btn btn-app-formacion">Formación</button>
+<button type="button" class="btn btn-app-totaldat">Protección de Datos</button>
+
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-vigilancia"</span><span class="nt">&gt;</span>Vigilancia de la Salud<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-administracion"</span><span class="nt">&gt;</span>Administración<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-formacion"</span><span class="nt">&gt;</span>Formación<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-totaldat"</span><span class="nt">&gt;</span>Protección de Datos<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-warning">
 <h5 id="los-botones-con-el-color-de-la-app-estarán-restringidos">Los botones con el color de la app estarán restringidos</h5>
