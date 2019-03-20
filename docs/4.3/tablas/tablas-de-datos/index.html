@@ -238,6 +238,7 @@
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#tablas-estáticas">Tablas estáticas</a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#convenciones-de-representación-de-datos">Convenciones de representación de datos</a></li>
 <li class="toc-entry toc-h3"><a href="#tablas-con-pie">Tablas con pie</a></li>
 <li class="toc-entry toc-h3"><a href="#tablas-ligeras">Tablas ligeras</a></li>
 <li class="toc-entry toc-h3"><a href="#iconos-en-tablas">Iconos en tablas</a></li>
@@ -370,6 +371,28 @@
   <span class="nt">&lt;/tbody&gt;</span>
 <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 
+<h3 id="convenciones-de-representación-de-datos">Convenciones de representación de datos</h3>
+
+<p>Por homogeneidad con el resto de aplicaciones desarrolladas, y siguiendo los criterios marcados anteriormente, los distintos tipos de datos que se puedes registrar en las tablas, y sus representación y alineación, son los siguientes:</p>
+
+<ul>
+  <li><strong>Unidades:</strong> Números enteros alineados a la derecha.</li>
+  <li><strong>Cantidades:</strong> Con dos decimales, identificador de moneda y alineados a la derecha.</li>
+  <li><strong>Fecha:</strong> En formato “dd-mm-aaaa” alineados a la derecha.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Fecha/Hora:</strong> En formato “dd-mm-aaaa</td>
+          <td>hh:mm” alineados a la derecha.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Iconos:</strong> Centrados</li>
+  <li><strong>Cadenas de texto:</strong> En formato dd-mm-aaaa alineados a la derecha.</li>
+</ul>
+
 <h3 id="tablas-con-pie">Tablas con pie</h3>
 
 <p>En tablas concretas puede ser interesante incluir el pie de la misma por facilitar la lectura de datos. En este caso, se incluiría el contenido comprendido entre <code class="highlighter-rouge">&lt;thead&gt;</code> y <code class="highlighter-rouge">&lt;/thead&gt;</code> dentro de las etiquetas <code class="highlighter-rouge">&lt;tfoot&gt;</code> y <code class="highlighter-rouge">&lt;/tfoot&gt;</code> al final de la tabla.</p>
@@ -383,6 +406,7 @@
       <th scope="col" class="text-center">ID</th>
       <th scope="col">Tipo</th>
       <th scope="col">Usuario</th>
+      <th scope="col">Centro de Trabajo</th>
       <th scope="col" class="text-right">Fecha</th>
     </tr>
   </thead>
@@ -391,30 +415,35 @@
       <td class="text-center">1</td>
       <td>Usuario</td>
       <td>Luis Miguel Martín</td>
+      <td>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ</td>
       <td class="text-right">21-10-2018</td>
     </tr>
     <tr>
       <td class="text-center">2</td>
       <td>Usuario</td>
       <td>Luis Miguel Martín</td>
+      <td>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ</td>
       <td class="text-right">21-10-2018</td>
     </tr>
     <tr>
       <td class="text-center">3</td>
       <td>Usuario</td>
       <td>Luis Miguel Martín</td>
+      <td>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ</td>
       <td class="text-right">21-10-2018</td>
     </tr>
     <tr>
       <td class="text-center">4</td>
       <td>Usuario</td>
       <td>Luis Miguel Martín</td>
+      <td>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ</td>
       <td class="text-right">21-10-2018</td>
     </tr>
     <tr>
       <td class="text-center">5</td>
       <td>Usuario</td>
       <td>Luis Miguel Martín</td>
+      <td>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ</td>
       <td class="text-right">21-10-2018</td>
     </tr>
   </tbody>
@@ -423,6 +452,7 @@
       <th scope="col" class="text-center">ID</th>
       <th scope="col">Tipo</th>
       <th scope="col">Usuario</th>
+      <th scope="col">Centro de Trabajo</th>
       <th scope="col" class="text-right">Fecha</th>
     </tr>
   </tfoot>
@@ -436,6 +466,7 @@
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Tipo<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Usuario<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Centro de Trabajo<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Fecha<span class="nt">&lt;/th&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/thead&gt;</span>
@@ -444,30 +475,35 @@
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Usuario<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Luis Miguel Martín<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>21-10-2018<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Usuario<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Luis Miguel Martín<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>21-10-2018<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Usuario<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Luis Miguel Martín<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>21-10-2018<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Usuario<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Luis Miguel Martín<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>21-10-2018<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Usuario<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td&gt;</span>Luis Miguel Martín<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Calle Puebla de Alcocer, 8 (bajo) - 06006 - BADAJOZ<span class="nt">&lt;/td&gt;</span>
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>21-10-2018<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/tbody&gt;</span>
@@ -476,6 +512,7 @@
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Tipo<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Usuario<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Centro de Trabajo<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Fecha<span class="nt">&lt;/th&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/tfoot&gt;</span>
