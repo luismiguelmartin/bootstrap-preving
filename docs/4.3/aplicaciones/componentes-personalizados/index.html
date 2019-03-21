@@ -248,9 +248,13 @@
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#aplicaciones-personalizadas">Aplicaciones personalizadas</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#colores">Colores</a></li>
-<li class="toc-entry toc-h3"><a href="#colores-de-fondo">Colores de Fondo</a></li>
-<li class="toc-entry toc-h3"><a href="#vigilancia-de-la-salud">Vigilancia de la Salud</a></li>
+<li class="toc-entry toc-h3"><a href="#colores-de-texto">Colores de texto</a></li>
+<li class="toc-entry toc-h3"><a href="#colores-de-fondo">Colores de fondo</a></li>
+<li class="toc-entry toc-h3"><a href="#aplicaciones">Aplicaciones</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#vigilancia-de-la-salud">Vigilancia de la Salud</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -262,7 +266,33 @@
           <p class="bd-lead">Por homogeneidad con el resto de las aplicaciones se incluirá un pie de página similar donde se recogerán los datos de soporte, el copyright y, opcionalmente, el log de acceso del usuario.</p>
           <h2 id="aplicaciones-personalizadas">Aplicaciones personalizadas</h2>
 
-<h3 id="colores">Colores</h3>
+<p>Con los colores de las aplicaciones presentados anteriormente, se han generado las clases auxiliares para colores de texto, colores de fondo, tablas, botones, bordes,… Esta siguen la estructura de colores y sufijos de Bootstrap.</p>
+
+<p>De esta manera, la relación de aplicaciones y sufijos de las mismas son los siguientes:</p>
+
+<ul>
+  <li>Vigilancia de la Salud - <code class="highlighter-rouge">-app-vigilancia</code></li>
+  <li>Protección de Datos - <code class="highlighter-rouge">-app-totaldat</code></li>
+  <li>Administración - <code class="highlighter-rouge">-app-adminitracion</code></li>
+  <li>Formación <code class="highlighter-rouge">-app-formacion</code></li>
+  <li>Directorio <code class="highlighter-rouge">-app-directorio</code></li>
+  <li>CRM - <code class="highlighter-rouge">-app-crm</code></li>
+  <li>e-Analítica - <code class="highlighter-rouge">-app-analitica</code></li>
+  <li>Gestión de Bajas - <code class="highlighter-rouge">-app-bajas</code></li>
+  <li>Carteras - <code class="highlighter-rouge">-app-carteras</code></li>
+  <li>e-Cobros - <code class="highlighter-rouge">-app-cobros</code></li>
+  <li>Gestión de Reclamaciones - <code class="highlighter-rouge">-app-reclamaciones</code></li>
+  <li>Higiene Industrial - <code class="highlighter-rouge">-app-higiene</code></li>
+  <li>Incapacidad Temporal - <code class="highlighter-rouge">-app-it</code></li>
+  <li>Vitaly - <code class="highlighter-rouge">-app-vitaly</code></li>
+  <li>OPETEC - <code class="highlighter-rouge">-app-opetec</code></li>
+</ul>
+
+<p>Simplemente, sobre los ejemplos de la <strong>Guía de Estilos</strong> hay que sustituir en las clase del color, la clase <code class="highlighter-rouge">..-primary</code> por la correspondiente a la del color de la aplicación. Por ejemplo: <code class="highlighter-rouge">.btn-app-formacion</code>, <code class="highlighter-rouge">.table-app-vigilancia</code>, <code class="highlighter-rouge">.bg-app-crm</code>; para un botón para formación, una tabla de vigilancia de la salud o el color de fondo para el CRM, respectivamente.</p>
+
+<h3 id="colores-de-texto">Colores de texto</h3>
+
+<p>Las clases generadas para los textos destacados con el color de las aplicaciones son los siguientes:</p>
 
 <div class="bd-example">
 
@@ -299,7 +329,9 @@
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-vitaly"</span><span class="nt">&gt;</span>.text-app-vitaly<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-opetec"</span><span class="nt">&gt;</span>.text-app-opetec<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
-<h3 id="colores-de-fondo">Colores de Fondo</h3>
+<h3 id="colores-de-fondo">Colores de fondo</h3>
+
+<p>Del mismo modo, las clases generadas para el color de fondo son:</p>
 
 <div class="bd-example">
 
@@ -336,7 +368,9 @@
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-vitaly text-white"</span><span class="nt">&gt;</span>.bg-app-vitaly<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-opetec text-white"</span><span class="nt">&gt;</span>.bg-app-opetec<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="vigilancia-de-la-salud">Vigilancia de la Salud</h3>
+<h3 id="aplicaciones">Aplicaciones</h3>
+
+<h4 id="vigilancia-de-la-salud">Vigilancia de la Salud</h4>
 
 <h5 id="aplicación-de-colores">Aplicación de colores</h5>
 
