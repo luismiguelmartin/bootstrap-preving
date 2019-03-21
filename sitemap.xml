@@ -121,7 +121,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/carousel/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/checkout/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/cover/</loc>
@@ -133,7 +133,10 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/floating-labels/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/grid/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/checkout/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/blog/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/jumbotron/</loc>
@@ -142,7 +145,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbar-bottom/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/blog/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbar-fixed/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbar-static/</loc>
@@ -178,10 +181,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbar-fixed/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/grid/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/input-group/</loc>
@@ -314,6 +314,9 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/vertical-align/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/vigilancia-de-la-salud/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/visibility/</loc>
