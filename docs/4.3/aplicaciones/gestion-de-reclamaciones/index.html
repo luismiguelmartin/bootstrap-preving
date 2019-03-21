@@ -10,9 +10,9 @@
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Administración · Preving Bootstrap</title>
+<title>Gestión de Reclamaciones · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/aplicaciones/administracion/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/aplicaciones/gestion-de-reclamaciones/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
   </div>
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/administracion/">English</a></li>-->
+    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/gestion-de-reclamaciones/">English</a></li>-->
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
         v4.3
@@ -246,7 +246,7 @@
             <a href="/preving-bootstrap/docs/4.3/aplicaciones/proteccion-de-datos/">
               Protección de Datos
             </a>
-          </li><li class="active bd-sidenav-active">
+          </li><li>
             <a href="/preving-bootstrap/docs/4.3/aplicaciones/administracion/">
               Administración
             </a>
@@ -274,7 +274,7 @@
             <a href="/preving-bootstrap/docs/4.3/aplicaciones/carteras/">
               Carteras
             </a>
-          </li><li>
+          </li><li class="active bd-sidenav-active">
             <a href="/preving-bootstrap/docs/4.3/aplicaciones/gestion-de-reclamaciones/">
               Gestión de Reclamaciones
             </a>
@@ -311,35 +311,35 @@
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Administración</h1>
+          <h1 class="bd-title" id="content">Gestión de Reclamaciones</h1>
           <p class="bd-lead">Componentes personalizados para la app</p>
           <h3 id="botones">Botones</h3>
 
-<p>Se asigna el color principal de botón añadiendo la clase <code class="highlighter-rouge">.btn-app-administracion</code> al botón:</p>
+<p>Se asigna el color principal de botón añadiendo la clase <code class="highlighter-rouge">.btn-app-reclamaciones</code> al botón:</p>
 
 <div class="bd-example">
 
 <div class="text-center">
-  <button type="button" class="btn btn-app-administracion">Guardar</button>
+  <button type="button" class="btn btn-app-reclamaciones">Guardar</button>
   <button type="button" class="btn btn-light">Cancelar</button>
 </div>
 
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-administracion"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-reclamaciones"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h3 id="tablas">Tablas</h3>
 
-<p>Se añade la clase <code class="highlighter-rouge">.bg-app-administracion</code> en la tabla:</p>
+<p>Se añade la clase <code class="highlighter-rouge">.bg-app-reclamaciones</code> en la tabla:</p>
 
 <div class="bd-example">
 
 <!-- Código de la tabla -->
 <table class="table table-striped table-sm" style="width:100%">
   <thead>
-    <tr class="bg-app-administracion text-white">
+    <tr class="bg-app-reclamaciones text-white">
       <th scope="col">ID</th>
       <th scope="col">Documento</th>
       <th scope="col">Tipo</th>
@@ -396,7 +396,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Código de la tabla --&gt;</span>
 <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-striped table-sm"</span> <span class="na">style=</span><span class="s">"width:100%"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"bg-app-administracion text-white"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"bg-app-reclamaciones text-white"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Documento<span class="nt">&lt;/th&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Tipo<span class="nt">&lt;/th&gt;</span>
@@ -457,27 +457,27 @@
 
 <!-- Button trigger modal -->
 <div class="text-center">
-  <button type="button" class="btn btn-app-administracion" data-toggle="modal" data-target="#modalAdministracion">
+  <button type="button" class="btn btn-app-reclamaciones" data-toggle="modal" data-target="#modalReclamaciones">
     Lanzar Modal
   </button>
-  <button type="button" class="btn btn-app-administracion" data-toggle="modal" data-target="#modalAdministracionProgress">
+  <button type="button" class="btn btn-app-reclamaciones" data-toggle="modal" data-target="#modalReclamacionesProgress">
   Progreso
 </button>
 </div>
 
-<!-- MODAL ADMINISTRACIÓN -->
-<div class="modal fade" id="modalAdministracion" tabindex="-1" role="dialog" aria-labelledby="modalAdministracionLabel" aria-hidden="true">
+<!-- MODAL GESTIÓN DE RECLAMACIONES -->
+<div class="modal fade" id="modalReclamaciones" tabindex="-1" role="dialog" aria-labelledby="modalReclamacionesLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-app-administracion">
-        <h5 class="modal-title text-white" id="modalAdministracionLabel">Modal normal</h5>
+      <div class="modal-header bg-app-reclamaciones">
+        <h5 class="modal-title text-white" id="modalReclamacionesLabel">Modal normal</h5>
       </div>
       <div class="modal-body">
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
         Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
       </div>
       <div class="modal-footer p-4">
-        <button type="button" class="btn btn-app-administracion">Guardar</button>
+        <button type="button" class="btn btn-app-reclamaciones">Guardar</button>
         <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
@@ -486,15 +486,15 @@
 
 
 <!-- MODAL BARRA PROGRESO -->
-<div class="modal fade" id="modalAdministracionProgress" tabindex="-1" role="dialog" aria-labelledby="modalAdministracionProgressLabel" aria-hidden="true">
+<div class="modal fade" id="modalReclamacionesProgress" tabindex="-1" role="dialog" aria-labelledby="modalReclamacionesProgressLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-app-administracion">
-        <h5 class="modal-title text-white" id="modalAdministracionProgressLabel">Cargando...</h5>
+      <div class="modal-header bg-app-reclamaciones">
+        <h5 class="modal-title text-white" id="modalReclamacionesProgressLabel">Cargando...</h5>
       </div>
       <div class="modal-body">
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-app-administracion" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-app-reclamaciones" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
         </div>
       </div>
     </div>
@@ -504,27 +504,27 @@
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-administracion"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#modalAdministracion"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-reclamaciones"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#modalReclamaciones"</span><span class="nt">&gt;</span>
     Lanzar Modal
   <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-administracion"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#modalAdministracionProgress"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-reclamaciones"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#modalReclamacionesProgress"</span><span class="nt">&gt;</span>
   Progreso
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="c">&lt;!-- MODAL ADMINISTRACIÓN --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modalAdministracion"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modalAdministracionLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- MODAL GESTIÓN DE RECLAMACIONES --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modalReclamaciones"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modalReclamacionesLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-app-administracion"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"modalAdministracionLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-app-reclamaciones"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"modalReclamacionesLabel"</span><span class="nt">&gt;</span>Modal normal<span class="nt">&lt;/h5&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="nt">&lt;/h4&gt;</span>
         Nam in felis cursus, vestibulum dolor sed, malesuada dolor. Maecenas dictum ante tortor. Ut non nulla vel ligula ornare pretium. In accumsan eu erat malesuada pharetra.
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-administracion"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-app-reclamaciones"</span><span class="nt">&gt;</span>Guardar<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -533,15 +533,15 @@
 
 
 <span class="c">&lt;!-- MODAL BARRA PROGRESO --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modalAdministracionProgress"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modalAdministracionProgressLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modalReclamacionesProgress"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modalReclamacionesProgressLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-app-administracion"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"modalAdministracionProgressLabel"</span><span class="nt">&gt;</span>Cargando...<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-app-reclamaciones"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"modalReclamacionesProgressLabel"</span><span class="nt">&gt;</span>Cargando...<span class="nt">&lt;/h5&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped progress-bar-animated bg-app-administracion"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100%"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped progress-bar-animated bg-app-reclamaciones"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span> <span class="na">style=</span><span class="s">"width: 100%"</span><span class="nt">&gt;&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -554,31 +554,31 @@
 
 <div class="bd-example">
 
-<h3 class="mb-4">Lorem ipsum dolor sit amet <span class="badge badge-app-administracion">5</span></h3>
+<h3 class="mb-4">Lorem ipsum dolor sit amet <span class="badge badge-app-reclamaciones">5</span></h3>
 
-<div class="alert alert-app-administracion" role="alert">
+<div class="alert alert-app-reclamaciones" role="alert">
   Quisque consectetur eros urna, <a href="#" class="alert-link">a ornare turpis fringilla vel</a>
 </div>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mb-4"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-app-administracion"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"mb-4"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-app-reclamaciones"</span><span class="nt">&gt;</span>5<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-app-administracion"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-app-reclamaciones"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
   Quisque consectetur eros urna, <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>a ornare turpis fringilla vel<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <div class="bd-example">
 
-<p class="border-left border-app-administracion pl-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum augue eget magna pharetra, ut lobortis nulla congue. Donec vulputate sit amet ipsum et tempus. Quisque consectetur eros urna, a ornare turpis fringilla vel.</p>
-<p class="text-right"><strong><a href="" class="text-app-administracion">Lorem ipsum</a></strong></p>
+<p class="border-left border-app-reclamaciones pl-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum augue eget magna pharetra, ut lobortis nulla congue. Donec vulputate sit amet ipsum et tempus. Quisque consectetur eros urna, a ornare turpis fringilla vel.</p>
+<p class="text-right"><strong><a href="" class="text-app-reclamaciones">Lorem ipsum</a></strong></p>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-left border-app-administracion pl-3"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum augue eget magna pharetra, ut lobortis nulla congue. Donec vulputate sit amet ipsum et tempus. Quisque consectetur eros urna, a ornare turpis fringilla vel.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;&lt;strong&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"text-app-administracion"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"border-left border-app-reclamaciones pl-3"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum augue eget magna pharetra, ut lobortis nulla congue. Donec vulputate sit amet ipsum et tempus. Quisque consectetur eros urna, a ornare turpis fringilla vel.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;&lt;strong&gt;&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"text-app-reclamaciones"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</span></code></pre></figure>
 
 <div class="bd-example">
 
-<div class="alert alert-app-administracion" role="alert">
+<div class="alert alert-app-reclamaciones" role="alert">
   <h4 class="alert-heading">Lorem Ipsum</h4>
   <p>Morbi sodales nisl turpis, quis maximus urna commodo eget. Quisque dapibus sem dolor, in porttitor mauris faucibus ut.</p>
   <hr />
@@ -586,7 +586,7 @@
 </div>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-app-administracion"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-app-reclamaciones"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"alert-heading"</span><span class="nt">&gt;</span>Lorem Ipsum<span class="nt">&lt;/h4&gt;</span>
   <span class="nt">&lt;p&gt;</span>Morbi sodales nisl turpis, quis maximus urna commodo eget. Quisque dapibus sem dolor, in porttitor mauris faucibus ut.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;hr&gt;</span>
