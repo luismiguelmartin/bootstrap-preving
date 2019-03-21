@@ -312,9 +312,9 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#tablas-dinámicas---datatables">Tablas dinámicas - DataTables</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#datatables-con-bootstrap4">DataTables con Bootstrap4</a></li>
-<li class="toc-entry toc-h3"><a href="#datatables-con-bootstrap3">DataTables con Bootstrap3</a></li>
-<li class="toc-entry toc-h3"><a href="#datatables-standalone">DataTables standalone</a></li>
+<li class="toc-entry toc-h3"><a href="#bootstrap4">Bootstrap4</a></li>
+<li class="toc-entry toc-h3"><a href="#bootstrap3">Bootstrap3</a></li>
+<li class="toc-entry toc-h3"><a href="#standalone">Standalone</a></li>
 </ul>
 </li>
 </ul>
@@ -1047,15 +1047,21 @@
     <span class="nt">&lt;/tbody&gt;</span>
   <span class="nt">&lt;/table&gt;</span></code></pre></figure>
 
-<h3 id="datatables-con-bootstrap4">DataTables con Bootstrap4</h3>
+<div class="bd-callout bd-callout-warning">
+<h5 id="datatables-requiere-jquery-y-boostrap34-según-se-necesite">DataTables requiere jQuery (y Boostrap3/4, según se necesite)</h5>
 
-<p>El código necesario para incluir DataTables en un <strong>entorno Bootstrap4</strong> es el siguiente (primero CSS y después JS):</p>
+<p>Aunque no se indica en los ejemplos de código de inserción de DataTables, jQuery es necesario para su funcionamiento. Del mismo modo, en el caso de emplearse en entornos Bootstrap3 o Bootstrap4, es necesario incluir previamente el JS y CSS de dicho <em>framework</em> (en el caso de que queramos emplear su aspecto).</p>
+</div>
+
+<h3 id="bootstrap4">Bootstrap4</h3>
+
+<p>El código necesario para incluir DataTables en un entorno Bootstrap4 es el siguiente (primero CSS y después JS):</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
 <span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap3
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap4 en DataTables
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Core Plugin
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Compatibilidad con Bootstrap3
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Compatibilidad con Bootstrap4
 <span class="c">&lt;!--/ Librerías exclusivas de DataTables --&gt;</span>
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
   <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -1067,13 +1073,15 @@
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<h3 id="datatables-con-bootstrap3">DataTables con Bootstrap3</h3>
+<p>Se asume que las librerías jQuery (JS) y Bootstrap4 (JS+CSS) han sido incorporadas previamente en el código.</p>
 
-<p>En el caso de que fuera <strong>entorno Bootstrap3</strong>:</p>
+<h3 id="bootstrap3">Bootstrap3</h3>
+
+<p>En este caso:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
 <span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap3
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap3 en DataTables
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Core Plugin
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Compatibilidad con Bootstrap3
 <span class="c">&lt;!--/ Librerías exclusivas de DataTables --&gt;</span>
@@ -1087,9 +1095,11 @@
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<h3 id="datatables-standalone">DataTables <em>standalone</em></h3>
+<p>Se asume que las librerías jQuery (JS) y Bootstrap3 (JS+CSS) han sido incorporadas previamente en el código.</p>
 
-<p><strong>En aplicaciones antiguas</strong> (o sin Bootstrap):</p>
+<h3 id="standalone"><em>Standalone</em></h3>
+
+<p>En aplicaciones antiguas (o sin Bootstrap):</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
 <span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
@@ -1106,6 +1116,7 @@
   <span class="p">});</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
+<p>Se asume que las librerías jQuery (JS) ya ha sido incorporada anteriormente.</p>
 
         </main>
       </div>
