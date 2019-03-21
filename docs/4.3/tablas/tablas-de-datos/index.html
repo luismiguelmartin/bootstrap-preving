@@ -310,7 +310,13 @@
 <li class="toc-entry toc-h3"><a href="#iconos-en-tablas">Iconos en tablas</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#tablas-dinámicas---datatables">Tablas dinámicas - DataTables</a></li>
+<li class="toc-entry toc-h2"><a href="#tablas-dinámicas---datatables">Tablas dinámicas - DataTables</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#datatables-con-bootstrap4">DataTables con Bootstrap4</a></li>
+<li class="toc-entry toc-h3"><a href="#datatables-con-bootstrap3">DataTables con Bootstrap3</a></li>
+<li class="toc-entry toc-h3"><a href="#datatables-standalone">DataTables standalone</a></li>
+</ul>
+</li>
 </ul>
           </div>
         
@@ -1040,6 +1046,65 @@
       <span class="nt">&lt;/tr&gt;</span>
     <span class="nt">&lt;/tbody&gt;</span>
   <span class="nt">&lt;/table&gt;</span></code></pre></figure>
+
+<h3 id="datatables-con-bootstrap4">DataTables con Bootstrap4</h3>
+
+<p>El código necesario para incluir DataTables en un <strong>entorno Bootstrap4</strong> es el siguiente (primero CSS y después JS):</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
+<span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap3
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Core Plugin
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Compatibilidad con Bootstrap3
+<span class="c">&lt;!--/ Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#example'</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
+      <span class="s2">"language"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"</span> <span class="c1">// Archivo de traducción</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<h3 id="datatables-con-bootstrap3">DataTables con Bootstrap3</h3>
+
+<p>En el caso de que fuera <strong>entorno Bootstrap3</strong>:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
+<span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"</span> <span class="nt">/&gt;</span> // Aspecto Bootstrap3
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Core Plugin
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Compatibilidad con Bootstrap3
+<span class="c">&lt;!--/ Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#example'</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
+      <span class="s2">"language"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"</span> <span class="c1">// Archivo de traducción</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<h3 id="datatables-standalone">DataTables <em>standalone</em></h3>
+
+<p><strong>En aplicaciones antiguas</strong> (o sin Bootstrap):</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- https://datatables.net/ --&gt;</span>
+<span class="c">&lt;!-- Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"</span> <span class="nt">/&gt;</span> // Aspecto
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span> // Core Plugin
+<span class="c">&lt;!--/ Librerías exclusivas de DataTables --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#myTable'</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">({</span>
+      <span class="s2">"language"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="s2">"url"</span><span class="p">:</span> <span class="s2">"//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"</span> <span class="c1">// Archivo de traducción</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 
         </main>
