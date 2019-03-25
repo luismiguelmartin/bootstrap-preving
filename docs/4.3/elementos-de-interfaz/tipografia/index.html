@@ -1,0 +1,54 @@
+<h2 id="fontawesome">FontAwesome</h2>
+
+<p>Para el desarrollo se van a emplear los iconos <em>FontAwesome</em> 5, ya que se pueden aplicar a botones, iconos, texto,… Se generan de forma sencilla incluyendo un elemento <em>inline</em> (tipo <code class="highlighter-rouge">&lt;i&gt;</code>, <code class="highlighter-rouge">&lt;span&gt;</code>, <code class="highlighter-rouge">&lt;button&gt;</code>,…) más un par de clases CSS: un prefijo de estilo y el nombre del ícono. Los iconos aparecen junto al texto de forma natural adquiriendo las características de “su entorno” (tamaño y color de texto, interlinado, etc.).</p>
+
+<p>Se puede consultar el listado completo de iconos disponibles aquí: <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">https://fontawesome.com/icons?d=gallery&amp;m=free</a></p>
+
+<h3 id="empleo-de-iconos">Empleo de iconos</h3>
+
+<p>Para añadir un icono es necesario incluir dos clases: 1) el nombre del icono prefijado por <code class="highlighter-rouge">fa-</code> y 2) el tipo de icono que se desea incorporar: solid (<code class="highlighter-rouge">fas</code>), regular (<code class="highlighter-rouge">far</code>), ligth (<code class="highlighter-rouge">fal</code>) o brands (<code class="highlighter-rouge">fab</code>).</p>
+
+<p>La clase <code class="highlighter-rouge">fa</code> se considera obsoleto en la versión 5 de <em>FontAwesome</em>. El nuevo valor predeterminado es <code class="highlighter-rouge">fas</code> (solid) y <code class="highlighter-rouge">fab</code> para los logos de marcas.</p>
+
+<p>Combinando distintos tipos de iconos:</p>
+
+<div class="bd-example">
+  <i class="fas fa-heart"></i>
+  <i class="far fa-heart"></i>
+  <span class="fas fa-info-circle"></span>
+  <em class="fab fa-font-awesome"></em>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-heart"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"fas fa-info-circle"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"fab fa-font-awesome"</span><span class="nt">&gt;&lt;/em&gt;</span></code></pre></figure>
+
+<p>Los iconos  <em>FontAwesome</em> son fácilmente personalizables tanto en color como en tamaño. Con ellos podremos añadir iconos a las tablas, en botones, modales de verificación,…</p>
+
+<h3 id="iconos-de-estado">Iconos de estado</h3>
+
+<p>Los iconos de estado, junto a salidas de datos o validaciones, ayudan a reconocer de forma rápida el resultado de las mismas.</p>
+
+<div class="bd-example">
+<h5>
+  <i class="fas fa-check-circle text-success"></i>
+  <i class="fas fa-info-circle text-info"></i>
+  <i class="fas fa-exclamation-triangle text-warning"></i>
+  <i class="fas fa-exclamation-circle text-danger"></i>
+</h5>
+<h1>
+  <i class="far fa-times-circle text-danger"></i>
+  <i class="far fa-check-circle text-success"></i>
+</h1>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h5&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-info-circle text-info"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-exclamation-triangle text-warning"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-exclamation-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h1&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-times-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
+

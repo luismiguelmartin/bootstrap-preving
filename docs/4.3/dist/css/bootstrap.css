@@ -33,6 +33,7 @@
   --it: #B5BE05;
   --vitaly: #029968;
   --opetec: #0103E4;
+  --prevencion: #337ab7;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -56,6 +57,7 @@
   --app-it: #B5BE05;
   --app-vitaly: #029968;
   --app-opetec: #0103E4;
+  --app-prevencion: #337ab7;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1952,6 +1954,28 @@ pre code {
   background-color: #a1a1f4;
 }
 
+.table-app-prevencion,
+.table-app-prevencion > th,
+.table-app-prevencion > td {
+  background-color: #c6daeb;
+}
+
+.table-app-prevencion th,
+.table-app-prevencion td,
+.table-app-prevencion thead th,
+.table-app-prevencion tbody + tbody {
+  border-color: #95bada;
+}
+
+.table-hover .table-app-prevencion:hover {
+  background-color: #b3cee4;
+}
+
+.table-hover .table-app-prevencion:hover > td,
+.table-hover .table-app-prevencion:hover > th {
+  background-color: #b3cee4;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -3389,6 +3413,40 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(39, 41, 232, 0.5);
 }
 
+.btn-app-prevencion {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-app-prevencion:hover {
+  color: #fff;
+  background-color: #2b6699;
+  border-color: #285f8f;
+}
+
+.btn-app-prevencion:focus, .btn-app-prevencion.focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 142, 194, 0.5);
+}
+
+.btn-app-prevencion.disabled, .btn-app-prevencion:disabled {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-app-prevencion:not(:disabled):not(.disabled):active, .btn-app-prevencion:not(:disabled):not(.disabled).active,
+.show > .btn-app-prevencion.dropdown-toggle {
+  color: #fff;
+  background-color: #285f8f;
+  border-color: #255985;
+}
+
+.btn-app-prevencion:not(:disabled):not(.disabled):active:focus, .btn-app-prevencion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-prevencion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 142, 194, 0.5);
+}
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -4123,6 +4181,38 @@ fieldset:disabled a.btn {
 .btn-outline-app-opetec:not(:disabled):not(.disabled):active:focus, .btn-outline-app-opetec:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-app-opetec.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(1, 3, 228, 0.5);
+}
+
+.btn-outline-app-prevencion {
+  color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-outline-app-prevencion:hover {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-outline-app-prevencion:focus, .btn-outline-app-prevencion.focus {
+  box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
+}
+
+.btn-outline-app-prevencion.disabled, .btn-outline-app-prevencion:disabled {
+  color: #337ab7;
+  background-color: transparent;
+}
+
+.btn-outline-app-prevencion:not(:disabled):not(.disabled):active, .btn-outline-app-prevencion:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-prevencion.dropdown-toggle {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.btn-outline-app-prevencion:not(:disabled):not(.disabled):active:focus, .btn-outline-app-prevencion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-prevencion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
 }
 
 .btn-link {
@@ -6400,6 +6490,21 @@ a.badge-app-opetec:focus, a.badge-app-opetec.focus {
   box-shadow: 0 0 0 0.2rem rgba(1, 3, 228, 0.5);
 }
 
+.badge-app-prevencion {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+a.badge-app-prevencion:hover, a.badge-app-prevencion:focus {
+  color: #fff;
+  background-color: #285f8f;
+}
+
+a.badge-app-prevencion:focus, a.badge-app-prevencion.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6767,6 +6872,20 @@ a.badge-app-opetec:focus, a.badge-app-opetec.focus {
 
 .alert-app-opetec .alert-link {
   color: #010144;
+}
+
+.alert-app-prevencion {
+  color: #1b3f5f;
+  background-color: #d6e4f1;
+  border-color: #c6daeb;
+}
+
+.alert-app-prevencion hr {
+  border-top-color: #b3cee4;
+}
+
+.alert-app-prevencion .alert-link {
+  color: #102537;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -7388,6 +7507,22 @@ a.badge-app-opetec:focus, a.badge-app-opetec.focus {
   color: #fff;
   background-color: #010277;
   border-color: #010277;
+}
+
+.list-group-item-app-prevencion {
+  color: #1b3f5f;
+  background-color: #c6daeb;
+}
+
+.list-group-item-app-prevencion.list-group-item-action:hover, .list-group-item-app-prevencion.list-group-item-action:focus {
+  color: #1b3f5f;
+  background-color: #b3cee4;
+}
+
+.list-group-item-app-prevencion.list-group-item-action.active {
+  color: #fff;
+  background-color: #1b3f5f;
+  border-color: #1b3f5f;
 }
 
 .close {
@@ -8467,6 +8602,16 @@ button.bg-app-opetec:focus {
   background-color: #0102b1 !important;
 }
 
+.bg-app-prevencion {
+  background-color: #337ab7 !important;
+}
+
+a.bg-app-prevencion:hover, a.bg-app-prevencion:focus,
+button.bg-app-prevencion:hover,
+button.bg-app-prevencion:focus {
+  background-color: #285f8f !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -8605,6 +8750,10 @@ button.bg-app-opetec:focus {
 
 .border-app-opetec {
   border-color: #0103E4 !important;
+}
+
+.border-app-prevencion {
+  border-color: #337ab7 !important;
 }
 
 .border-white {
@@ -12988,6 +13137,14 @@ a.text-app-vitaly:hover, a.text-app-vitaly:focus {
 
 a.text-app-opetec:hover, a.text-app-opetec:focus {
   color: #010298 !important;
+}
+
+.text-app-prevencion {
+  color: #337ab7 !important;
+}
+
+a.text-app-prevencion:hover, a.text-app-prevencion:focus {
+  color: #22527b !important;
 }
 
 .text-body {
