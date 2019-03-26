@@ -151,10 +151,7 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/incapacidad-temporal/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/sticky-footer/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/starter-template/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/</loc>
@@ -163,7 +160,13 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/sticky-footer-navbar/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/starter-template/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/sticky-footer/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/sign-in/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
@@ -212,9 +215,6 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/product/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/sign-in/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/input-group/</loc>
@@ -305,6 +305,9 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/scrollspy/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/servicios-juridicos/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/shadows/</loc>
