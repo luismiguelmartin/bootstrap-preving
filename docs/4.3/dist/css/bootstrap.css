@@ -34,6 +34,7 @@
   --vitaly: #029968;
   --opetec: #0103E4;
   --prevencion: #337ab7;
+  --juridico: #005BA8;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -58,6 +59,7 @@
   --app-vitaly: #029968;
   --app-opetec: #0103E4;
   --app-prevencion: #337ab7;
+  --app-juridico: #005BA8;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1976,6 +1978,28 @@ pre code {
   background-color: #b3cee4;
 }
 
+.table-app-juridico,
+.table-app-juridico > th,
+.table-app-juridico > td {
+  background-color: #b8d1e7;
+}
+
+.table-app-juridico th,
+.table-app-juridico td,
+.table-app-juridico thead th,
+.table-app-juridico tbody + tbody {
+  border-color: #7aaad2;
+}
+
+.table-hover .table-app-juridico:hover {
+  background-color: #a5c5e1;
+}
+
+.table-hover .table-app-juridico:hover > td,
+.table-hover .table-app-juridico:hover > th {
+  background-color: #a5c5e1;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -3447,6 +3471,40 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(82, 142, 194, 0.5);
 }
 
+.btn-app-juridico {
+  color: #fff;
+  background-color: #005BA8;
+  border-color: #005BA8;
+}
+
+.btn-app-juridico:hover {
+  color: #fff;
+  background-color: #004682;
+  border-color: #003f75;
+}
+
+.btn-app-juridico:focus, .btn-app-juridico.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 116, 181, 0.5);
+}
+
+.btn-app-juridico.disabled, .btn-app-juridico:disabled {
+  color: #fff;
+  background-color: #005BA8;
+  border-color: #005BA8;
+}
+
+.btn-app-juridico:not(:disabled):not(.disabled):active, .btn-app-juridico:not(:disabled):not(.disabled).active,
+.show > .btn-app-juridico.dropdown-toggle {
+  color: #fff;
+  background-color: #003f75;
+  border-color: #003868;
+}
+
+.btn-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-app-juridico:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-juridico.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 116, 181, 0.5);
+}
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -4213,6 +4271,38 @@ fieldset:disabled a.btn {
 .btn-outline-app-prevencion:not(:disabled):not(.disabled):active:focus, .btn-outline-app-prevencion:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-app-prevencion.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
+}
+
+.btn-outline-app-juridico {
+  color: #005BA8;
+  border-color: #005BA8;
+}
+
+.btn-outline-app-juridico:hover {
+  color: #fff;
+  background-color: #005BA8;
+  border-color: #005BA8;
+}
+
+.btn-outline-app-juridico:focus, .btn-outline-app-juridico.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 91, 168, 0.5);
+}
+
+.btn-outline-app-juridico.disabled, .btn-outline-app-juridico:disabled {
+  color: #005BA8;
+  background-color: transparent;
+}
+
+.btn-outline-app-juridico:not(:disabled):not(.disabled):active, .btn-outline-app-juridico:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-juridico.dropdown-toggle {
+  color: #fff;
+  background-color: #005BA8;
+  border-color: #005BA8;
+}
+
+.btn-outline-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-outline-app-juridico:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-juridico.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 91, 168, 0.5);
 }
 
 .btn-link {
@@ -6505,6 +6595,21 @@ a.badge-app-prevencion:focus, a.badge-app-prevencion.focus {
   box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
 }
 
+.badge-app-juridico {
+  color: #fff;
+  background-color: #005BA8;
+}
+
+a.badge-app-juridico:hover, a.badge-app-juridico:focus {
+  color: #fff;
+  background-color: #003f75;
+}
+
+a.badge-app-juridico:focus, a.badge-app-juridico.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 91, 168, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -6886,6 +6991,20 @@ a.badge-app-prevencion:focus, a.badge-app-prevencion.focus {
 
 .alert-app-prevencion .alert-link {
   color: #102537;
+}
+
+.alert-app-juridico {
+  color: #002f57;
+  background-color: #ccdeee;
+  border-color: #b8d1e7;
+}
+
+.alert-app-juridico hr {
+  border-top-color: #a5c5e1;
+}
+
+.alert-app-juridico .alert-link {
+  color: #001324;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -7523,6 +7642,22 @@ a.badge-app-prevencion:focus, a.badge-app-prevencion.focus {
   color: #fff;
   background-color: #1b3f5f;
   border-color: #1b3f5f;
+}
+
+.list-group-item-app-juridico {
+  color: #002f57;
+  background-color: #b8d1e7;
+}
+
+.list-group-item-app-juridico.list-group-item-action:hover, .list-group-item-app-juridico.list-group-item-action:focus {
+  color: #002f57;
+  background-color: #a5c5e1;
+}
+
+.list-group-item-app-juridico.list-group-item-action.active {
+  color: #fff;
+  background-color: #002f57;
+  border-color: #002f57;
 }
 
 .close {
@@ -8612,6 +8747,16 @@ button.bg-app-prevencion:focus {
   background-color: #285f8f !important;
 }
 
+.bg-app-juridico {
+  background-color: #005BA8 !important;
+}
+
+a.bg-app-juridico:hover, a.bg-app-juridico:focus,
+button.bg-app-juridico:hover,
+button.bg-app-juridico:focus {
+  background-color: #003f75 !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -8754,6 +8899,10 @@ button.bg-app-prevencion:focus {
 
 .border-app-prevencion {
   border-color: #337ab7 !important;
+}
+
+.border-app-juridico {
+  border-color: #005BA8 !important;
 }
 
 .border-white {
@@ -13145,6 +13294,14 @@ a.text-app-opetec:hover, a.text-app-opetec:focus {
 
 a.text-app-prevencion:hover, a.text-app-prevencion:focus {
   color: #22527b !important;
+}
+
+.text-app-juridico {
+  color: #005BA8 !important;
+}
+
+a.text-app-juridico:hover, a.text-app-juridico:focus {
+  color: #00325c !important;
 }
 
 .text-body {
