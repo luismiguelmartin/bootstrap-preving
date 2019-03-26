@@ -329,6 +329,7 @@
 <li class="toc-entry toc-h3"><a href="#select">Select</a></li>
 <li class="toc-entry toc-h3"><a href="#select-múltipe">Select Múltipe</a></li>
 <li class="toc-entry toc-h3"><a href="#calendario">Calendario</a></li>
+<li class="toc-entry toc-h3"><a href="#rango-de-fechas">Rango de fechas</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#botones">Botones</a>
@@ -348,6 +349,12 @@
           <h1 class="bd-title" id="content">Elementos para formularios</h1>
           <p class="bd-lead">Inventario de elementos de formularios reutilizables en todas las aplicaciones.</p>
           <h2 id="campos-de-formulario">Campos de formulario</h2>
+
+<p>Los campos de formulario deberán ir siempre entiquetas de formulario.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">method=</span><span class="s">"get"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
 <h3 id="input-text">Input [text]</h3>
 
@@ -457,7 +464,7 @@
 
 <div class="bd-example">
   <div class="form-group row">
-    <label for="selectMultiple" class="col-2 text-right col-form-label"><strong>Fecha \*</strong></label>
+    <label for="inputDate" class="col-2 text-right col-form-label"><strong>Fecha *</strong></label>
     <div class="input-group col-4">
       <input type="text" class="form-control" id="inputDate" value="22-04-2019" />
       <div class="input-group-append">
@@ -468,7 +475,7 @@
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"selectMultiple"</span> <span class="na">class=</span><span class="s">"col-2 text-right col-form-label"</span><span class="nt">&gt;&lt;strong&gt;</span>Fecha *<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputDate"</span> <span class="na">class=</span><span class="s">"col-2 text-right col-form-label"</span><span class="nt">&gt;&lt;strong&gt;</span>Fecha *<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group col-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputDate"</span> <span class="na">value=</span><span class="s">"22-04-2019"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
@@ -476,6 +483,84 @@
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="rango-de-fechas">Rango de fechas</h3>
+
+<div class="bd-example">
+
+<div class="form-group row">
+  <label for="inputDateDesde" class="col-2 text-right col-form-label"><strong>Desde</strong></label>
+  <div class="input-group col-4">
+    <input type="text" class="form-control" id="inputDateDesde" value="22-04-2019" />
+    <div class="input-group-append">
+      <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+    </div>
+  </div>
+  <label for="inputDateHasta" class="col-2 text-right col-form-label"><strong>Hasta</strong></label>
+  <div class="input-group col-4">
+    <input type="text" class="form-control" id="inputDateHasta" value="22-04-2019" />
+    <div class="input-group-append">
+      <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+    </div>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputDateDesde"</span> <span class="na">class=</span><span class="s">"col-2 text-right col-form-label"</span><span class="nt">&gt;&lt;strong&gt;</span>Desde<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputDateDesde"</span> <span class="na">value=</span><span class="s">"22-04-2019"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputDateHasta"</span> <span class="na">class=</span><span class="s">"col-2 text-right col-form-label"</span><span class="nt">&gt;&lt;strong&gt;</span>Hasta<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputDateHasta"</span> <span class="na">value=</span><span class="s">"22-04-2019"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+
+<div class="col form-inline mb-4">
+    <label for="fechaInicio" class="col-form-label pr-3">Inicio de la actividad entre </label>
+    <div class="input-group date" style="width:130px;">
+      <input type="text" class="form-control" id="fechaInicio" value="23-11-2018" />
+      <div class="input-group-append">
+        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+      </div>
+    </div>
+    <label for="fechaFin" class="col-form-label px-3"> y </label>
+    <div class="input-group date" style="width:130px;">
+      <input type="text" class="form-control" id="fechaFin" value="25-01-2019" />
+      <div class="input-group-append">
+        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+      </div>
+    </div>
+    <a href="#" class="col-form-label pl-3">Borrar fechas</a>
+  </div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col form-inline mb-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fechaInicio"</span> <span class="na">class=</span><span class="s">"col-form-label pr-3"</span><span class="nt">&gt;</span>Inicio de la actividad entre <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group date"</span> <span class="na">style=</span><span class="s">"width:130px;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"fechaInicio"</span> <span class="na">value=</span><span class="s">"23-11-2018"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fechaFin"</span> <span class="na">class=</span><span class="s">"col-form-label px-3"</span><span class="nt">&gt;</span> y <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group date"</span> <span class="na">style=</span><span class="s">"width:130px;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"fechaFin"</span> <span class="na">value=</span><span class="s">"25-01-2019"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"col-form-label pl-3"</span><span class="nt">&gt;</span>Borrar fechas<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-info">
 <h5 id="campos-requeridos-en-formularios">Campos requeridos en formularios</h5>
@@ -513,7 +598,7 @@
 <div class="bd-example">
 
 <div class="row">
-  <div class="col text-danger col-form-label"><b>(\*) Campos requeridos</b></div>
+  <div class="col text-danger col-form-label"><b>(*) Campos requeridos</b></div>
   <div class="col text-right">
     <button class="btn btn-primary" type="submit">Aceptar</button>
     <button class="btn btn-light" type="reset">Cancelar</button>
@@ -522,7 +607,7 @@
 
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col text-danger col-form-label"</span><span class="nt">&gt;&lt;b&gt;</span>(\*) Campos requeridos<span class="nt">&lt;/b&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col text-danger col-form-label"</span><span class="nt">&gt;&lt;b&gt;</span>(*) Campos requeridos<span class="nt">&lt;/b&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col text-right"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">type=</span><span class="s">"reset"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
