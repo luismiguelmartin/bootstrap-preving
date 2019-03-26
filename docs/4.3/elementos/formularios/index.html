@@ -330,7 +330,13 @@
 <li class="toc-entry toc-h3"><a href="#select-múltipe">Select Múltipe</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#botones">Botones</a></li>
+<li class="toc-entry toc-h2"><a href="#botones">Botones</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#envío-formulario-submit">Envío formulario [submit]</a></li>
+<li class="toc-entry toc-h3"><a href="#borrar-formulario-reset">Borrar formulario [reset]</a></li>
+<li class="toc-entry toc-h3"><a href="#botonera-pie-de-formulario">Botonera pie de formulario</a></li>
+</ul>
+</li>
 </ul>
           </div>
         
@@ -373,13 +379,13 @@
 <div class="bd-example">
   <div class="form-group row">
     <label for="inputFile" class="col-2 text-right col-form-label"><strong>Archivo</strong></label>
-    <input type="file" class="form-control-file col-4" id="inputFile" />
+    <input type="file" class="form-control-file col-4 mt-2" id="inputFile" />
   </div>
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputFile"</span> <span class="na">class=</span><span class="s">"col-4 text-right col-form-label"</span><span class="nt">&gt;&lt;strong&gt;</span>Archivo<span class="nt">&lt;/strong&gt;&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">class=</span><span class="s">"form-control-file col-8"</span> <span class="na">id=</span><span class="s">"inputFile"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">class=</span><span class="s">"form-control-file mt-2 col-8"</span> <span class="na">id=</span><span class="s">"inputFile"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h3 id="textarea">Textarea</h3>
@@ -445,6 +451,46 @@
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="botones">Botones</h2>
+
+<h3 id="envío-formulario-submit">Envío formulario [submit]</h3>
+
+<div class="bd-example">
+
+<button class="btn btn-primary" type="submit">Aceptar</button>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="borrar-formulario-reset">Borrar formulario [reset]</h3>
+
+<div class="bd-example">
+
+<button class="btn btn-light" type="reset">Cancelar</button>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">type=</span><span class="s">"reset"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="botonera-pie-de-formulario">Botonera pie de formulario</h3>
+
+<div class="bd-example">
+
+<div class="row">
+  <div class="col text-danger col-form-label"><b>(*) Campos requeridos</b></div>
+  <div class="col text-right">
+    <button class="btn btn-primary" type="submit">Aceptar</button>
+    <button class="btn btn-info" type="reset">Cancelar</button>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col text-danger col-form-label"</span><span class="nt">&gt;&lt;b&gt;</span>(*) Campos requeridos<span class="nt">&lt;/b&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col text-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-info"</span> <span class="na">type=</span><span class="s">"reset"</span><span class="nt">&gt;</span>Cancelar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
