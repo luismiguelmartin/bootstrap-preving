@@ -344,6 +344,7 @@
             <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#elementos-flotantes">Elementos flotantes</a></li>
 <li class="toc-entry toc-h2"><a href="#clearfix">Clearfix</a></li>
+<li class="toc-entry toc-h2"><a href="#overflow">Overflow</a></li>
 </ul>
           </div>
         
@@ -373,6 +374,35 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <p>El siguiente ejemplo muestra cómo se puede utilizar el <em>clearfix</em>. Sin él, <code class="highlighter-rouge">div</code> que envuelve a los botones no se ectendería al rededor de los mismos, lo que causaría que el diseño no se mostrase correctamente.</p>
+
+<div class="bd-example">
+
+<div class="bg-light p-3 clearfix">
+  <button type="button" class="btn btn-primary float-left">Flotando a la izquierda</button>
+  <button type="button" class="btn btn-primary float-right">Flotando a la derecha</button>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-light p-3 clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary float-left"</span><span class="nt">&gt;</span>Flotando a la izquierda<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary float-right"</span><span class="nt">&gt;</span>Flotando a la derecha<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="overflow">Overflow</h2>
+
+<p>Podemos modificar el comportamiento del contenido de un elemento.</p>
+
+<div class="bd-example d-md-flex">
+  <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions. By design, this content will vertically scroll.
+  </div>
+  <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+    This is an example of using <code>.overflow-hidden</code> on an element with set width and height dimensions.
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-auto"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <div class="bd-example">
 
