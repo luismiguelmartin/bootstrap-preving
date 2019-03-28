@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Elemento para recorrer los distintos registros (usuarios, contratos, etc.) dentro de la aplicación.">
+<meta name="description" content="Pasos a seguir para aplicar el estilo Preving Bootstrap en el desarrollo de una aplicación web de Grupo Preving.">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Navegador de registros · Preving Bootstrap</title>
+<title>Primeros pasos · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/navegacion/moviendonos-entre-registros/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/conceptos-basicos/primeros-pasos/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
   </div>
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/navegacion/moviendonos-entre-registros/">English</a></li>-->
+    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/primeros-pasos/">English</a></li>-->
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
         v4.3
@@ -115,18 +115,16 @@
       </a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/primeros-pasos/">
-        Primeros Pasos
-      </a>
-
-      <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
-      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
+    </div><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/primeros-pasos/">
         Conceptos Básicos
       </a>
 
-      <ul class="nav bd-sidenav"><li>
+      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+            <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/primeros-pasos/">
+              Primeros Pasos
+            </a>
+          </li><li>
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
               Maquetación
             </a>
@@ -191,7 +189,7 @@
               Tablas de datos
             </a>
           </li></ul>
-    </div><div class="bd-toc-item active">
+    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/navegacion/navegacion-de-la-aplicacion/">
         Navegación
       </a>
@@ -204,9 +202,9 @@
             <a href="/preving-bootstrap/docs/4.3/navegacion/tabs-pills-y-cards/">
               Tabs, pills y cards
             </a>
-          </li><li class="active bd-sidenav-active">
-            <a href="/preving-bootstrap/docs/4.3/navegacion/moviendonos-entre-registros/">
-              Moviéndonos entre registros
+          </li><li>
+            <a href="/preving-bootstrap/docs/4.3/navegacion/navegador-de-registros/">
+              Navegador de registros
             </a>
           </li><li>
             <a href="/preving-bootstrap/docs/4.3/navegacion/paginacion-de-resultados/">
@@ -340,80 +338,146 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#navegador-de-registros">Navegador de registros</a></li>
+<li class="toc-entry toc-h2"><a href="#creación-de-bootstrap-personalizado">Creación de Bootstrap personalizado</a></li>
+<li class="toc-entry toc-h2"><a href="#inicio-rápido">Inicio rápido</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+<li class="toc-entry toc-h3"><a href="#js">JS</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#plantilla-html-inicial">Plantilla HTML inicial</a></li>
+<li class="toc-entry toc-h2"><a href="#configuraciones-globales-y-consideraciones-finales">Configuraciones globales y consideraciones finales</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
+<li class="toc-entry toc-h3"><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+<li class="toc-entry toc-h3"><a href="#tamaño-de-caja">Tamaño de caja</a></li>
+<li class="toc-entry toc-h3"><a href="#reset-css">Reset CSS</a></li>
+</ul>
+</li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Navegador de registros</h1>
-          <p class="bd-lead">Elemento para recorrer los distintos registros (usuarios, contratos, etc.) dentro de la aplicación.</p>
-          <h2 id="navegador-de-registros">Navegador de registros</h2>
+          <h1 class="bd-title" id="content">Primeros pasos</h1>
+          <p class="bd-lead">Pasos a seguir para aplicar el estilo Preving Bootstrap en el desarrollo de una aplicación web de Grupo Preving.</p>
+          <h2 id="creación-de-bootstrap-personalizado">Creación de Bootstrap personalizado</h2>
 
-<div class="bd-example">
-
-<div class="card">
-  <div class="card-header record">
-    <ul class="nav justify-content-end w-50 float-right">
-      <!-- Navegación por resultados/filtro -->
-      <li class="nav-item pt-3">
-        <a class="" href="#"><i class="fas fa-arrow-circle-left"></i></a>&nbsp;&nbsp;<a class="" href="#"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp;<a class="" href="#"><i class="fas fa-arrow-right"></i></a>&nbsp;&nbsp;<a class="" href="#"><i class="fas fa-arrow-circle-right"></i></a>&nbsp;&nbsp;<a class="" href="#"><i class="fas fa-arrow-circle-up"></i></a>
-      </li>
-      <!-- /Navegación por resultados/filtro -->
-      <!-- Nuevo documento -->
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-plus-square"></i>&nbsp;&nbsp;<b>Documento</b></a>
-      </li>
-      <!-- /Nuevo documento -->
+<ol>
+  <li>Establecer el color principal de la aplicación.
+    <ul>
+      <li>Establecer los colores secundarios (si fueran distintos de los especificados).</li>
+      <li>Generar el compilado del archivo Bootstrap añadiendo el color de la aplicación como nueva variale de color: $color-app</li>
     </ul>
-    <h5 class="w-50 pt-3">Clientes / Cliente Extremeño de Servicios, SL</h5>
-  </div>
-  <div class="card-body">
-    <div class="row">
-      <div class="col">
-        <h5 class="text-left">(123) Cliente Extremeño de Servicios, SL - B123456789</h5>
-        <p class="text-left mb-0"><b>AJE <acronym title="Prevención Técnica">PT</acronym> - <acronym title="Asesoría Jurídica Plus">AJP</acronym></b> | (ID) Fecha contrato/Fecha baja: <b>(11)</b> <b>10-10-2001</b>/--</p>
-      </div>
-      <div class="col">
-        <h5 class="text-right">Especialidades PRL: H,S,V</h5>
-        <p class="text-right mb-0" style="">Entidad: <b>Grupo Preving</b> | Gran cuenta: <b>Sí</b></p>
-      </div>
-    </div>
-  </div>
+  </li>
+  <li>Incluirlo en la cabecera en el componente de la cabecera HTML.</li>
+  <li>Incluir los librerías de JavaScript correspondientes antes del cierre de la etiqueta <code class="highlighter-rouge">&lt;body&gt;</code> en la plantilla HTML.</li>
+  <li>…</li>
+</ol>
+
+<div class="bd-callout bd-callout-info">
+<h5 id="cambios-en-el-theming-de-boostrap">Cambios en el <em>theming</em> de Boostrap</h5>
+
+<p>Una de las novedades de Boostrap 4 es que apuesta por la compilación personalizada, a partir de variables de sus variables SASS/SCSS, frente a la creación de un archivo CSS aparte para la personalización que se empleaba en Bootstrap 3.</p>
+
+<p>Para cada proyecto, se compilará el código SCSS/SASS y se generarán todos los estilos de la base con el color establecido para la aplicación.</p>
 </div>
 
+<h2 id="inicio-rápido">Inicio rápido</h2>
 
+<p>La manera más rápida de usar Preving Boostrap (o Boostrap) en un proyecto es enlazar los archivos CSS y JS necesarios. <strong>En el caso de incluir una versión personalizada de Preving Bootstrap, compilada para la aplicación, no será necesario enlazar Bootstrap.</strong></p>
+
+<h3 id="css">CSS</h3>
+
+<p>Incluir la hoja de estilo CSS mediante la etiqueta <code class="highlighter-rouge">&lt;link&gt;</code> en el <code class="highlighter-rouge">&lt;head&gt;</code> del documento, antes de cualquier otra hoja de estilo.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/css/preving-bootstrap.min.css"</span> <span class="nt">&gt;</span></code></pre></figure>
+
+<p><em>URL superior no real</em></p>
+
+<h3 id="js">JS</h3>
+
+<p>Muchos de los componentes de Bootstrap requieren el uso de JavaScript para funcionar. Concretamente, son necesarios <a href="https://jquery.com/">jQuery</a>, <a href="https://popper.js.org/">Popper.js</a> y los propios complementos de Bootstrap.</p>
+
+<p>Para ello, hay que incluir los siguientes scripts -en ese orden- al final de la página, justo antes de la etiqueta de cierre <code class="highlighter-rouge">&lt;/body&gt;</code>, para habilitarlos. jQuery debe aparecer primero, luego Popper.js, y luego nuestros complementos de JavaScript.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/jquery-3.3.1.slim.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/popper-1.14.7.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
+
+<p><em>URLs superiores no reales</em></p>
+
+<p>Los archivos <code class="highlighter-rouge">bootstrap.bundle.js</code> y <code class="highlighter-rouge">bootstrap.bundle.min.js</code> ya incluyen <a href="https://popper.js.org/">Popper</a>, pero no <a href="https://jquery.com/">jQuery</a>.</p>
+
+<h2 id="plantilla-html-inicial">Plantilla HTML inicial</h2>
+
+<p>Es importante configurar la aplicación para que pueda aprovechar los últimos estándares de diseño y desarrollo. Eso significa usar un doctype HTML5 e incluir una metaetiqueta de viewport para obtener el comportamiento adecuado. Todo junto debería verse así:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="c">&lt;!-- Etiquetas requeridas: emplear el charset adecuado --&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Preving Bootstrap CSS --&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/css/preving-bootstrap.min.css"</span> <span class="nt">&gt;</span>
+
+    <span class="nt">&lt;title&gt;</span>Ejemplo Preving Bootstrap<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Preving Boostrap<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="c">&lt;!-- Archivos JavaScript --&gt;</span>
+    <span class="c">&lt;!-- Primero jQuery, después Popper.js, finalmente Bootstrap JS --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/jquery-3.3.1.slim.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/popper-1.14.7.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://intranet.preving.com/ejemplo-app/libs/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h2 id="configuraciones-globales-y-consideraciones-finales">Configuraciones globales y consideraciones finales</h2>
+
+<p>Bootstrap emplea un conjunto de configuraciones globales que es necesario conocer antes de usuarlos; los cuales están casi exclusivamente orientados hacia la <em>normalización</em> de los estilos  <em>crossbrowser</em> (para que funcione en el mayor rango de navegadores posible).</p>
+
+<h3 id="html5-doctype">HTML5 doctype</h3>
+
+<p>Es necesario emplear el doctype HTML5. Sin él puede que el aspecto visual se muestre incompleto; incluirlo no debería causar ningún problema considerable.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h3 id="responsive-meta-tag">Responsive meta tag</h3>
+
+<p>Bootstrap está desarrollado con la concepción <em>mobile first</em>, una estrategia en la que se optimiza primero el código dispositivos móviles y luego se escalan los componentes -según sea necesario- mediante <em>media queries</em> CSS. Para garantizar una visualización adecuada y el zoom táctil para todos los dispositivos, <strong>es necesario agregar la siguiente metaetiqueta</strong> dentro de la cabecera de la plantilla HTML (<code class="highlighter-rouge">&lt;head&gt;</code>).</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Ella permite el comportamiento <em>responsive</em> del documento.</p>
+
+<h3 id="tamaño-de-caja">Tamaño de caja</h3>
+
+<p>Para trabajar de forma más sencilla, Bootstrap cambiar el valor del tamaño de caja por defecto, <code class="highlighter-rouge">content-box</code> a <code class="highlighter-rouge">border-box</code>. Esto garantiza que el <code class="highlighter-rouge">padding</code> no afecte el ancho final computado de un elemento, pero puede causar problemas con algún software de terceros como Google Maps y Google Custom Search Engine.</p>
+
+<p>En las raras ocasiones en que se necesite anular, se puede usar lo siguiente:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.selector-for-some-widget</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Con el fragmento de código anterior, los elementos anidados heredarán el tamaño de caja especificado.</p>
+
+<h3 id="reset-css">Reset CSS</h3>
+
+<p>Para mejorar la representación en múltiples navegadores, y versiones de los mismos, Bootstrap incorpora un <em>reset CSS</em>. Esto corrige ciertas inconsistencias en los navegadores y dispositivos, a la vez que restablece las propiedades de los elementos  mismo tiempo que brindamos restablecimientos de opinión más comunes a elementos HTML comunes.</p>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="las-urls-empleadas-en-los-ejemplos-no-son-reales">las URLs empleadas en los ejemplos no son reales</h5>
+
+<p>Todas las URLs de los ejemplos, https://intranet.preving.com/ejemplo-app/libs/css o https://intranet.preving.com/ejemplo-app/libs/js/, no son reales y no deben confundirse con las URLs de producción de cada app.</p>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header record"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav justify-content-end w-50 float-right"</span><span class="nt">&gt;</span>
-      <span class="c">&lt;!-- Navegación por resultados/filtro --&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pt-3"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-circle-left"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-left"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span>
-            <span class="na">class=</span><span class="s">"fas fa-arrow-circle-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-arrow-circle-up"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="c">&lt;!-- /Navegación por resultados/filtro --&gt;</span>
-      <span class="c">&lt;!-- Nuevo documento --&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-plus-square"</span><span class="nt">&gt;&lt;/i&gt;</span><span class="ni">&amp;nbsp;&amp;nbsp;</span><span class="nt">&lt;b&gt;</span>Documento<span class="nt">&lt;/b&gt;&lt;/a&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      <span class="c">&lt;!-- /Nuevo documento --&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"w-50 pt-3"</span><span class="nt">&gt;</span>Clientes / Cliente Extremeño de Servicios, SL<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>(123) Cliente Extremeño de Servicios, SL - B123456789<span class="nt">&lt;/h5&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left mb-0"</span><span class="nt">&gt;&lt;b&gt;</span>AJE <span class="nt">&lt;acronym</span> <span class="na">title=</span><span class="s">"Prevención Técnica"</span><span class="nt">&gt;</span>PT<span class="nt">&lt;/acronym&gt;</span> - <span class="nt">&lt;acronym</span> <span class="na">title=</span><span class="s">"Asesoría Jurídica Plus"</span><span class="nt">&gt;</span>AJP<span class="nt">&lt;/acronym&gt;&lt;/b&gt;</span> | (ID) Fecha contrato/Fecha baja: <span class="nt">&lt;b&gt;</span>(11)<span class="nt">&lt;/b&gt;</span> <span class="nt">&lt;b&gt;</span>10-10-2001<span class="nt">&lt;/b&gt;</span>/--<span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Especialidades PRL: H,S,V<span class="nt">&lt;/h5&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right mb-0"</span> <span class="na">style=</span><span class="s">""</span><span class="nt">&gt;</span>Entidad: <span class="nt">&lt;b&gt;</span>Grupo Preving<span class="nt">&lt;/b&gt;</span> | Gran cuenta: <span class="nt">&lt;b&gt;</span>Sí<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
         </main>
