@@ -350,29 +350,14 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#global-settings">Global settings</a></li>
-<li class="toc-entry toc-h2"><a href="#encabezados">Encabezados</a>
+<li class="toc-entry toc-h2"><a href="#encabezados">Encabezados</a></li>
+<li class="toc-entry toc-h2"><a href="#párrafos-destacados">Párrafos destacados</a></li>
+<li class="toc-entry toc-h2"><a href="#elementos-de-formato-inline">Elementos de formato inline</a></li>
+<li class="toc-entry toc-h2"><a href="#listas">Listas</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#customizing-headings">Customizing headings</a></li>
+<li class="toc-entry toc-h3"><a href="#ordenadas">Ordenadas</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#párrafos-destacados-o-entradillas">Párrafos destacados o entradillas</a></li>
-<li class="toc-entry toc-h2"><a href="#elementos-de-texto-en-línea">Elementos de texto en línea</a></li>
-<li class="toc-entry toc-h2"><a href="#text-utilities">Text utilities</a></li>
-<li class="toc-entry toc-h2"><a href="#abbreviations">Abbreviations</a></li>
-<li class="toc-entry toc-h2"><a href="#blockquotes">Blockquotes</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#alignment">Alignment</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#lists">Lists</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#unstyled">Unstyled</a></li>
-<li class="toc-entry toc-h3"><a href="#inline">Inline</a></li>
-<li class="toc-entry toc-h3"><a href="#description-list-alignment">Description list alignment</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#responsive-font-sizes">Responsive font sizes</a></li>
 </ul>
           </div>
         
@@ -380,21 +365,7 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Tipografía</h1>
           <p class="bd-lead">Documentación y ejemplos de tipografía (encabezados, cuerpo, listas,etc.).</p>
-          <h2 id="global-settings">Global settings</h2>
-
-<p>Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the .</p>
-
-<ul>
-  <li>Use a  that selects the best <code class="highlighter-rouge">font-family</code> for each OS and device.</li>
-  <li>For a more inclusive and accessible type scale, we assume the browser default root <code class="highlighter-rouge">font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.</li>
-  <li>Use the <code class="highlighter-rouge">$font-family-base</code>, <code class="highlighter-rouge">$font-size-base</code>, and <code class="highlighter-rouge">$line-height-base</code> attributes as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code>.</li>
-  <li>Set the global link color via <code class="highlighter-rouge">$link-color</code> and apply link underlines only on <code class="highlighter-rouge">:hover</code>.</li>
-  <li>Use <code class="highlighter-rouge">$body-bg</code> to set a <code class="highlighter-rouge">background-color</code> on the <code class="highlighter-rouge">&lt;body&gt;</code> (<code class="highlighter-rouge">#fff</code> by default).</li>
-</ul>
-
-<p>These styles can be found within <code class="highlighter-rouge">_reboot.scss</code>, and the global variables are defined in <code class="highlighter-rouge">_variables.scss</code>. Make sure to set <code class="highlighter-rouge">$font-size-base</code> in <code class="highlighter-rouge">rem</code>.</p>
-
-<h2 id="encabezados">Encabezados</h2>
+          <h2 id="encabezados">Encabezados</h2>
 
 <p>Todos los encabezados HTML, desde <code class="highlighter-rouge">&lt;h1&gt;</code> a <code class="highlighter-rouge">&lt;h6&gt;</code>, están disponibles.</p>
 
@@ -443,10 +414,8 @@
     </tr>
     <tr>
       <td>
-      <td>
       <p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
 
-      </td>
       </td>
       <td><span class="h6">h6. Bootstrap heading</span></td>
     </tr>
@@ -460,7 +429,7 @@
 <span class="nt">&lt;h5&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/h5&gt;</span>
 <span class="nt">&lt;h6&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/h6&gt;</span></code></pre></figure>
 
-<p>Del mismo modo, también estás disponibles las clases similares de <code class="highlighter-rouge">.h1</code>, … , <code class="highlighter-rouge">.h6</code>. Están indicadas para emplear el estilo/tamaño de un encabezado pero no se puede utilizar el elemento HTML asociado.</p>
+<p>También estás disponibles las clases similares de <code class="highlighter-rouge">.h1</code>, … , <code class="highlighter-rouge">.h6</code>. Están indicadas para emplear el estilo/tamaño de un encabezado pero no se puede utilizar el elemento HTML asociado.</p>
 
 <div class="bd-example">
 <p class="h1">h1. Bootstrap heading</p>
@@ -477,22 +446,7 @@
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>h5. Bootstrap heading<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>h6. Bootstrap heading<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
-<h3 id="customizing-headings">Customizing headings</h3>
-
-<p>Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.</p>
-
-<div class="bd-example">
-<h3>
-  Fancy display heading
-  <small class="text-muted">With faded secondary text</small>
-</h3>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>
-  Fancy display heading
-  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>With faded secondary text<span class="nt">&lt;/small&gt;</span>
-<span class="nt">&lt;/h3&gt;</span></code></pre></figure>
-
-<h2 id="párrafos-destacados-o-entradillas">Párrafos destacados o entradillas</h2>
+<h2 id="párrafos-destacados">Párrafos destacados</h2>
 
 <p>Se puede destacar un párrafo añadiéndole la clase <code class="highlighter-rouge">.lead</code>.</p>
 
@@ -505,94 +459,80 @@
   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
 <span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
-<h2 id="elementos-de-texto-en-línea">Elementos de texto en línea</h2>
+<h2 id="elementos-de-formato-inline">Elementos de formato <em>inline</em></h2>
 
-<p>Estilo para elementos HTML5 en línea comunes.</p>
-
-<div class="bd-example">
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;small&gt;</span>This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;strong&gt;</span>This line rendered as bold text.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;em&gt;</span>This line rendered as italicized text.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></figure>
-
-<p><code class="highlighter-rouge">.mark</code> and <code class="highlighter-rouge">.small</code> classes are also available to apply the same styles as <code class="highlighter-rouge">&lt;mark&gt;</code> and <code class="highlighter-rouge">&lt;small&gt;</code> while avoiding any unwanted semantic implications that the tags would bring.</p>
-
-<p>While not shown above, feel free to use <code class="highlighter-rouge">&lt;b&gt;</code> and <code class="highlighter-rouge">&lt;i&gt;</code> in HTML5. <code class="highlighter-rouge">&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code class="highlighter-rouge">&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
-
-<h2 id="text-utilities">Text utilities</h2>
-
-<p>Change text alignment, transform, style, weight, and color with our <em>text utilities</em> and <em>color utilities</em>.</p>
-
-<h2 id="abbreviations">Abbreviations</h2>
-
-<p>Stylized implementation of HTML’s <code class="highlighter-rouge">&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
-
-<p>Add <code class="highlighter-rouge">.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+<p>Estilo para elementos de formato HTML5 en línea.</p>
 
 <div class="bd-example">
-<p><abbr title="attribute">attr</abbr></p>
-<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+<p>Texto <mark>destacado</mark>.</p>
+<p><del>Marcado como texto borrado o eliminado.</del></p>
+<p><u>Texto subrayado</u></p>
+<p><small>Texto más pequeño.</small></p>
+<p><strong>Texto en negrita</strong></p>
+<p><em>Texto en itálica o cursiva.</em></p>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Texto <span class="nt">&lt;mark&gt;</span>destacado<span class="nt">&lt;/mark&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;del&gt;</span>Marcado como texto borrado o eliminado.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;u&gt;</span>Texto subrayado<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;small&gt;</span>Texto más pequeño.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;strong&gt;</span>Texto en negrita<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;em&gt;</span>Texto en itálica o cursiva.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></figure>
 
-<h2 id="blockquotes">Blockquotes</h2>
+<p>Las clases <code class="highlighter-rouge">.mark</code> y <code class="highlighter-rouge">.small</code> están disponibles para aplicar los mismos estilos que las etiquetas <code class="highlighter-rouge">&lt;mark&gt;</code> y <code class="highlighter-rouge">&lt;small&gt;</code>.</p>
 
-<p>For quoting blocks of content from another source within your document. Wrap <code class="highlighter-rouge">&lt;blockquote class="blockquote"&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote.</p>
+<div class="bd-callout bd-callout-info">
+<h5 id="negritas-b-y-cursivas-i">Negritas (<code class="highlighter-rouge">&lt;b&gt;</code>) y cursivas (<code class="highlighter-rouge">&lt;i&gt;</code>)</h5>
+
+<p>Aunque no se muestran más arriba, se pueden emplear las etiquetas <code class="highlighter-rouge">&lt;b&gt;</code> y <code class="highlighter-rouge">&lt;i&gt;</code> en HTML5. Así <code class="highlighter-rouge">&lt;b&gt;</code> está destinado a resaltar palabras o frases sin transmitir una importancia adicional, mientras que <code class="highlighter-rouge">&lt;i&gt;</code> está indicada principalmente para voz, términos técnicos, etc.</p>
+</div>
+
+<h2 id="listas">Listas</h2>
+
+<h3 id="ordenadas">Ordenadas</h3>
 
 <div class="bd-example">
-<blockquote class="blockquote">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
+<ol>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+&lt;/ol&gt;
+&lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Consectetur adipiscing elit<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Integer molestie lorem at massa<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Nulla volutpat aliquam velit
+<span class="nt">&lt;/ol&gt;</span></code></pre></figure>
 
-<h3 id="alignment">Alignment</h3>
 
-<p>Use text utilities as needed to change the alignment of your blockquote.</p>
+### Desordenadas
 
-<div class="bd-example">
-<blockquote class="blockquote text-center">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
 
 <div class="bd-example">
-<blockquote class="blockquote text-right">
-  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-right"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+&lt;/ul&gt;
+&lt;/div&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Consectetur adipiscing elit<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Integer molestie lorem at massa<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Nulla volutpat aliquam velit
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<h2 id="lists">Lists</h2>
 
-<h3 id="unstyled">Unstyled</h3>
+### Sin estilo
 
-<p>Remove the default <code class="highlighter-rouge">list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+Elimina el estilo `list-style` por defecto pero mantiene el margen en los elementos de las listas secundarias anidadas. Si quisiéramos que esas segundas listas no tuvieran viñetas ni margen, habría que añadir la clase en esa segunda lista.
+
 
 <div class="bd-example">
 <ul class="list-unstyled">
@@ -631,9 +571,11 @@
   <span class="nt">&lt;li&gt;</span>Eget porttitor lorem<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<h3 id="inline">Inline</h3>
 
-<p>Remove a list’s bullets and apply some light <code class="highlighter-rouge">margin</code> with a combination of two classes, <code class="highlighter-rouge">.list-inline</code> and <code class="highlighter-rouge">.list-inline-item</code>.</p>
+### En línea
+
+Elimina las viñetas de la lista y aplica un ligero `margin` con la combinación de los clases: `.list-inline` y `.list-inline-item`.
+
 
 <div class="bd-example">
 <ul class="list-inline">
@@ -648,66 +590,7 @@
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Nulla volutpat<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<h3 id="description-list-alignment">Description list alignment</h3>
-
-<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
-
-<div class="bd-example">
-<dl class="row">
-  <dt class="col-sm-3">Description lists</dt>
-  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-
-  <dt class="col-sm-3">Euismod</dt>
-  <dd class="col-sm-9">
-    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
-    <p>Donec id elit non mi porta gravida at eget metus.</p>
-  </dd>
-
-  <dt class="col-sm-3">Malesuada porta</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
-
-  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-
-  <dt class="col-sm-3">Nesting</dt>
-  <dd class="col-sm-9">
-    <dl class="row">
-      <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
-    </dl>
-  </dd>
-</dl>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Description lists<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>A description list is perfect for defining terms.<span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Euismod<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Malesuada porta<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>Etiam porta sem malesuada magna mollis euismod.<span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3 text-truncate"</span><span class="nt">&gt;</span>Truncated term is truncated<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Nesting<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>Nested definition list<span class="nt">&lt;/dt&gt;</span>
-      <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.<span class="nt">&lt;/dd&gt;</span>
-    <span class="nt">&lt;/dl&gt;</span>
-  <span class="nt">&lt;/dd&gt;</span>
-<span class="nt">&lt;/dl&gt;</span></code></pre></figure>
-
-<h2 id="responsive-font-sizes">Responsive font sizes</h2>
-
-<p>Bootstrap v4.3 ships with the option to enable responsive font sizes, allowing text to scale more naturally across device and viewport sizes. <abbr title="Responsive font sizes">RFS</abbr> can be enabled by changing the <code class="highlighter-rouge">$enable-responsive-font-sizes</code> Sass variable to <code class="highlighter-rouge">true</code> and recompiling Bootstrap.</p>
-
-<p>To support <abbr title="Responsive font sizes">RFS</abbr>, we use a Sass mixin to replace our normal <code class="highlighter-rouge">font-size</code> properties. Responsive font sizes will be compiled into <code class="highlighter-rouge">calc()</code> functions with a mix of <code class="highlighter-rouge">rem</code> and viewport units to enable the responsive scaling behavior. More about &lt;abbr tit</p>
+</li></ul></div></li></ol></div>
 
         </main>
       </div>
