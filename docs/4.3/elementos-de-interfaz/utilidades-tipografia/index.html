@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Documentación y ejemplos de tipografía (encabezados, cuerpo, listas,etc.).">
+<meta name="description" content="Documentación y ejemplos para utilidades comunes de texto (alineación del texto, formato, etc.).">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
@@ -350,14 +350,100 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#alineación-del-texto">Alineación del texto</a></li>
+<li class="toc-entry toc-h2"><a href="#salto-de-palabra">Salto de palabra</a></li>
+<li class="toc-entry toc-h2"><a href="#transformación-de-texto">Transformación de texto</a></li>
+<li class="toc-entry toc-h2"><a href="#negrita-y-cursivas">Negrita y cursivas</a></li>
+<li class="toc-entry toc-h2"><a href="#decoración-de-texto">Decoración de texto</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Utilidades de Tipografía</h1>
-          <p class="bd-lead">Documentación y ejemplos de tipografía (encabezados, cuerpo, listas,etc.).</p>
-          
+          <p class="bd-lead">Documentación y ejemplos para utilidades comunes de texto (alineación del texto, formato, etc.).</p>
+          <h2 id="alineación-del-texto">Alineación del texto</h2>
+
+<p>Se puede realinear fácilmente el texto de los componentes con las clases para alineación de texto.</p>
+
+<div class="bd-example">
+<p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<p>Para alineación a la izquierda, a la derecha y al centro -aparte de las clases básicas- tenemos clases que responden al ancho de pantalla y al sistema de retícula de Bootstrap.</p>
+
+<div class="bd-example">
+<p class="text-left">Texto alineado a la izquierda en todos los tamaños de pantalla o  _viewports_.</p>
+<p class="text-center">Centrar el texto alineado en todos los  _viewports_.</p>
+<p class="text-right">Texto alineado a la derecha en todos los  _viewports_.</p>
+
+<p class="text-sm-left">Texto alineado a la izquierda en _viewports_ tamaño SM (pequeño) o más ancho.</p>
+<p class="text-md-left">Texto alineado a la izquierda en _viewports_ tamaño MD (medio) o más ancho.</p>
+<p class="text-lg-left">Texto alineado a la izquierda en  _viewports_ tamaño LG (grande) o más ancho.</p>
+<p class="text-xl-left">Texto alineado a la izquierda en  _viewports_ tamaño XL (extra grande) o más ancho.</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Texto alineado a la izquierda en todos los tamaños de pantalla o  _viewports_.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Centrar el texto alineado en todos los  _viewports_.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Texto alineado a la derecha en todos los  _viewports_.<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-sm-left"</span><span class="nt">&gt;</span>Texto alineado a la izquierda en _viewports_ tamaño SM (pequeño) o más ancho.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-md-left"</span><span class="nt">&gt;</span>Texto alineado a la izquierda en _viewports_ tamaño MD (medio) o más ancho.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lg-left"</span><span class="nt">&gt;</span>Texto alineado a la izquierda en  _viewports_ tamaño LG (grande) o más ancho.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xl-left"</span><span class="nt">&gt;</span>Texto alineado a la izquierda en  _viewports_ tamaño XL (extra grande) o más ancho.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h2 id="salto-de-palabra">Salto de palabra</h2>
+
+<p>Se puede evitar que las cadenas largas de texto <em>rompan</em> el diseño de la página empleando la clase <code class="highlighter-rouge">.text-break</code>.</p>
+
+<div class="bd-example">
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-break"</span><span class="nt">&gt;</span>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h2 id="transformación-de-texto">Transformación de texto</h2>
+
+<p>Se pueden cambiar el texto a MAYÚSCULAS, minúscula o Texto Capitalizado con las clases creadas a tal efecto.</p>
+
+<div class="bd-example">
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>CapiTaliZed text.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<p>Como se puede ver <code class="highlighter-rouge">.text-capitalize</code> solo cambia la primera letra de cada palabra, sin afectar a ninguna otra letra.</p>
+
+<h2 id="negrita-y-cursivas">Negrita y cursivas</h2>
+
+<p>Se puede cambiar rápidamente el peso (negrita) del texto o el texto en cursiva.</p>
+
+<div class="bd-example">
+<p class="font-weight-bold">Texto en negrita.</p>
+<p class="font-weight-bolder">Texto de mayor peso (relativo al elemento padre).</p>
+<p class="font-weight-normal">Texto de peso normal.</p>
+<p class="font-weight-light">Texto ligero.</p>
+<p class="font-weight-lighter">Texto más ligero (relativo al elemento padre).</p>
+<p class="font-italic">Texto en cursiva</p>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-bold"</span><span class="nt">&gt;</span>Texto en negrita.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-bolder"</span><span class="nt">&gt;</span>Texto de mayor peso (relativo al elemento padre).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-normal"</span><span class="nt">&gt;</span>Texto de peso normal.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-light"</span><span class="nt">&gt;</span>Texto ligero.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-lighter"</span><span class="nt">&gt;</span>Texto más ligero (relativo al elemento padre).<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-italic"</span><span class="nt">&gt;</span>Texto en cursiva<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<h2 id="decoración-de-texto">Decoración de texto</h2>
+
+<p>Se puede eliminar la decoración de un texto (por ejemplo: un enlace) con la clase <code class="highlighter-rouge">.text-decoration-none</code>.</p>
+
+<div class="bd-example">
+<a href="#" class="text-decoration-none">Enlace sin subrayar</a>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"text-decoration-none"</span><span class="nt">&gt;</span>Enlace sin subrayar<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
