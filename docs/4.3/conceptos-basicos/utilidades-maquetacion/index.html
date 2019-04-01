@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="La personalización de los componentes para las distintas aplicaciones, permite generar usarlos de forma muy rápida.">
+<meta name="description" content="Conjunto de utilidades para bordes, márgenes, espaciado y otros">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Componentes personalizados · Preving Bootstrap</title>
+<title>Utilidades · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/aplicaciones/componentes-personalizados/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/conceptos-basicos/utilidades-maquetacion/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
   </div>
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/aplicaciones/componentes-personalizados/">English</a></li>-->
+    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/utilidades-maquetacion/">English</a></li>-->
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
         v4.3
@@ -115,7 +115,7 @@
       </a>
 
       <ul class="nav bd-sidenav"></ul>
-    </div><div class="bd-toc-item">
+    </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/conceptos-basicos/primeros-pasos/">
         Conceptos Básicos
       </a>
@@ -128,7 +128,7 @@
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/maquetacion/">
               Maquetación
             </a>
-          </li><li>
+          </li><li class="active bd-sidenav-active">
             <a href="/preving-bootstrap/docs/4.3/conceptos-basicos/utilidades-maquetacion/">
               Utilidades maquetación
             </a>
@@ -239,12 +239,12 @@
               Pies de página
             </a>
           </li></ul>
-    </div><div class="bd-toc-item active">
+    </div><div class="bd-toc-item">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/aplicaciones/componentes-personalizados/">
         Aplicaciones
       </a>
 
-      <ul class="nav bd-sidenav"><li class="active bd-sidenav-active">
+      <ul class="nav bd-sidenav"><li>
             <a href="/preving-bootstrap/docs/4.3/aplicaciones/componentes-personalizados/">
               Componentes Personalizados
             </a>
@@ -350,176 +350,205 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#personalización-de-aplicaciones">Personalización de aplicaciones</a>
+<li class="toc-entry toc-h2"><a href="#bordes">Bordes</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#colores-de-texto">Colores de texto</a></li>
-<li class="toc-entry toc-h3"><a href="#colores-de-fondo">Colores de fondo</a></li>
-<li class="toc-entry toc-h3"><a href="#colores-de-bordes">Colores de bordes</a></li>
+<li class="toc-entry toc-h3"><a href="#añadir-borde">Añadir borde</a></li>
+<li class="toc-entry toc-h3"><a href="#eliminar-borde">Eliminar borde</a></li>
+<li class="toc-entry toc-h3"><a href="#colores-en-los-bordes">Colores en los bordes</a></li>
+<li class="toc-entry toc-h3"><a href="#colores-de-las-aplicaciones">Colores de las aplicaciones</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#espaciado-con-margin-y-padding">Espaciado con margin y padding</a></li>
+<li class="toc-entry toc-h2"><a href="#elementos-flotantes">Elementos flotantes</a></li>
+<li class="toc-entry toc-h2"><a href="#clearfix">Clearfix</a></li>
+<li class="toc-entry toc-h2"><a href="#overflow">Overflow</a></li>
 </ul>
           </div>
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Componentes personalizados</h1>
-          <p class="bd-lead">La personalización de los componentes para las distintas aplicaciones, permite generar usarlos de forma muy rápida.</p>
-          <h2 id="personalización-de-aplicaciones">Personalización de aplicaciones</h2>
+          <h1 class="bd-title" id="content">Utilidades</h1>
+          <p class="bd-lead">Conjunto de utilidades para bordes, márgenes, espaciado y otros</p>
+          <h2 id="bordes">Bordes</h2>
 
-<p>Con los colores de las aplicaciones presentados anteriormente, se han generado las clases auxiliares para colores de texto, colores de fondo, tablas, botones, bordes,… Esta siguen la estructura de colores y sufijos de Bootstrap.</p>
+<p>Las utilidades de borde permiten agregar o eliminar bordes a un elemento. Se puede hacer de forma completa o únicamente un lado.</p>
 
-<p>De esta manera, la relación de aplicaciones y sufijos de las mismas son los siguientes:</p>
+<h3 id="añadir-borde">Añadir borde</h3>
+<div class="bd-example-border-utils">
+  <div class="bd-example">
+    <span class="border"></span>
+    <span class="border-top"></span>
+    <span class="border-right"></span>
+    <span class="border-bottom"></span>
+    <span class="border-left"></span>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-top"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-left"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+
+<h3 id="eliminar-borde">Eliminar borde</h3>
+
+<div class="bd-example-border-utils bd-example-border-utils-0">
+  <div class="bd-example">
+    <span class="border-0"></span>
+    <span class="border-top-0"></span>
+    <span class="border-right-0"></span>
+    <span class="border-bottom-0"></span>
+    <span class="border-left-0"></span>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-top-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-right-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-bottom-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-left-0"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+
+<h3 id="colores-en-los-bordes">Colores en los bordes</h3>
+
+<p>Se puede cambiar el color del borde empleando los colores definidos en Preving Bootstrap (colores básicos o de aplicaciones).</p>
+
+<div class="bd-example-border-utils">
+  <div class="bd-example">
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-primary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-secondary"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-success"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-danger"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-warning"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-info"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-light"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-dark"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-white"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+
+<h3 id="colores-de-las-aplicaciones">Colores de las aplicaciones</h3>
+
+<p>Se puede cambiar el color del borde empleando los colores definidos en Preving Bootstrap (colores básicos o de aplicaciones).</p>
+
+<div class="bd-example-border-utils">
+  <div class="bd-example">
+    <span class="border border-app-formacion"></span>
+    <span class="border border-app-totaldat"></span>
+    <span class="border border-app-vitaly"></span>
+    <span class="border border-app-adminitracion"></span>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-app-formacion"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-app-totaldat"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-app-vitaly"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border border-app-adminitracion"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></figure>
+
+<p>Del mismo modo se pueden emplear los colores de las aplicaciones. Basta reemplazar la clase de un color (<code class="highlighter-rouge">boder-primary</code>, <code class="highlighter-rouge">border-warning</code>, etc.), por la correspondiente al color del borde de la aplicación que queremos (por ejemplo: <code class="highlighter-rouge">border-app-formacion</code>)</p>
+
+<h2 id="espaciado-con-margin-y-padding">Espaciado con <em>margin</em> y <em>padding</em></h2>
+
+<p>Boostrap dispone de clases útiles que nos ayudan en la maquetación de las aplicaciones, jugando con los espacios internos y los márgenes de los elementos.
+Estas clases se denominan utilizando el formato <code class="highlighter-rouge">{propiedad}{lado}-{tamaño}</code>.</p>
+
+<p>De esta manera, la <strong>propiedad</strong> puede ser:</p>
 
 <ul>
-  <li>Vigilancia de la Salud <code class="highlighter-rouge">-app-vigilancia</code></li>
-  <li>Protección de Datos <code class="highlighter-rouge">-app-totaldat</code></li>
-  <li>Administración <code class="highlighter-rouge">-app-adminitracion</code></li>
-  <li>Formación <code class="highlighter-rouge">-app-formacion</code></li>
-  <li>Directorio <code class="highlighter-rouge">-app-directorio</code></li>
-  <li>CRM  <code class="highlighter-rouge">-app-crm</code></li>
-  <li>e-Analítica <code class="highlighter-rouge">-app-analitica</code></li>
-  <li>Gestión de Bajas <code class="highlighter-rouge">-app-bajas</code></li>
-  <li>Carteras <code class="highlighter-rouge">-app-carteras</code></li>
-  <li>e-Cobros <code class="highlighter-rouge">-app-cobros</code></li>
-  <li>Gestión de Reclamaciones <code class="highlighter-rouge">-app-reclamaciones</code></li>
-  <li>Higiene Industrial <code class="highlighter-rouge">-app-higiene</code></li>
-  <li>Incapacidad Temporal  <code class="highlighter-rouge">-app-it</code></li>
-  <li>Vitaly <code class="highlighter-rouge">-app-vitaly</code></li>
-  <li>OPETEC <code class="highlighter-rouge">-app-opetec</code></li>
-  <li>Prevención <code class="highlighter-rouge">-app-prevencion</code></li>
-  <li>Servicios Jurídicos <code class="highlighter-rouge">-app-juridico</code></li>
+  <li><code class="highlighter-rouge">m</code> - para el <code class="highlighter-rouge">margin</code></li>
+  <li><code class="highlighter-rouge">p</code> - para el <code class="highlighter-rouge">padding</code></li>
 </ul>
 
-<p>Simplemente, sobre los ejemplos de la <strong>Guía de Estilos</strong> hay que sustituir en las clase del color, la clase <code class="highlighter-rouge">..-primary</code> por la correspondiente a la del color de la aplicación. Por ejemplo: <code class="highlighter-rouge">.btn-app-formacion</code>, <code class="highlighter-rouge">.table-app-vigilancia</code>, <code class="highlighter-rouge">.bg-app-crm</code>; para un botón para formación, una tabla de vigilancia de la salud o el color de fondo para el CRM, respectivamente.</p>
+<p>Los <strong>lados</strong> son:</p>
 
-<h3 id="colores-de-texto">Colores de texto</h3>
+<ul>
+  <li><code class="highlighter-rouge">t</code> - para <code class="highlighter-rouge">margin-top</code> o <code class="highlighter-rouge">padding-top</code></li>
+  <li><code class="highlighter-rouge">b</code> - para <code class="highlighter-rouge">margin-bottom</code> o <code class="highlighter-rouge">padding-bottom</code></li>
+  <li><code class="highlighter-rouge">l</code> - para <code class="highlighter-rouge">margin-left</code> o <code class="highlighter-rouge">padding-left</code></li>
+  <li><code class="highlighter-rouge">r</code> - para <code class="highlighter-rouge">margin-right</code> o <code class="highlighter-rouge">padding-right</code></li>
+  <li><code class="highlighter-rouge">x</code> - tanto para <code class="highlighter-rouge">*-left</code> como <code class="highlighter-rouge">*-right</code></li>
+  <li><code class="highlighter-rouge">y</code> - tanto para <code class="highlighter-rouge">*-top</code> como<code class="highlighter-rouge">*-bottom</code></li>
+  <li>en blanco - para las clases que establecen un <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> en los 4 lados del elemento (por ejemplo: <code class="highlighter-rouge">m-0</code> o <code class="highlighter-rouge">p-0</code>)</li>
+</ul>
 
-<p>Las clases generadas para los textos destacados con el color de las aplicaciones son los siguientes:</p>
+<p>Donde el <strong>tamaño</strong> es:</p>
 
-<div class="bd-example">
+<ul>
+  <li><code class="highlighter-rouge">0</code> - Añade un <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">0</code> (sería eliminar el valor de dichas propiedades en el elemento en el que se aplique)</li>
+  <li><code class="highlighter-rouge">1</code> - <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">1</code></li>
+  <li><code class="highlighter-rouge">2</code> - <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">2</code></li>
+  <li><code class="highlighter-rouge">3</code> - <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">3</code></li>
+  <li><code class="highlighter-rouge">4</code> - <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">4</code></li>
+  <li><code class="highlighter-rouge">5</code> - <code class="highlighter-rouge">margin</code> o <code class="highlighter-rouge">padding</code> de tamaño <code class="highlighter-rouge">5</code></li>
+  <li><code class="highlighter-rouge">auto</code> - Para las clases que configuran el <code class="highlighter-rouge">margin</code> auto.</li>
+</ul>
 
-<p class="text-app-vigilancia">.text-app-vigilancia</p>
-<p class="text-app-totaldat">.text-app-totaldat</p>
-<p class="text-app-adminitracion">.text-app-administracion</p>
-<p class="text-app-formacion">.text-app-formacion</p>
-<p class="text-app-directorio">.text-app-directorio</p>
-<p class="text-app-crm">.text-app-crm</p>
-<p class="text-app-analitica">.text-app-analitica</p>
-<p class="text-app-bajas">.text-app-bajas</p>
-<p class="text-app-carteras">.text-app-carteras</p>
-<p class="text-app-cobros">.text-app-cobros</p>
-<p class="text-app-reclamaciones">.text-app-reclamaciones</p>
-<p class="text-app-higiene">.text-app-higiene</p>
-<p class="text-app-it">.text-app-it</p>
-<p class="text-app-vitaly">.text-app-vitaly</p>
-<p class="text-app-opetec">.text-app-opetec</p>
-<p class="text-app-prevencion">.text-app-prevencion</p>
-<p class="text-app-juridico">.text-app-juridico</p>
+<p>Por ejemplo: <code class="highlighter-rouge">pt-3</code>, que correspondería con <code class="highlighter-rouge">padding-top</code> y <code class="highlighter-rouge">tamaño 3</code>, o <code class="highlighter-rouge">my-0</code>, que correspondería con <code class="highlighter-rouge">margin-top</code> y <code class="highlighter-rouge">margin-bottom</code> establecidos a <code class="highlighter-rouge">0</code>.</p>
 
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-vigilancia"</span><span class="nt">&gt;</span>.text-app-vigilancia<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-totaldat"</span><span class="nt">&gt;</span>.text-app-totaldat<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-adminitracion"</span><span class="nt">&gt;</span>.text-app-administracion<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-formacion"</span><span class="nt">&gt;</span>.text-app-formacion<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-directorio"</span><span class="nt">&gt;</span>.text-app-directorio<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-crm"</span><span class="nt">&gt;</span>.text-app-crm<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-analitica"</span><span class="nt">&gt;</span>.text-app-analitica<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-bajas"</span><span class="nt">&gt;</span>.text-app-bajas<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-carteras"</span><span class="nt">&gt;</span>.text-app-carteras<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-cobros"</span><span class="nt">&gt;</span>.text-app-cobros<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-reclamaciones"</span><span class="nt">&gt;</span>.text-app-reclamaciones<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-higiene"</span><span class="nt">&gt;</span>.text-app-higiene<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-it"</span><span class="nt">&gt;</span>.text-app-it<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-vitaly"</span><span class="nt">&gt;</span>.text-app-vitaly<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-opetec"</span><span class="nt">&gt;</span>.text-app-opetec<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-prevencion"</span><span class="nt">&gt;</span>.text-app-prevencion<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-app-juridico"</span><span class="nt">&gt;</span>.text-app-juridico<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<p><em>Los tamaños se generan a partir de una variable definida en la configuración de Bootstrap.</em></p>
 
-<h3 id="colores-de-fondo">Colores de fondo</h3>
+<h2 id="elementos-flotantes">Elementos flotantes</h2>
 
-<p>Del mismo modo, las clases generadas para el color de fondo son:</p>
+<p>Estas clases permiten flotar un elemento a la izquierda o derecha, o deshabilitar dicho comportamiento. Nos ayudas a gestionar la propiedad CSS <code class="highlighter-rouge">float</code> de forma sencilla.</p>
 
 <div class="bd-example">
 
-<div class="p-3 mb-2 bg-app-vigilancia text-white">.bg-app-vigilancia</div>
-<div class="p-3 mb-2 bg-app-totaldat text-white">.bg-app-totaldat</div>
-<div class="p-3 mb-2 bg-app-administracion text-white">.bg-app-administracion</div>
-<div class="p-3 mb-2 bg-app-formacion text-white">.bg-app-formacion</div>
-<div class="p-3 mb-2 bg-app-directorio text-white">.bg-app-directorio</div>
-<div class="p-3 mb-2 bg-app-crm text-white">.bg-app-crm</div>
-<div class="p-3 mb-2 bg-app-analitica text-white">.bg-app-analitica</div>
-<div class="p-3 mb-2 bg-app-bajas text-white">.bg-app-bajas</div>
-<div class="p-3 mb-2 bg-app-carteras text-white">.bg-app-carteras</div>
-<div class="p-3 mb-2 bg-app-cobros text-white">.bg-app-cobros</div>
-<div class="p-3 mb-2 bg-app-reclamaciones text-white">.bg-app-reclamaciones</div>
-<div class="p-3 mb-2 bg-app-higiene text-white">.bg-app-higiene</div>
-<div class="p-3 mb-2 bg-app-it text-white">.bg-app-it</div>
-<div class="p-3 mb-2 bg-app-vitaly text-white">.bg-app-vitaly</div>
-<div class="p-3 mb-2 bg-app-opetec text-white">.bg-app-opetec</div>
-<div class="p-3 mb-2 bg-app-prevencion text-white">.bg-app-prevencion</div>
-<div class="p-3 mb-2 bg-app-juridico text-white">.bg-app-juridico</div>
+<div class="float-left">Elemento flotante a la izquierda</div><br />
+<div class="float-right">Elemento flotante a la derecha</div><br />
+<div class="float-none">Elemento sin flotar</div>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-vigilancia text-white"</span><span class="nt">&gt;</span>.bg-app-vigilancia<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-totaldat text-white"</span><span class="nt">&gt;</span>.bg-app-totaldat<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-administracion text-white"</span><span class="nt">&gt;</span>.bg-app-administracion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-formacion text-white"</span><span class="nt">&gt;</span>.bg-app-formacion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-directorio text-white"</span><span class="nt">&gt;</span>.bg-app-directorio<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-crm text-white"</span><span class="nt">&gt;</span>.bg-app-crm<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-analitica text-white"</span><span class="nt">&gt;</span>.bg-app-analitica<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-bajas text-white"</span><span class="nt">&gt;</span>.bg-app-bajas<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-carteras text-white"</span><span class="nt">&gt;</span>.bg-app-carteras<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-cobros text-white"</span><span class="nt">&gt;</span>.bg-app-cobros<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-reclamaciones text-white"</span><span class="nt">&gt;</span>.bg-app-reclamaciones<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-higiene text-white"</span><span class="nt">&gt;</span>.bg-app-higiene<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-it text-white"</span><span class="nt">&gt;</span>.bg-app-it<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-vitaly text-white"</span><span class="nt">&gt;</span>.bg-app-vitaly<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-opetec text-white"</span><span class="nt">&gt;</span>.bg-app-opetec<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-prevencion text-white"</span><span class="nt">&gt;</span>.bg-app-prevencion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 bg-app-juridico text-white"</span><span class="nt">&gt;</span>.bg-app-juridico<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-left"</span><span class="nt">&gt;</span>Elemento flotante a la izquierda<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-right"</span><span class="nt">&gt;</span>Elemento flotante a la derecha<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-none"</span><span class="nt">&gt;</span>Elemento sin flotar<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="colores-de-bordes">Colores de bordes</h3>
+<h2 id="clearfix">Clearfix</h2>
 
-<p>También se han generado las clases para los bordes de los elementos:</p>
+<p>Permite eliminar el comportamiento flotante (<em>floats</em>) añadiendo <code class="highlighter-rouge">.clearfix</code> al <strong>elemento contenedor padre</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>El siguiente ejemplo muestra cómo se puede utilizar el <em>clearfix</em>. Sin él, <code class="highlighter-rouge">div</code> que envuelve a los botones no se ectendería al rededor de los mismos, lo que causaría que el diseño no se mostrase correctamente.</p>
 
 <div class="bd-example">
 
-<div class="p-3 mb-2 border border-app-vigilancia">.border-app-vigilancia</div>
-<div class="p-3 mb-2 border border-app-totaldat">.border-app-totaldat</div>
-<div class="p-3 mb-2 border border-app-administracion">.border-app-administracion</div>
-<div class="p-3 mb-2 border border-app-formacion">.border-app-formacion</div>
-<div class="p-3 mb-2 border border-app-directorio">.border-app-directorio</div>
-<div class="p-3 mb-2 border border-app-crm">.border-app-crm</div>
-<div class="p-3 mb-2 border border-app-analitica">.border-app-analitica</div>
-<div class="p-3 mb-2 border border-app-bajas">.border-app-bajas</div>
-<div class="p-3 mb-2 border border-app-carteras">.border-app-carteras</div>
-<div class="p-3 mb-2 border border-app-cobros">.border-app-cobros</div>
-<div class="p-3 mb-2 border border-app-reclamaciones">.border-app-reclamaciones</div>
-<div class="p-3 mb-2 border border-app-higiene">.border-app-higiene</div>
-<div class="p-3 mb-2 border border-app-it">.border-app-it</div>
-<div class="p-3 mb-2 border border-app-vitaly">.border-app-vitaly</div>
-<div class="p-3 mb-2 border border-app-opetec">.border-app-opetec</div>
-<div class="p-3 mb-2 border border-app-prevencion">.border-app-prevencion</div>
-<div class="p-3 mb-2 border border-app-juridico">.border-app-juridico</div>
+<div class="bg-light p-3 clearfix">
+  <button type="button" class="btn btn-primary float-left">Flotando a la izquierda</button>
+  <button type="button" class="btn btn-primary float-right">Flotando a la derecha</button>
+</div>
 
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-vigilancia"</span><span class="nt">&gt;</span>.border-app-vigilancia<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-totaldat"</span><span class="nt">&gt;</span>.border-app-totaldat<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-administracion"</span><span class="nt">&gt;</span>.border-app-administracion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-formacion"</span><span class="nt">&gt;</span>.border-app-formacion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-directorio"</span><span class="nt">&gt;</span>.border-app-directorio<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-crm"</span><span class="nt">&gt;</span>.border-app-crm<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-analitica"</span><span class="nt">&gt;</span>.border-app-analitica<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-bajas"</span><span class="nt">&gt;</span>.border-app-bajas<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-carteras"</span><span class="nt">&gt;</span>.border-app-carteras<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-cobros"</span><span class="nt">&gt;</span>.border-app-cobros<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-reclamaciones"</span><span class="nt">&gt;</span>.border-app-reclamaciones<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-higiene"</span><span class="nt">&gt;</span>.border-app-higiene<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-it"</span><span class="nt">&gt;</span>.border-app-it<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-vitaly"</span><span class="nt">&gt;</span>.border-app-vitaly<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-opetec"</span><span class="nt">&gt;</span>.border-app-opetec<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-prevencion"</span><span class="nt">&gt;</span>.border-app-prevencion<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-3 mb-2 border border-app-juridico"</span><span class="nt">&gt;</span>.border-app-juridico<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-light p-3 clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary float-left"</span><span class="nt">&gt;</span>Flotando a la izquierda<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary float-right"</span><span class="nt">&gt;</span>Flotando a la derecha<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="overflow">Overflow</h2>
+
+<p>Podemos modificar el comportamiento del contenido de un elemento.</p>
+
+<div class="bd-example d-md-flex">
+  <div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+    Ejemplo <code>.overflow-auto</code>.<br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus congue tellus mollis posuere. Donec ut vehicula velit. Etiam suscipit dolor sit amet ligula ornare maximus. Curabitur molestie sapien vitae turpis semper, et ornare dui luctus.
+  </div>
+  <div class="overflow-hidden p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+    Ejemplo <code>.overflow-hidden</code>.<br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus tellus congue tellus mollis posuere. Donec ut vehicula velit. Etiam suscipit dolor sit amet ligula ornare maximus. Curabitur molestie sapien vitae turpis semper, et ornare dui luctus.
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-auto"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overflow-hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
         </main>

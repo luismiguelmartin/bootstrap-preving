@@ -187,6 +187,9 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/offcanvas/</loc>
 </url>
 <url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbars/</loc>
+</url>
+<url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/album/</loc>
 </url>
 <url>
@@ -221,9 +224,6 @@
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbar-static/</loc>
-</url>
-<url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/examples/navbars/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/input-group/</loc>
@@ -334,10 +334,10 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/utilities/stretched-link/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/tablas/tablas-de-datos/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/componentes/tablas-de-datos/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/componentes/tablas-de-datos/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/tablas/tablas-de-datos/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/content/tables/</loc>
@@ -367,7 +367,10 @@
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/content/typography/</loc>
 </url>
 <url>
-<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/utilidades/</loc>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/conceptos-basicos/utilidades-maquetacion/</loc>
+</url>
+<url>
+<loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/elementos-de-interfaz/utilidades-tipografia/</loc>
 </url>
 <url>
 <loc>https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/layout/utilities-for-layout/</loc>
