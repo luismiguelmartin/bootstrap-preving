@@ -369,8 +369,8 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#modales-avanzadas">Modales avanzadas</a></li>
 <li class="toc-entry toc-h2"><a href="#formularios-en-modales">Formularios en modales</a></li>
-<li class="toc-entry toc-h2"><a href="#modales-de-validación">Modales de validación</a></li>
 <li class="toc-entry toc-h2"><a href="#modales-informativas">Modales informativas</a></li>
+<li class="toc-entry toc-h2"><a href="#modales-de-validación">Modales de validación</a></li>
 <li class="toc-entry toc-h2"><a href="#modal-con-log">Modal con log</a></li>
 </ul>
           </div>
@@ -1077,113 +1077,6 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h2 id="modales-de-validación">Modales de validación</h2>
-
-<p>Se pueden crear pequeñas ventanas para mostrar el resultado de validación de un elemento. Por ejemplo, un botón o enlace para validar si el resultado</p>
-
-<div class="bd-example">
-
-<!-- Button trigger modal -->
-<div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirmOK">
-    Validación OK
-  </button>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirmKO">
-    Validación KO
-  </button>
-</div>
-
-<!-- MODAL VALIDACIÓN OK -->
-<div class="modal fade" id="exampleModalConfirmOK" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmOKLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-primary">
-        <h5 class="modal-title text-white" id="exampleModalConfirmOKLabel">Resultado correcto</h5>
-      </div>
-      <div class="modal-body text-center">
-        <div style="font-size:4rem;">
-          <i class="far fa-check-circle text-success"></i>
-        </div>
-        <div><strong>Validación correcta</strong></div>
-      </div>
-      <div class="modal-footer p-4">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Aceptar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL VALIDACIÓN KO -->
-<div class="modal fade" id="exampleModalConfirmKO" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmKOLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-primary">
-        <h5 class="modal-title text-white" id="exampleModalConfirmKOLabel">Resultado incorrecto</h5>
-      </div>
-      <div class="modal-body text-center">
-        <div style="font-size:4rem;">
-          <i class="far fa-times-circle text-danger"></i>
-        </div>
-        <div><strong>Validación incorrecta (Error: 1024)</strong></div>
-      </div>
-      <div class="modal-footer p-4">
-        <button type="button" class="btn btn-light" data-dismiss="modal">Aceptar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalConfirmOK"</span><span class="nt">&gt;</span>
-    Validación OK
-  <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalConfirmKO"</span><span class="nt">&gt;</span>
-    Validación KO
-  <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="c">&lt;!-- MODAL VALIDACIÓN OK --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOK"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmOKLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOKLabel"</span><span class="nt">&gt;</span>Resultado correcto<span class="nt">&lt;/h5&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Validación correcta<span class="nt">&lt;/strong&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="c">&lt;!-- MODAL VALIDACIÓN KO --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKO"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmKOLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKOLabel"</span><span class="nt">&gt;</span>Resultado incorrecto<span class="nt">&lt;/h5&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-times-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Validación incorrecta (Error: 1024)<span class="nt">&lt;/strong&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
 <h2 id="modales-informativas">Modales informativas</h2>
 
 <p>Del mismo modo que las modales de validación, pensadas para pequeñas validaciones, se pueden emplear modales un poco más complejas para mostrar resultados de validaciones, cominicar avisos y errores, mostrar información,…</p>
@@ -1446,6 +1339,113 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Cerrar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="modales-de-validación">Modales de validación</h2>
+
+<p>Se pueden crear pequeñas ventanas para mostrar el resultado de validación de un elemento. Por ejemplo, un botón o enlace para validar si el resultado</p>
+
+<div class="bd-example">
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirmOK">
+    Validación OK
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalConfirmKO">
+    Validación KO
+  </button>
+</div>
+
+<!-- MODAL VALIDACIÓN OK -->
+<div class="modal fade" id="exampleModalConfirmOK" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmOKLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalConfirmOKLabel">Resultado correcto</h5>
+      </div>
+      <div class="modal-body text-center">
+        <div style="font-size:4rem;">
+          <i class="far fa-check-circle text-success"></i>
+        </div>
+        <div><strong>Validación correcta</strong></div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VALIDACIÓN KO -->
+<div class="modal fade" id="exampleModalConfirmKO" tabindex="-1" role="dialog" aria-labelledby="exampleModalConfirmKOLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="exampleModalConfirmKOLabel">Resultado incorrecto</h5>
+      </div>
+      <div class="modal-body text-center">
+        <div style="font-size:4rem;">
+          <i class="far fa-times-circle text-danger"></i>
+        </div>
+        <div><strong>Validación incorrecta (Error: 1024)</strong></div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalConfirmOK"</span><span class="nt">&gt;</span>
+    Validación OK
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalConfirmKO"</span><span class="nt">&gt;</span>
+    Validación KO
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL VALIDACIÓN OK --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOK"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmOKLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmOKLabel"</span><span class="nt">&gt;</span>Resultado correcto<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-check-circle text-success"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Validación correcta<span class="nt">&lt;/strong&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- MODAL VALIDACIÓN KO --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKO"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalConfirmKOLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-sm modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header bg-primary"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title text-white"</span> <span class="na">id=</span><span class="s">"exampleModalConfirmKOLabel"</span><span class="nt">&gt;</span>Resultado incorrecto<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"font-size:4rem;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"far fa-times-circle text-danger"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;strong&gt;</span>Validación incorrecta (Error: 1024)<span class="nt">&lt;/strong&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer p-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
