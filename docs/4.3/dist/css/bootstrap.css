@@ -43,23 +43,23 @@
   --danger: #dc3545;
   --light: #e9ecef;
   --dark: #343a40;
-  --app-vigilancia: #56c056;
-  --app-totaldat: #9C0052;
   --app-administracion: #663366;
-  --app-formacion: #FFB200;
-  --app-directorio: #A40353;
-  --app-crm: #004451;
   --app-analitica: #008000;
   --app-bajas: #808000;
   --app-carteras: #CC0000;
   --app-cobros: #CC6633;
-  --app-reclamaciones: #E1AD0F;
+  --app-crm: #004451;
+  --app-directorio: #A40353;
+  --app-formacion: #FFB200;
+  --app-juridico: #572364;
   --app-higiene: #8CAE29;
   --app-it: #B5BE05;
-  --app-vitaly: #029968;
   --app-opetec: #0103E4;
   --app-prevencion: #337ab7;
-  --app-juridico: #572364;
+  --app-reclamaciones: #E1AD0F;
+  --app-totaldat: #9C0052;
+  --app-vigilancia: #56c056;
+  --app-vitaly: #029968;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1626,50 +1626,6 @@ pre code {
   background-color: #b9bbbe;
 }
 
-.table-app-vigilancia,
-.table-app-vigilancia > th,
-.table-app-vigilancia > td {
-  background-color: #d0edd0;
-}
-
-.table-app-vigilancia th,
-.table-app-vigilancia td,
-.table-app-vigilancia thead th,
-.table-app-vigilancia tbody + tbody {
-  border-color: #a7dea7;
-}
-
-.table-hover .table-app-vigilancia:hover {
-  background-color: #bee6be;
-}
-
-.table-hover .table-app-vigilancia:hover > td,
-.table-hover .table-app-vigilancia:hover > th {
-  background-color: #bee6be;
-}
-
-.table-app-totaldat,
-.table-app-totaldat > th,
-.table-app-totaldat > td {
-  background-color: #e3b8cf;
-}
-
-.table-app-totaldat th,
-.table-app-totaldat td,
-.table-app-totaldat thead th,
-.table-app-totaldat tbody + tbody {
-  border-color: #cc7aa5;
-}
-
-.table-hover .table-app-totaldat:hover {
-  background-color: #dca6c3;
-}
-
-.table-hover .table-app-totaldat:hover > td,
-.table-hover .table-app-totaldat:hover > th {
-  background-color: #dca6c3;
-}
-
 .table-app-administracion,
 .table-app-administracion > th,
 .table-app-administracion > td {
@@ -1690,72 +1646,6 @@ pre code {
 .table-hover .table-app-administracion:hover > td,
 .table-hover .table-app-administracion:hover > th {
   background-color: #c9b7c9;
-}
-
-.table-app-formacion,
-.table-app-formacion > th,
-.table-app-formacion > td {
-  background-color: #ffe9b8;
-}
-
-.table-app-formacion th,
-.table-app-formacion td,
-.table-app-formacion thead th,
-.table-app-formacion tbody + tbody {
-  border-color: #ffd77a;
-}
-
-.table-hover .table-app-formacion:hover {
-  background-color: #ffe19f;
-}
-
-.table-hover .table-app-formacion:hover > td,
-.table-hover .table-app-formacion:hover > th {
-  background-color: #ffe19f;
-}
-
-.table-app-directorio,
-.table-app-directorio > th,
-.table-app-directorio > td {
-  background-color: #e6b8cf;
-}
-
-.table-app-directorio th,
-.table-app-directorio td,
-.table-app-directorio thead th,
-.table-app-directorio tbody + tbody {
-  border-color: #d07ca6;
-}
-
-.table-hover .table-app-directorio:hover {
-  background-color: #dfa5c2;
-}
-
-.table-hover .table-app-directorio:hover > td,
-.table-hover .table-app-directorio:hover > th {
-  background-color: #dfa5c2;
-}
-
-.table-app-crm,
-.table-app-crm > th,
-.table-app-crm > td {
-  background-color: #b8cbce;
-}
-
-.table-app-crm th,
-.table-app-crm td,
-.table-app-crm thead th,
-.table-app-crm tbody + tbody {
-  border-color: #7a9ea5;
-}
-
-.table-hover .table-app-crm:hover {
-  background-color: #a9c0c4;
-}
-
-.table-hover .table-app-crm:hover > td,
-.table-hover .table-app-crm:hover > th {
-  background-color: #a9c0c4;
 }
 
 .table-app-analitica,
@@ -1846,26 +1736,92 @@ pre code {
   background-color: #ecc5b2;
 }
 
-.table-app-reclamaciones,
-.table-app-reclamaciones > th,
-.table-app-reclamaciones > td {
-  background-color: #f7e8bc;
+.table-app-crm,
+.table-app-crm > th,
+.table-app-crm > td {
+  background-color: #b8cbce;
 }
 
-.table-app-reclamaciones th,
-.table-app-reclamaciones td,
-.table-app-reclamaciones thead th,
-.table-app-reclamaciones tbody + tbody {
-  border-color: #efd482;
+.table-app-crm th,
+.table-app-crm td,
+.table-app-crm thead th,
+.table-app-crm tbody + tbody {
+  border-color: #7a9ea5;
 }
 
-.table-hover .table-app-reclamaciones:hover {
-  background-color: #f4e0a5;
+.table-hover .table-app-crm:hover {
+  background-color: #a9c0c4;
 }
 
-.table-hover .table-app-reclamaciones:hover > td,
-.table-hover .table-app-reclamaciones:hover > th {
-  background-color: #f4e0a5;
+.table-hover .table-app-crm:hover > td,
+.table-hover .table-app-crm:hover > th {
+  background-color: #a9c0c4;
+}
+
+.table-app-directorio,
+.table-app-directorio > th,
+.table-app-directorio > td {
+  background-color: #e6b8cf;
+}
+
+.table-app-directorio th,
+.table-app-directorio td,
+.table-app-directorio thead th,
+.table-app-directorio tbody + tbody {
+  border-color: #d07ca6;
+}
+
+.table-hover .table-app-directorio:hover {
+  background-color: #dfa5c2;
+}
+
+.table-hover .table-app-directorio:hover > td,
+.table-hover .table-app-directorio:hover > th {
+  background-color: #dfa5c2;
+}
+
+.table-app-formacion,
+.table-app-formacion > th,
+.table-app-formacion > td {
+  background-color: #ffe9b8;
+}
+
+.table-app-formacion th,
+.table-app-formacion td,
+.table-app-formacion thead th,
+.table-app-formacion tbody + tbody {
+  border-color: #ffd77a;
+}
+
+.table-hover .table-app-formacion:hover {
+  background-color: #ffe19f;
+}
+
+.table-hover .table-app-formacion:hover > td,
+.table-hover .table-app-formacion:hover > th {
+  background-color: #ffe19f;
+}
+
+.table-app-juridico,
+.table-app-juridico > th,
+.table-app-juridico > td {
+  background-color: #d0c1d4;
+}
+
+.table-app-juridico th,
+.table-app-juridico td,
+.table-app-juridico thead th,
+.table-app-juridico tbody + tbody {
+  border-color: #a88dae;
+}
+
+.table-hover .table-app-juridico:hover {
+  background-color: #c5b2ca;
+}
+
+.table-hover .table-app-juridico:hover > td,
+.table-hover .table-app-juridico:hover > th {
+  background-color: #c5b2ca;
 }
 
 .table-app-higiene,
@@ -1912,28 +1868,6 @@ pre code {
   background-color: #e4e8a5;
 }
 
-.table-app-vitaly,
-.table-app-vitaly > th,
-.table-app-vitaly > td {
-  background-color: #b8e2d5;
-}
-
-.table-app-vitaly th,
-.table-app-vitaly td,
-.table-app-vitaly thead th,
-.table-app-vitaly tbody + tbody {
-  border-color: #7bcab0;
-}
-
-.table-hover .table-app-vitaly:hover {
-  background-color: #a6dbca;
-}
-
-.table-hover .table-app-vitaly:hover > td,
-.table-hover .table-app-vitaly:hover > th {
-  background-color: #a6dbca;
-}
-
 .table-app-opetec,
 .table-app-opetec > th,
 .table-app-opetec > td {
@@ -1978,26 +1912,92 @@ pre code {
   background-color: #b3cee4;
 }
 
-.table-app-juridico,
-.table-app-juridico > th,
-.table-app-juridico > td {
-  background-color: #d0c1d4;
+.table-app-reclamaciones,
+.table-app-reclamaciones > th,
+.table-app-reclamaciones > td {
+  background-color: #f7e8bc;
 }
 
-.table-app-juridico th,
-.table-app-juridico td,
-.table-app-juridico thead th,
-.table-app-juridico tbody + tbody {
-  border-color: #a88dae;
+.table-app-reclamaciones th,
+.table-app-reclamaciones td,
+.table-app-reclamaciones thead th,
+.table-app-reclamaciones tbody + tbody {
+  border-color: #efd482;
 }
 
-.table-hover .table-app-juridico:hover {
-  background-color: #c5b2ca;
+.table-hover .table-app-reclamaciones:hover {
+  background-color: #f4e0a5;
 }
 
-.table-hover .table-app-juridico:hover > td,
-.table-hover .table-app-juridico:hover > th {
-  background-color: #c5b2ca;
+.table-hover .table-app-reclamaciones:hover > td,
+.table-hover .table-app-reclamaciones:hover > th {
+  background-color: #f4e0a5;
+}
+
+.table-app-totaldat,
+.table-app-totaldat > th,
+.table-app-totaldat > td {
+  background-color: #e3b8cf;
+}
+
+.table-app-totaldat th,
+.table-app-totaldat td,
+.table-app-totaldat thead th,
+.table-app-totaldat tbody + tbody {
+  border-color: #cc7aa5;
+}
+
+.table-hover .table-app-totaldat:hover {
+  background-color: #dca6c3;
+}
+
+.table-hover .table-app-totaldat:hover > td,
+.table-hover .table-app-totaldat:hover > th {
+  background-color: #dca6c3;
+}
+
+.table-app-vigilancia,
+.table-app-vigilancia > th,
+.table-app-vigilancia > td {
+  background-color: #d0edd0;
+}
+
+.table-app-vigilancia th,
+.table-app-vigilancia td,
+.table-app-vigilancia thead th,
+.table-app-vigilancia tbody + tbody {
+  border-color: #a7dea7;
+}
+
+.table-hover .table-app-vigilancia:hover {
+  background-color: #bee6be;
+}
+
+.table-hover .table-app-vigilancia:hover > td,
+.table-hover .table-app-vigilancia:hover > th {
+  background-color: #bee6be;
+}
+
+.table-app-vitaly,
+.table-app-vitaly > th,
+.table-app-vitaly > td {
+  background-color: #b8e2d5;
+}
+
+.table-app-vitaly th,
+.table-app-vitaly td,
+.table-app-vitaly thead th,
+.table-app-vitaly tbody + tbody {
+  border-color: #7bcab0;
+}
+
+.table-hover .table-app-vitaly:hover {
+  background-color: #a6dbca;
+}
+
+.table-hover .table-app-vitaly:hover > td,
+.table-hover .table-app-vitaly:hover > th {
+  background-color: #a6dbca;
 }
 
 .table-active,
@@ -2927,74 +2927,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
 
-.btn-app-vigilancia {
-  color: #fff;
-  background-color: #56c056;
-  border-color: #56c056;
-}
-
-.btn-app-vigilancia:hover {
-  color: #fff;
-  background-color: #41af41;
-  border-color: #3ea53e;
-}
-
-.btn-app-vigilancia:focus, .btn-app-vigilancia.focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 201, 111, 0.5);
-}
-
-.btn-app-vigilancia.disabled, .btn-app-vigilancia:disabled {
-  color: #fff;
-  background-color: #56c056;
-  border-color: #56c056;
-}
-
-.btn-app-vigilancia:not(:disabled):not(.disabled):active, .btn-app-vigilancia:not(:disabled):not(.disabled).active,
-.show > .btn-app-vigilancia.dropdown-toggle {
-  color: #fff;
-  background-color: #3ea53e;
-  border-color: #3a9c3a;
-}
-
-.btn-app-vigilancia:not(:disabled):not(.disabled):active:focus, .btn-app-vigilancia:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-vigilancia.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 201, 111, 0.5);
-}
-
-.btn-app-totaldat {
-  color: #fff;
-  background-color: #9C0052;
-  border-color: #9C0052;
-}
-
-.btn-app-totaldat:hover {
-  color: #fff;
-  background-color: #76003e;
-  border-color: #690037;
-}
-
-.btn-app-totaldat:focus, .btn-app-totaldat.focus {
-  box-shadow: 0 0 0 0.2rem rgba(171, 38, 108, 0.5);
-}
-
-.btn-app-totaldat.disabled, .btn-app-totaldat:disabled {
-  color: #fff;
-  background-color: #9C0052;
-  border-color: #9C0052;
-}
-
-.btn-app-totaldat:not(:disabled):not(.disabled):active, .btn-app-totaldat:not(:disabled):not(.disabled).active,
-.show > .btn-app-totaldat.dropdown-toggle {
-  color: #fff;
-  background-color: #690037;
-  border-color: #5c0030;
-}
-
-.btn-app-totaldat:not(:disabled):not(.disabled):active:focus, .btn-app-totaldat:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-totaldat.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(171, 38, 108, 0.5);
-}
-
 .btn-app-administracion {
   color: #fff;
   background-color: #663366;
@@ -3027,108 +2959,6 @@ fieldset:disabled a.btn {
 .btn-app-administracion:not(:disabled):not(.disabled):active:focus, .btn-app-administracion:not(:disabled):not(.disabled).active:focus,
 .show > .btn-app-administracion.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(125, 82, 125, 0.5);
-}
-
-.btn-app-formacion {
-  color: #212529;
-  background-color: #FFB200;
-  border-color: #FFB200;
-}
-
-.btn-app-formacion:hover {
-  color: #212529;
-  background-color: #d99700;
-  border-color: #cc8e00;
-}
-
-.btn-app-formacion:focus, .btn-app-formacion.focus {
-  box-shadow: 0 0 0 0.2rem rgba(222, 157, 6, 0.5);
-}
-
-.btn-app-formacion.disabled, .btn-app-formacion:disabled {
-  color: #212529;
-  background-color: #FFB200;
-  border-color: #FFB200;
-}
-
-.btn-app-formacion:not(:disabled):not(.disabled):active, .btn-app-formacion:not(:disabled):not(.disabled).active,
-.show > .btn-app-formacion.dropdown-toggle {
-  color: #fff;
-  background-color: #cc8e00;
-  border-color: #bf8600;
-}
-
-.btn-app-formacion:not(:disabled):not(.disabled):active:focus, .btn-app-formacion:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-formacion.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(222, 157, 6, 0.5);
-}
-
-.btn-app-directorio {
-  color: #fff;
-  background-color: #A40353;
-  border-color: #A40353;
-}
-
-.btn-app-directorio:hover {
-  color: #fff;
-  background-color: #7e0240;
-  border-color: #72023a;
-}
-
-.btn-app-directorio:focus, .btn-app-directorio.focus {
-  box-shadow: 0 0 0 0.2rem rgba(178, 41, 109, 0.5);
-}
-
-.btn-app-directorio.disabled, .btn-app-directorio:disabled {
-  color: #fff;
-  background-color: #A40353;
-  border-color: #A40353;
-}
-
-.btn-app-directorio:not(:disabled):not(.disabled):active, .btn-app-directorio:not(:disabled):not(.disabled).active,
-.show > .btn-app-directorio.dropdown-toggle {
-  color: #fff;
-  background-color: #72023a;
-  border-color: #650233;
-}
-
-.btn-app-directorio:not(:disabled):not(.disabled):active:focus, .btn-app-directorio:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-directorio.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(178, 41, 109, 0.5);
-}
-
-.btn-app-crm {
-  color: #fff;
-  background-color: #004451;
-  border-color: #004451;
-}
-
-.btn-app-crm:hover {
-  color: #fff;
-  background-color: #00242b;
-  border-color: #00191e;
-}
-
-.btn-app-crm:focus, .btn-app-crm.focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 96, 107, 0.5);
-}
-
-.btn-app-crm.disabled, .btn-app-crm:disabled {
-  color: #fff;
-  background-color: #004451;
-  border-color: #004451;
-}
-
-.btn-app-crm:not(:disabled):not(.disabled):active, .btn-app-crm:not(:disabled):not(.disabled).active,
-.show > .btn-app-crm.dropdown-toggle {
-  color: #fff;
-  background-color: #00191e;
-  border-color: #000e11;
-}
-
-.btn-app-crm:not(:disabled):not(.disabled):active:focus, .btn-app-crm:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-crm.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 96, 107, 0.5);
 }
 
 .btn-app-analitica {
@@ -3267,38 +3097,140 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(212, 125, 82, 0.5);
 }
 
-.btn-app-reclamaciones {
-  color: #212529;
-  background-color: #E1AD0F;
-  border-color: #E1AD0F;
-}
-
-.btn-app-reclamaciones:hover {
+.btn-app-crm {
   color: #fff;
-  background-color: #bd910d;
-  border-color: #b1880c;
+  background-color: #004451;
+  border-color: #004451;
 }
 
-.btn-app-reclamaciones:focus, .btn-app-reclamaciones.focus {
-  box-shadow: 0 0 0 0.2rem rgba(196, 153, 19, 0.5);
-}
-
-.btn-app-reclamaciones.disabled, .btn-app-reclamaciones:disabled {
-  color: #212529;
-  background-color: #E1AD0F;
-  border-color: #E1AD0F;
-}
-
-.btn-app-reclamaciones:not(:disabled):not(.disabled):active, .btn-app-reclamaciones:not(:disabled):not(.disabled).active,
-.show > .btn-app-reclamaciones.dropdown-toggle {
+.btn-app-crm:hover {
   color: #fff;
-  background-color: #b1880c;
-  border-color: #a57f0b;
+  background-color: #00242b;
+  border-color: #00191e;
 }
 
-.btn-app-reclamaciones:not(:disabled):not(.disabled):active:focus, .btn-app-reclamaciones:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-reclamaciones.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(196, 153, 19, 0.5);
+.btn-app-crm:focus, .btn-app-crm.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 96, 107, 0.5);
+}
+
+.btn-app-crm.disabled, .btn-app-crm:disabled {
+  color: #fff;
+  background-color: #004451;
+  border-color: #004451;
+}
+
+.btn-app-crm:not(:disabled):not(.disabled):active, .btn-app-crm:not(:disabled):not(.disabled).active,
+.show > .btn-app-crm.dropdown-toggle {
+  color: #fff;
+  background-color: #00191e;
+  border-color: #000e11;
+}
+
+.btn-app-crm:not(:disabled):not(.disabled):active:focus, .btn-app-crm:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-crm.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 96, 107, 0.5);
+}
+
+.btn-app-directorio {
+  color: #fff;
+  background-color: #A40353;
+  border-color: #A40353;
+}
+
+.btn-app-directorio:hover {
+  color: #fff;
+  background-color: #7e0240;
+  border-color: #72023a;
+}
+
+.btn-app-directorio:focus, .btn-app-directorio.focus {
+  box-shadow: 0 0 0 0.2rem rgba(178, 41, 109, 0.5);
+}
+
+.btn-app-directorio.disabled, .btn-app-directorio:disabled {
+  color: #fff;
+  background-color: #A40353;
+  border-color: #A40353;
+}
+
+.btn-app-directorio:not(:disabled):not(.disabled):active, .btn-app-directorio:not(:disabled):not(.disabled).active,
+.show > .btn-app-directorio.dropdown-toggle {
+  color: #fff;
+  background-color: #72023a;
+  border-color: #650233;
+}
+
+.btn-app-directorio:not(:disabled):not(.disabled):active:focus, .btn-app-directorio:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-directorio.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(178, 41, 109, 0.5);
+}
+
+.btn-app-formacion {
+  color: #212529;
+  background-color: #FFB200;
+  border-color: #FFB200;
+}
+
+.btn-app-formacion:hover {
+  color: #212529;
+  background-color: #d99700;
+  border-color: #cc8e00;
+}
+
+.btn-app-formacion:focus, .btn-app-formacion.focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 157, 6, 0.5);
+}
+
+.btn-app-formacion.disabled, .btn-app-formacion:disabled {
+  color: #212529;
+  background-color: #FFB200;
+  border-color: #FFB200;
+}
+
+.btn-app-formacion:not(:disabled):not(.disabled):active, .btn-app-formacion:not(:disabled):not(.disabled).active,
+.show > .btn-app-formacion.dropdown-toggle {
+  color: #fff;
+  background-color: #cc8e00;
+  border-color: #bf8600;
+}
+
+.btn-app-formacion:not(:disabled):not(.disabled):active:focus, .btn-app-formacion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-formacion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 157, 6, 0.5);
+}
+
+.btn-app-juridico {
+  color: #fff;
+  background-color: #572364;
+  border-color: #572364;
+}
+
+.btn-app-juridico:hover {
+  color: #fff;
+  background-color: #3e1948;
+  border-color: #36163e;
+}
+
+.btn-app-juridico:focus, .btn-app-juridico.focus {
+  box-shadow: 0 0 0 0.2rem rgba(112, 68, 123, 0.5);
+}
+
+.btn-app-juridico.disabled, .btn-app-juridico:disabled {
+  color: #fff;
+  background-color: #572364;
+  border-color: #572364;
+}
+
+.btn-app-juridico:not(:disabled):not(.disabled):active, .btn-app-juridico:not(:disabled):not(.disabled).active,
+.show > .btn-app-juridico.dropdown-toggle {
+  color: #fff;
+  background-color: #36163e;
+  border-color: #2e1235;
+}
+
+.btn-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-app-juridico:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-juridico.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(112, 68, 123, 0.5);
 }
 
 .btn-app-higiene {
@@ -3369,40 +3301,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(159, 167, 10, 0.5);
 }
 
-.btn-app-vitaly {
-  color: #fff;
-  background-color: #029968;
-  border-color: #029968;
-}
-
-.btn-app-vitaly:hover {
-  color: #fff;
-  background-color: #02734e;
-  border-color: #016746;
-}
-
-.btn-app-vitaly:focus, .btn-app-vitaly.focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 168, 127, 0.5);
-}
-
-.btn-app-vitaly.disabled, .btn-app-vitaly:disabled {
-  color: #fff;
-  background-color: #029968;
-  border-color: #029968;
-}
-
-.btn-app-vitaly:not(:disabled):not(.disabled):active, .btn-app-vitaly:not(:disabled):not(.disabled).active,
-.show > .btn-app-vitaly.dropdown-toggle {
-  color: #fff;
-  background-color: #016746;
-  border-color: #015a3d;
-}
-
-.btn-app-vitaly:not(:disabled):not(.disabled):active:focus, .btn-app-vitaly:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-vitaly.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(40, 168, 127, 0.5);
-}
-
 .btn-app-opetec {
   color: #fff;
   background-color: #0103E4;
@@ -3471,38 +3369,140 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(82, 142, 194, 0.5);
 }
 
-.btn-app-juridico {
+.btn-app-reclamaciones {
+  color: #212529;
+  background-color: #E1AD0F;
+  border-color: #E1AD0F;
+}
+
+.btn-app-reclamaciones:hover {
   color: #fff;
-  background-color: #572364;
-  border-color: #572364;
+  background-color: #bd910d;
+  border-color: #b1880c;
 }
 
-.btn-app-juridico:hover {
+.btn-app-reclamaciones:focus, .btn-app-reclamaciones.focus {
+  box-shadow: 0 0 0 0.2rem rgba(196, 153, 19, 0.5);
+}
+
+.btn-app-reclamaciones.disabled, .btn-app-reclamaciones:disabled {
+  color: #212529;
+  background-color: #E1AD0F;
+  border-color: #E1AD0F;
+}
+
+.btn-app-reclamaciones:not(:disabled):not(.disabled):active, .btn-app-reclamaciones:not(:disabled):not(.disabled).active,
+.show > .btn-app-reclamaciones.dropdown-toggle {
   color: #fff;
-  background-color: #3e1948;
-  border-color: #36163e;
+  background-color: #b1880c;
+  border-color: #a57f0b;
 }
 
-.btn-app-juridico:focus, .btn-app-juridico.focus {
-  box-shadow: 0 0 0 0.2rem rgba(112, 68, 123, 0.5);
+.btn-app-reclamaciones:not(:disabled):not(.disabled):active:focus, .btn-app-reclamaciones:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-reclamaciones.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(196, 153, 19, 0.5);
 }
 
-.btn-app-juridico.disabled, .btn-app-juridico:disabled {
+.btn-app-totaldat {
   color: #fff;
-  background-color: #572364;
-  border-color: #572364;
+  background-color: #9C0052;
+  border-color: #9C0052;
 }
 
-.btn-app-juridico:not(:disabled):not(.disabled):active, .btn-app-juridico:not(:disabled):not(.disabled).active,
-.show > .btn-app-juridico.dropdown-toggle {
+.btn-app-totaldat:hover {
   color: #fff;
-  background-color: #36163e;
-  border-color: #2e1235;
+  background-color: #76003e;
+  border-color: #690037;
 }
 
-.btn-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-app-juridico:not(:disabled):not(.disabled).active:focus,
-.show > .btn-app-juridico.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(112, 68, 123, 0.5);
+.btn-app-totaldat:focus, .btn-app-totaldat.focus {
+  box-shadow: 0 0 0 0.2rem rgba(171, 38, 108, 0.5);
+}
+
+.btn-app-totaldat.disabled, .btn-app-totaldat:disabled {
+  color: #fff;
+  background-color: #9C0052;
+  border-color: #9C0052;
+}
+
+.btn-app-totaldat:not(:disabled):not(.disabled):active, .btn-app-totaldat:not(:disabled):not(.disabled).active,
+.show > .btn-app-totaldat.dropdown-toggle {
+  color: #fff;
+  background-color: #690037;
+  border-color: #5c0030;
+}
+
+.btn-app-totaldat:not(:disabled):not(.disabled):active:focus, .btn-app-totaldat:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-totaldat.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(171, 38, 108, 0.5);
+}
+
+.btn-app-vigilancia {
+  color: #fff;
+  background-color: #56c056;
+  border-color: #56c056;
+}
+
+.btn-app-vigilancia:hover {
+  color: #fff;
+  background-color: #41af41;
+  border-color: #3ea53e;
+}
+
+.btn-app-vigilancia:focus, .btn-app-vigilancia.focus {
+  box-shadow: 0 0 0 0.2rem rgba(111, 201, 111, 0.5);
+}
+
+.btn-app-vigilancia.disabled, .btn-app-vigilancia:disabled {
+  color: #fff;
+  background-color: #56c056;
+  border-color: #56c056;
+}
+
+.btn-app-vigilancia:not(:disabled):not(.disabled):active, .btn-app-vigilancia:not(:disabled):not(.disabled).active,
+.show > .btn-app-vigilancia.dropdown-toggle {
+  color: #fff;
+  background-color: #3ea53e;
+  border-color: #3a9c3a;
+}
+
+.btn-app-vigilancia:not(:disabled):not(.disabled):active:focus, .btn-app-vigilancia:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-vigilancia.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(111, 201, 111, 0.5);
+}
+
+.btn-app-vitaly {
+  color: #fff;
+  background-color: #029968;
+  border-color: #029968;
+}
+
+.btn-app-vitaly:hover {
+  color: #fff;
+  background-color: #02734e;
+  border-color: #016746;
+}
+
+.btn-app-vitaly:focus, .btn-app-vitaly.focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 168, 127, 0.5);
+}
+
+.btn-app-vitaly.disabled, .btn-app-vitaly:disabled {
+  color: #fff;
+  background-color: #029968;
+  border-color: #029968;
+}
+
+.btn-app-vitaly:not(:disabled):not(.disabled):active, .btn-app-vitaly:not(:disabled):not(.disabled).active,
+.show > .btn-app-vitaly.dropdown-toggle {
+  color: #fff;
+  background-color: #016746;
+  border-color: #015a3d;
+}
+
+.btn-app-vitaly:not(:disabled):not(.disabled):active:focus, .btn-app-vitaly:not(:disabled):not(.disabled).active:focus,
+.show > .btn-app-vitaly.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 168, 127, 0.5);
 }
 
 .btn-outline-primary {
@@ -3761,70 +3761,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.btn-outline-app-vigilancia {
-  color: #56c056;
-  border-color: #56c056;
-}
-
-.btn-outline-app-vigilancia:hover {
-  color: #fff;
-  background-color: #56c056;
-  border-color: #56c056;
-}
-
-.btn-outline-app-vigilancia:focus, .btn-outline-app-vigilancia.focus {
-  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
-}
-
-.btn-outline-app-vigilancia.disabled, .btn-outline-app-vigilancia:disabled {
-  color: #56c056;
-  background-color: transparent;
-}
-
-.btn-outline-app-vigilancia:not(:disabled):not(.disabled):active, .btn-outline-app-vigilancia:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-vigilancia.dropdown-toggle {
-  color: #fff;
-  background-color: #56c056;
-  border-color: #56c056;
-}
-
-.btn-outline-app-vigilancia:not(:disabled):not(.disabled):active:focus, .btn-outline-app-vigilancia:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-vigilancia.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
-}
-
-.btn-outline-app-totaldat {
-  color: #9C0052;
-  border-color: #9C0052;
-}
-
-.btn-outline-app-totaldat:hover {
-  color: #fff;
-  background-color: #9C0052;
-  border-color: #9C0052;
-}
-
-.btn-outline-app-totaldat:focus, .btn-outline-app-totaldat.focus {
-  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
-}
-
-.btn-outline-app-totaldat.disabled, .btn-outline-app-totaldat:disabled {
-  color: #9C0052;
-  background-color: transparent;
-}
-
-.btn-outline-app-totaldat:not(:disabled):not(.disabled):active, .btn-outline-app-totaldat:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-totaldat.dropdown-toggle {
-  color: #fff;
-  background-color: #9C0052;
-  border-color: #9C0052;
-}
-
-.btn-outline-app-totaldat:not(:disabled):not(.disabled):active:focus, .btn-outline-app-totaldat:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-totaldat.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
-}
-
 .btn-outline-app-administracion {
   color: #663366;
   border-color: #663366;
@@ -3855,102 +3791,6 @@ fieldset:disabled a.btn {
 .btn-outline-app-administracion:not(:disabled):not(.disabled):active:focus, .btn-outline-app-administracion:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-app-administracion.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(102, 51, 102, 0.5);
-}
-
-.btn-outline-app-formacion {
-  color: #FFB200;
-  border-color: #FFB200;
-}
-
-.btn-outline-app-formacion:hover {
-  color: #212529;
-  background-color: #FFB200;
-  border-color: #FFB200;
-}
-
-.btn-outline-app-formacion:focus, .btn-outline-app-formacion.focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
-}
-
-.btn-outline-app-formacion.disabled, .btn-outline-app-formacion:disabled {
-  color: #FFB200;
-  background-color: transparent;
-}
-
-.btn-outline-app-formacion:not(:disabled):not(.disabled):active, .btn-outline-app-formacion:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-formacion.dropdown-toggle {
-  color: #212529;
-  background-color: #FFB200;
-  border-color: #FFB200;
-}
-
-.btn-outline-app-formacion:not(:disabled):not(.disabled):active:focus, .btn-outline-app-formacion:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-formacion.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
-}
-
-.btn-outline-app-directorio {
-  color: #A40353;
-  border-color: #A40353;
-}
-
-.btn-outline-app-directorio:hover {
-  color: #fff;
-  background-color: #A40353;
-  border-color: #A40353;
-}
-
-.btn-outline-app-directorio:focus, .btn-outline-app-directorio.focus {
-  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
-}
-
-.btn-outline-app-directorio.disabled, .btn-outline-app-directorio:disabled {
-  color: #A40353;
-  background-color: transparent;
-}
-
-.btn-outline-app-directorio:not(:disabled):not(.disabled):active, .btn-outline-app-directorio:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-directorio.dropdown-toggle {
-  color: #fff;
-  background-color: #A40353;
-  border-color: #A40353;
-}
-
-.btn-outline-app-directorio:not(:disabled):not(.disabled):active:focus, .btn-outline-app-directorio:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-directorio.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
-}
-
-.btn-outline-app-crm {
-  color: #004451;
-  border-color: #004451;
-}
-
-.btn-outline-app-crm:hover {
-  color: #fff;
-  background-color: #004451;
-  border-color: #004451;
-}
-
-.btn-outline-app-crm:focus, .btn-outline-app-crm.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
-}
-
-.btn-outline-app-crm.disabled, .btn-outline-app-crm:disabled {
-  color: #004451;
-  background-color: transparent;
-}
-
-.btn-outline-app-crm:not(:disabled):not(.disabled):active, .btn-outline-app-crm:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-crm.dropdown-toggle {
-  color: #fff;
-  background-color: #004451;
-  border-color: #004451;
-}
-
-.btn-outline-app-crm:not(:disabled):not(.disabled):active:focus, .btn-outline-app-crm:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-crm.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
 }
 
 .btn-outline-app-analitica {
@@ -4081,36 +3921,132 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(204, 102, 51, 0.5);
 }
 
-.btn-outline-app-reclamaciones {
-  color: #E1AD0F;
-  border-color: #E1AD0F;
+.btn-outline-app-crm {
+  color: #004451;
+  border-color: #004451;
 }
 
-.btn-outline-app-reclamaciones:hover {
-  color: #212529;
-  background-color: #E1AD0F;
-  border-color: #E1AD0F;
+.btn-outline-app-crm:hover {
+  color: #fff;
+  background-color: #004451;
+  border-color: #004451;
 }
 
-.btn-outline-app-reclamaciones:focus, .btn-outline-app-reclamaciones.focus {
-  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
+.btn-outline-app-crm:focus, .btn-outline-app-crm.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
 }
 
-.btn-outline-app-reclamaciones.disabled, .btn-outline-app-reclamaciones:disabled {
-  color: #E1AD0F;
+.btn-outline-app-crm.disabled, .btn-outline-app-crm:disabled {
+  color: #004451;
   background-color: transparent;
 }
 
-.btn-outline-app-reclamaciones:not(:disabled):not(.disabled):active, .btn-outline-app-reclamaciones:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-reclamaciones.dropdown-toggle {
-  color: #212529;
-  background-color: #E1AD0F;
-  border-color: #E1AD0F;
+.btn-outline-app-crm:not(:disabled):not(.disabled):active, .btn-outline-app-crm:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-crm.dropdown-toggle {
+  color: #fff;
+  background-color: #004451;
+  border-color: #004451;
 }
 
-.btn-outline-app-reclamaciones:not(:disabled):not(.disabled):active:focus, .btn-outline-app-reclamaciones:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-reclamaciones.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
+.btn-outline-app-crm:not(:disabled):not(.disabled):active:focus, .btn-outline-app-crm:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-crm.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
+}
+
+.btn-outline-app-directorio {
+  color: #A40353;
+  border-color: #A40353;
+}
+
+.btn-outline-app-directorio:hover {
+  color: #fff;
+  background-color: #A40353;
+  border-color: #A40353;
+}
+
+.btn-outline-app-directorio:focus, .btn-outline-app-directorio.focus {
+  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
+}
+
+.btn-outline-app-directorio.disabled, .btn-outline-app-directorio:disabled {
+  color: #A40353;
+  background-color: transparent;
+}
+
+.btn-outline-app-directorio:not(:disabled):not(.disabled):active, .btn-outline-app-directorio:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-directorio.dropdown-toggle {
+  color: #fff;
+  background-color: #A40353;
+  border-color: #A40353;
+}
+
+.btn-outline-app-directorio:not(:disabled):not(.disabled):active:focus, .btn-outline-app-directorio:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-directorio.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
+}
+
+.btn-outline-app-formacion {
+  color: #FFB200;
+  border-color: #FFB200;
+}
+
+.btn-outline-app-formacion:hover {
+  color: #212529;
+  background-color: #FFB200;
+  border-color: #FFB200;
+}
+
+.btn-outline-app-formacion:focus, .btn-outline-app-formacion.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
+}
+
+.btn-outline-app-formacion.disabled, .btn-outline-app-formacion:disabled {
+  color: #FFB200;
+  background-color: transparent;
+}
+
+.btn-outline-app-formacion:not(:disabled):not(.disabled):active, .btn-outline-app-formacion:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-formacion.dropdown-toggle {
+  color: #212529;
+  background-color: #FFB200;
+  border-color: #FFB200;
+}
+
+.btn-outline-app-formacion:not(:disabled):not(.disabled):active:focus, .btn-outline-app-formacion:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-formacion.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
+}
+
+.btn-outline-app-juridico {
+  color: #572364;
+  border-color: #572364;
+}
+
+.btn-outline-app-juridico:hover {
+  color: #fff;
+  background-color: #572364;
+  border-color: #572364;
+}
+
+.btn-outline-app-juridico:focus, .btn-outline-app-juridico.focus {
+  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
+}
+
+.btn-outline-app-juridico.disabled, .btn-outline-app-juridico:disabled {
+  color: #572364;
+  background-color: transparent;
+}
+
+.btn-outline-app-juridico:not(:disabled):not(.disabled):active, .btn-outline-app-juridico:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-juridico.dropdown-toggle {
+  color: #fff;
+  background-color: #572364;
+  border-color: #572364;
+}
+
+.btn-outline-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-outline-app-juridico:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-juridico.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
 }
 
 .btn-outline-app-higiene {
@@ -4177,38 +4113,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(181, 190, 5, 0.5);
 }
 
-.btn-outline-app-vitaly {
-  color: #029968;
-  border-color: #029968;
-}
-
-.btn-outline-app-vitaly:hover {
-  color: #fff;
-  background-color: #029968;
-  border-color: #029968;
-}
-
-.btn-outline-app-vitaly:focus, .btn-outline-app-vitaly.focus {
-  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
-}
-
-.btn-outline-app-vitaly.disabled, .btn-outline-app-vitaly:disabled {
-  color: #029968;
-  background-color: transparent;
-}
-
-.btn-outline-app-vitaly:not(:disabled):not(.disabled):active, .btn-outline-app-vitaly:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-vitaly.dropdown-toggle {
-  color: #fff;
-  background-color: #029968;
-  border-color: #029968;
-}
-
-.btn-outline-app-vitaly:not(:disabled):not(.disabled):active:focus, .btn-outline-app-vitaly:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-vitaly.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
-}
-
 .btn-outline-app-opetec {
   color: #0103E4;
   border-color: #0103E4;
@@ -4273,36 +4177,132 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
 }
 
-.btn-outline-app-juridico {
-  color: #572364;
-  border-color: #572364;
+.btn-outline-app-reclamaciones {
+  color: #E1AD0F;
+  border-color: #E1AD0F;
 }
 
-.btn-outline-app-juridico:hover {
-  color: #fff;
-  background-color: #572364;
-  border-color: #572364;
+.btn-outline-app-reclamaciones:hover {
+  color: #212529;
+  background-color: #E1AD0F;
+  border-color: #E1AD0F;
 }
 
-.btn-outline-app-juridico:focus, .btn-outline-app-juridico.focus {
-  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
+.btn-outline-app-reclamaciones:focus, .btn-outline-app-reclamaciones.focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
 }
 
-.btn-outline-app-juridico.disabled, .btn-outline-app-juridico:disabled {
-  color: #572364;
+.btn-outline-app-reclamaciones.disabled, .btn-outline-app-reclamaciones:disabled {
+  color: #E1AD0F;
   background-color: transparent;
 }
 
-.btn-outline-app-juridico:not(:disabled):not(.disabled):active, .btn-outline-app-juridico:not(:disabled):not(.disabled).active,
-.show > .btn-outline-app-juridico.dropdown-toggle {
-  color: #fff;
-  background-color: #572364;
-  border-color: #572364;
+.btn-outline-app-reclamaciones:not(:disabled):not(.disabled):active, .btn-outline-app-reclamaciones:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-reclamaciones.dropdown-toggle {
+  color: #212529;
+  background-color: #E1AD0F;
+  border-color: #E1AD0F;
 }
 
-.btn-outline-app-juridico:not(:disabled):not(.disabled):active:focus, .btn-outline-app-juridico:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-app-juridico.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
+.btn-outline-app-reclamaciones:not(:disabled):not(.disabled):active:focus, .btn-outline-app-reclamaciones:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-reclamaciones.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
+}
+
+.btn-outline-app-totaldat {
+  color: #9C0052;
+  border-color: #9C0052;
+}
+
+.btn-outline-app-totaldat:hover {
+  color: #fff;
+  background-color: #9C0052;
+  border-color: #9C0052;
+}
+
+.btn-outline-app-totaldat:focus, .btn-outline-app-totaldat.focus {
+  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
+}
+
+.btn-outline-app-totaldat.disabled, .btn-outline-app-totaldat:disabled {
+  color: #9C0052;
+  background-color: transparent;
+}
+
+.btn-outline-app-totaldat:not(:disabled):not(.disabled):active, .btn-outline-app-totaldat:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-totaldat.dropdown-toggle {
+  color: #fff;
+  background-color: #9C0052;
+  border-color: #9C0052;
+}
+
+.btn-outline-app-totaldat:not(:disabled):not(.disabled):active:focus, .btn-outline-app-totaldat:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-totaldat.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
+}
+
+.btn-outline-app-vigilancia {
+  color: #56c056;
+  border-color: #56c056;
+}
+
+.btn-outline-app-vigilancia:hover {
+  color: #fff;
+  background-color: #56c056;
+  border-color: #56c056;
+}
+
+.btn-outline-app-vigilancia:focus, .btn-outline-app-vigilancia.focus {
+  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
+}
+
+.btn-outline-app-vigilancia.disabled, .btn-outline-app-vigilancia:disabled {
+  color: #56c056;
+  background-color: transparent;
+}
+
+.btn-outline-app-vigilancia:not(:disabled):not(.disabled):active, .btn-outline-app-vigilancia:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-vigilancia.dropdown-toggle {
+  color: #fff;
+  background-color: #56c056;
+  border-color: #56c056;
+}
+
+.btn-outline-app-vigilancia:not(:disabled):not(.disabled):active:focus, .btn-outline-app-vigilancia:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-vigilancia.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
+}
+
+.btn-outline-app-vitaly {
+  color: #029968;
+  border-color: #029968;
+}
+
+.btn-outline-app-vitaly:hover {
+  color: #fff;
+  background-color: #029968;
+  border-color: #029968;
+}
+
+.btn-outline-app-vitaly:focus, .btn-outline-app-vitaly.focus {
+  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
+}
+
+.btn-outline-app-vitaly.disabled, .btn-outline-app-vitaly:disabled {
+  color: #029968;
+  background-color: transparent;
+}
+
+.btn-outline-app-vitaly:not(:disabled):not(.disabled):active, .btn-outline-app-vitaly:not(:disabled):not(.disabled).active,
+.show > .btn-outline-app-vitaly.dropdown-toggle {
+  color: #fff;
+  background-color: #029968;
+  border-color: #029968;
+}
+
+.btn-outline-app-vitaly:not(:disabled):not(.disabled):active:focus, .btn-outline-app-vitaly:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-app-vitaly.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
 }
 
 .btn-link {
@@ -6355,36 +6355,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.badge-app-vigilancia {
-  color: #fff;
-  background-color: #56c056;
-}
-
-a.badge-app-vigilancia:hover, a.badge-app-vigilancia:focus {
-  color: #fff;
-  background-color: #3ea53e;
-}
-
-a.badge-app-vigilancia:focus, a.badge-app-vigilancia.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
-}
-
-.badge-app-totaldat {
-  color: #fff;
-  background-color: #9C0052;
-}
-
-a.badge-app-totaldat:hover, a.badge-app-totaldat:focus {
-  color: #fff;
-  background-color: #690037;
-}
-
-a.badge-app-totaldat:focus, a.badge-app-totaldat.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
-}
-
 .badge-app-administracion {
   color: #fff;
   background-color: #663366;
@@ -6398,51 +6368,6 @@ a.badge-app-administracion:hover, a.badge-app-administracion:focus {
 a.badge-app-administracion:focus, a.badge-app-administracion.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(102, 51, 102, 0.5);
-}
-
-.badge-app-formacion {
-  color: #212529;
-  background-color: #FFB200;
-}
-
-a.badge-app-formacion:hover, a.badge-app-formacion:focus {
-  color: #212529;
-  background-color: #cc8e00;
-}
-
-a.badge-app-formacion:focus, a.badge-app-formacion.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
-}
-
-.badge-app-directorio {
-  color: #fff;
-  background-color: #A40353;
-}
-
-a.badge-app-directorio:hover, a.badge-app-directorio:focus {
-  color: #fff;
-  background-color: #72023a;
-}
-
-a.badge-app-directorio:focus, a.badge-app-directorio.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
-}
-
-.badge-app-crm {
-  color: #fff;
-  background-color: #004451;
-}
-
-a.badge-app-crm:hover, a.badge-app-crm:focus {
-  color: #fff;
-  background-color: #00191e;
-}
-
-a.badge-app-crm:focus, a.badge-app-crm.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
 }
 
 .badge-app-analitica {
@@ -6505,19 +6430,64 @@ a.badge-app-cobros:focus, a.badge-app-cobros.focus {
   box-shadow: 0 0 0 0.2rem rgba(204, 102, 51, 0.5);
 }
 
-.badge-app-reclamaciones {
-  color: #212529;
-  background-color: #E1AD0F;
+.badge-app-crm {
+  color: #fff;
+  background-color: #004451;
 }
 
-a.badge-app-reclamaciones:hover, a.badge-app-reclamaciones:focus {
-  color: #212529;
-  background-color: #b1880c;
+a.badge-app-crm:hover, a.badge-app-crm:focus {
+  color: #fff;
+  background-color: #00191e;
 }
 
-a.badge-app-reclamaciones:focus, a.badge-app-reclamaciones.focus {
+a.badge-app-crm:focus, a.badge-app-crm.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 68, 81, 0.5);
+}
+
+.badge-app-directorio {
+  color: #fff;
+  background-color: #A40353;
+}
+
+a.badge-app-directorio:hover, a.badge-app-directorio:focus {
+  color: #fff;
+  background-color: #72023a;
+}
+
+a.badge-app-directorio:focus, a.badge-app-directorio.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(164, 3, 83, 0.5);
+}
+
+.badge-app-formacion {
+  color: #212529;
+  background-color: #FFB200;
+}
+
+a.badge-app-formacion:hover, a.badge-app-formacion:focus {
+  color: #212529;
+  background-color: #cc8e00;
+}
+
+a.badge-app-formacion:focus, a.badge-app-formacion.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 178, 0, 0.5);
+}
+
+.badge-app-juridico {
+  color: #fff;
+  background-color: #572364;
+}
+
+a.badge-app-juridico:hover, a.badge-app-juridico:focus {
+  color: #fff;
+  background-color: #36163e;
+}
+
+a.badge-app-juridico:focus, a.badge-app-juridico.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
 }
 
 .badge-app-higiene {
@@ -6550,21 +6520,6 @@ a.badge-app-it:focus, a.badge-app-it.focus {
   box-shadow: 0 0 0 0.2rem rgba(181, 190, 5, 0.5);
 }
 
-.badge-app-vitaly {
-  color: #fff;
-  background-color: #029968;
-}
-
-a.badge-app-vitaly:hover, a.badge-app-vitaly:focus {
-  color: #fff;
-  background-color: #016746;
-}
-
-a.badge-app-vitaly:focus, a.badge-app-vitaly.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
-}
-
 .badge-app-opetec {
   color: #fff;
   background-color: #0103E4;
@@ -6595,19 +6550,64 @@ a.badge-app-prevencion:focus, a.badge-app-prevencion.focus {
   box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5);
 }
 
-.badge-app-juridico {
-  color: #fff;
-  background-color: #572364;
+.badge-app-reclamaciones {
+  color: #212529;
+  background-color: #E1AD0F;
 }
 
-a.badge-app-juridico:hover, a.badge-app-juridico:focus {
-  color: #fff;
-  background-color: #36163e;
+a.badge-app-reclamaciones:hover, a.badge-app-reclamaciones:focus {
+  color: #212529;
+  background-color: #b1880c;
 }
 
-a.badge-app-juridico:focus, a.badge-app-juridico.focus {
+a.badge-app-reclamaciones:focus, a.badge-app-reclamaciones.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(87, 35, 100, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(225, 173, 15, 0.5);
+}
+
+.badge-app-totaldat {
+  color: #fff;
+  background-color: #9C0052;
+}
+
+a.badge-app-totaldat:hover, a.badge-app-totaldat:focus {
+  color: #fff;
+  background-color: #690037;
+}
+
+a.badge-app-totaldat:focus, a.badge-app-totaldat.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(156, 0, 82, 0.5);
+}
+
+.badge-app-vigilancia {
+  color: #fff;
+  background-color: #56c056;
+}
+
+a.badge-app-vigilancia:hover, a.badge-app-vigilancia:focus {
+  color: #fff;
+  background-color: #3ea53e;
+}
+
+a.badge-app-vigilancia:focus, a.badge-app-vigilancia.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(86, 192, 86, 0.5);
+}
+
+.badge-app-vitaly {
+  color: #fff;
+  background-color: #029968;
+}
+
+a.badge-app-vitaly:hover, a.badge-app-vitaly:focus {
+  color: #fff;
+  background-color: #016746;
+}
+
+a.badge-app-vitaly:focus, a.badge-app-vitaly.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(2, 153, 104, 0.5);
 }
 
 .jumbotron {
@@ -6769,34 +6769,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   color: #040505;
 }
 
-.alert-app-vigilancia {
-  color: #2d642d;
-  background-color: #ddf2dd;
-  border-color: #d0edd0;
-}
-
-.alert-app-vigilancia hr {
-  border-top-color: #bee6be;
-}
-
-.alert-app-vigilancia .alert-link {
-  color: #1d411d;
-}
-
-.alert-app-totaldat {
-  color: #51002b;
-  background-color: #ebccdc;
-  border-color: #e3b8cf;
-}
-
-.alert-app-totaldat hr {
-  border-top-color: #dca6c3;
-}
-
-.alert-app-totaldat .alert-link {
-  color: #1e0010;
-}
-
 .alert-app-administracion {
   color: #351b35;
   background-color: #e0d6e0;
@@ -6809,48 +6781,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
 
 .alert-app-administracion .alert-link {
   color: #130a13;
-}
-
-.alert-app-formacion {
-  color: #855d00;
-  background-color: #fff0cc;
-  border-color: #ffe9b8;
-}
-
-.alert-app-formacion hr {
-  border-top-color: #ffe19f;
-}
-
-.alert-app-formacion .alert-link {
-  color: #523900;
-}
-
-.alert-app-directorio {
-  color: #55022b;
-  background-color: #edcddd;
-  border-color: #e6b8cf;
-}
-
-.alert-app-directorio hr {
-  border-top-color: #dfa5c2;
-}
-
-.alert-app-directorio .alert-link {
-  color: #230112;
-}
-
-.alert-app-crm {
-  color: #00232a;
-  background-color: #ccdadc;
-  border-color: #b8cbce;
-}
-
-.alert-app-crm hr {
-  border-top-color: #a9c0c4;
-}
-
-.alert-app-crm .alert-link {
-  color: black;
 }
 
 .alert-app-analitica {
@@ -6909,18 +6839,60 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   color: #412111;
 }
 
-.alert-app-reclamaciones {
-  color: #755a08;
-  background-color: #f9efcf;
-  border-color: #f7e8bc;
+.alert-app-crm {
+  color: #00232a;
+  background-color: #ccdadc;
+  border-color: #b8cbce;
 }
 
-.alert-app-reclamaciones hr {
-  border-top-color: #f4e0a5;
+.alert-app-crm hr {
+  border-top-color: #a9c0c4;
 }
 
-.alert-app-reclamaciones .alert-link {
-  color: #453505;
+.alert-app-crm .alert-link {
+  color: black;
+}
+
+.alert-app-directorio {
+  color: #55022b;
+  background-color: #edcddd;
+  border-color: #e6b8cf;
+}
+
+.alert-app-directorio hr {
+  border-top-color: #dfa5c2;
+}
+
+.alert-app-directorio .alert-link {
+  color: #230112;
+}
+
+.alert-app-formacion {
+  color: #855d00;
+  background-color: #fff0cc;
+  border-color: #ffe9b8;
+}
+
+.alert-app-formacion hr {
+  border-top-color: #ffe19f;
+}
+
+.alert-app-formacion .alert-link {
+  color: #523900;
+}
+
+.alert-app-juridico {
+  color: #2d1234;
+  background-color: #ddd3e0;
+  border-color: #d0c1d4;
+}
+
+.alert-app-juridico hr {
+  border-top-color: #c5b2ca;
+}
+
+.alert-app-juridico .alert-link {
+  color: #0c050e;
 }
 
 .alert-app-higiene {
@@ -6951,20 +6923,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   color: #2f3202;
 }
 
-.alert-app-vitaly {
-  color: #015036;
-  background-color: #ccebe1;
-  border-color: #b8e2d5;
-}
-
-.alert-app-vitaly hr {
-  border-top-color: #a6dbca;
-}
-
-.alert-app-vitaly .alert-link {
-  color: #001e14;
-}
-
 .alert-app-opetec {
   color: #010277;
   background-color: #cccdfa;
@@ -6993,18 +6951,60 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   color: #102537;
 }
 
-.alert-app-juridico {
-  color: #2d1234;
-  background-color: #ddd3e0;
-  border-color: #d0c1d4;
+.alert-app-reclamaciones {
+  color: #755a08;
+  background-color: #f9efcf;
+  border-color: #f7e8bc;
 }
 
-.alert-app-juridico hr {
-  border-top-color: #c5b2ca;
+.alert-app-reclamaciones hr {
+  border-top-color: #f4e0a5;
 }
 
-.alert-app-juridico .alert-link {
-  color: #0c050e;
+.alert-app-reclamaciones .alert-link {
+  color: #453505;
+}
+
+.alert-app-totaldat {
+  color: #51002b;
+  background-color: #ebccdc;
+  border-color: #e3b8cf;
+}
+
+.alert-app-totaldat hr {
+  border-top-color: #dca6c3;
+}
+
+.alert-app-totaldat .alert-link {
+  color: #1e0010;
+}
+
+.alert-app-vigilancia {
+  color: #2d642d;
+  background-color: #ddf2dd;
+  border-color: #d0edd0;
+}
+
+.alert-app-vigilancia hr {
+  border-top-color: #bee6be;
+}
+
+.alert-app-vigilancia .alert-link {
+  color: #1d411d;
+}
+
+.alert-app-vitaly {
+  color: #015036;
+  background-color: #ccebe1;
+  border-color: #b8e2d5;
+}
+
+.alert-app-vitaly hr {
+  border-top-color: #a6dbca;
+}
+
+.alert-app-vitaly .alert-link {
+  color: #001e14;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -7388,38 +7388,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   border-color: #1b1e21;
 }
 
-.list-group-item-app-vigilancia {
-  color: #2d642d;
-  background-color: #d0edd0;
-}
-
-.list-group-item-app-vigilancia.list-group-item-action:hover, .list-group-item-app-vigilancia.list-group-item-action:focus {
-  color: #2d642d;
-  background-color: #bee6be;
-}
-
-.list-group-item-app-vigilancia.list-group-item-action.active {
-  color: #fff;
-  background-color: #2d642d;
-  border-color: #2d642d;
-}
-
-.list-group-item-app-totaldat {
-  color: #51002b;
-  background-color: #e3b8cf;
-}
-
-.list-group-item-app-totaldat.list-group-item-action:hover, .list-group-item-app-totaldat.list-group-item-action:focus {
-  color: #51002b;
-  background-color: #dca6c3;
-}
-
-.list-group-item-app-totaldat.list-group-item-action.active {
-  color: #fff;
-  background-color: #51002b;
-  border-color: #51002b;
-}
-
 .list-group-item-app-administracion {
   color: #351b35;
   background-color: #d4c6d4;
@@ -7434,54 +7402,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   color: #fff;
   background-color: #351b35;
   border-color: #351b35;
-}
-
-.list-group-item-app-formacion {
-  color: #855d00;
-  background-color: #ffe9b8;
-}
-
-.list-group-item-app-formacion.list-group-item-action:hover, .list-group-item-app-formacion.list-group-item-action:focus {
-  color: #855d00;
-  background-color: #ffe19f;
-}
-
-.list-group-item-app-formacion.list-group-item-action.active {
-  color: #fff;
-  background-color: #855d00;
-  border-color: #855d00;
-}
-
-.list-group-item-app-directorio {
-  color: #55022b;
-  background-color: #e6b8cf;
-}
-
-.list-group-item-app-directorio.list-group-item-action:hover, .list-group-item-app-directorio.list-group-item-action:focus {
-  color: #55022b;
-  background-color: #dfa5c2;
-}
-
-.list-group-item-app-directorio.list-group-item-action.active {
-  color: #fff;
-  background-color: #55022b;
-  border-color: #55022b;
-}
-
-.list-group-item-app-crm {
-  color: #00232a;
-  background-color: #b8cbce;
-}
-
-.list-group-item-app-crm.list-group-item-action:hover, .list-group-item-app-crm.list-group-item-action:focus {
-  color: #00232a;
-  background-color: #a9c0c4;
-}
-
-.list-group-item-app-crm.list-group-item-action.active {
-  color: #fff;
-  background-color: #00232a;
-  border-color: #00232a;
 }
 
 .list-group-item-app-analitica {
@@ -7548,20 +7468,68 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   border-color: #6a351b;
 }
 
-.list-group-item-app-reclamaciones {
-  color: #755a08;
-  background-color: #f7e8bc;
+.list-group-item-app-crm {
+  color: #00232a;
+  background-color: #b8cbce;
 }
 
-.list-group-item-app-reclamaciones.list-group-item-action:hover, .list-group-item-app-reclamaciones.list-group-item-action:focus {
-  color: #755a08;
-  background-color: #f4e0a5;
+.list-group-item-app-crm.list-group-item-action:hover, .list-group-item-app-crm.list-group-item-action:focus {
+  color: #00232a;
+  background-color: #a9c0c4;
 }
 
-.list-group-item-app-reclamaciones.list-group-item-action.active {
+.list-group-item-app-crm.list-group-item-action.active {
   color: #fff;
-  background-color: #755a08;
-  border-color: #755a08;
+  background-color: #00232a;
+  border-color: #00232a;
+}
+
+.list-group-item-app-directorio {
+  color: #55022b;
+  background-color: #e6b8cf;
+}
+
+.list-group-item-app-directorio.list-group-item-action:hover, .list-group-item-app-directorio.list-group-item-action:focus {
+  color: #55022b;
+  background-color: #dfa5c2;
+}
+
+.list-group-item-app-directorio.list-group-item-action.active {
+  color: #fff;
+  background-color: #55022b;
+  border-color: #55022b;
+}
+
+.list-group-item-app-formacion {
+  color: #855d00;
+  background-color: #ffe9b8;
+}
+
+.list-group-item-app-formacion.list-group-item-action:hover, .list-group-item-app-formacion.list-group-item-action:focus {
+  color: #855d00;
+  background-color: #ffe19f;
+}
+
+.list-group-item-app-formacion.list-group-item-action.active {
+  color: #fff;
+  background-color: #855d00;
+  border-color: #855d00;
+}
+
+.list-group-item-app-juridico {
+  color: #2d1234;
+  background-color: #d0c1d4;
+}
+
+.list-group-item-app-juridico.list-group-item-action:hover, .list-group-item-app-juridico.list-group-item-action:focus {
+  color: #2d1234;
+  background-color: #c5b2ca;
+}
+
+.list-group-item-app-juridico.list-group-item-action.active {
+  color: #fff;
+  background-color: #2d1234;
+  border-color: #2d1234;
 }
 
 .list-group-item-app-higiene {
@@ -7596,22 +7564,6 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   border-color: #5e6303;
 }
 
-.list-group-item-app-vitaly {
-  color: #015036;
-  background-color: #b8e2d5;
-}
-
-.list-group-item-app-vitaly.list-group-item-action:hover, .list-group-item-app-vitaly.list-group-item-action:focus {
-  color: #015036;
-  background-color: #a6dbca;
-}
-
-.list-group-item-app-vitaly.list-group-item-action.active {
-  color: #fff;
-  background-color: #015036;
-  border-color: #015036;
-}
-
 .list-group-item-app-opetec {
   color: #010277;
   background-color: #b8b8f7;
@@ -7644,20 +7596,68 @@ a.badge-app-juridico:focus, a.badge-app-juridico.focus {
   border-color: #1b3f5f;
 }
 
-.list-group-item-app-juridico {
-  color: #2d1234;
-  background-color: #d0c1d4;
+.list-group-item-app-reclamaciones {
+  color: #755a08;
+  background-color: #f7e8bc;
 }
 
-.list-group-item-app-juridico.list-group-item-action:hover, .list-group-item-app-juridico.list-group-item-action:focus {
-  color: #2d1234;
-  background-color: #c5b2ca;
+.list-group-item-app-reclamaciones.list-group-item-action:hover, .list-group-item-app-reclamaciones.list-group-item-action:focus {
+  color: #755a08;
+  background-color: #f4e0a5;
 }
 
-.list-group-item-app-juridico.list-group-item-action.active {
+.list-group-item-app-reclamaciones.list-group-item-action.active {
   color: #fff;
-  background-color: #2d1234;
-  border-color: #2d1234;
+  background-color: #755a08;
+  border-color: #755a08;
+}
+
+.list-group-item-app-totaldat {
+  color: #51002b;
+  background-color: #e3b8cf;
+}
+
+.list-group-item-app-totaldat.list-group-item-action:hover, .list-group-item-app-totaldat.list-group-item-action:focus {
+  color: #51002b;
+  background-color: #dca6c3;
+}
+
+.list-group-item-app-totaldat.list-group-item-action.active {
+  color: #fff;
+  background-color: #51002b;
+  border-color: #51002b;
+}
+
+.list-group-item-app-vigilancia {
+  color: #2d642d;
+  background-color: #d0edd0;
+}
+
+.list-group-item-app-vigilancia.list-group-item-action:hover, .list-group-item-app-vigilancia.list-group-item-action:focus {
+  color: #2d642d;
+  background-color: #bee6be;
+}
+
+.list-group-item-app-vigilancia.list-group-item-action.active {
+  color: #fff;
+  background-color: #2d642d;
+  border-color: #2d642d;
+}
+
+.list-group-item-app-vitaly {
+  color: #015036;
+  background-color: #b8e2d5;
+}
+
+.list-group-item-app-vitaly.list-group-item-action:hover, .list-group-item-app-vitaly.list-group-item-action:focus {
+  color: #015036;
+  background-color: #a6dbca;
+}
+
+.list-group-item-app-vitaly.list-group-item-action.active {
+  color: #fff;
+  background-color: #015036;
+  border-color: #015036;
 }
 
 .close {
@@ -8587,26 +8587,6 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
-.bg-app-vigilancia {
-  background-color: #56c056 !important;
-}
-
-a.bg-app-vigilancia:hover, a.bg-app-vigilancia:focus,
-button.bg-app-vigilancia:hover,
-button.bg-app-vigilancia:focus {
-  background-color: #3ea53e !important;
-}
-
-.bg-app-totaldat {
-  background-color: #9C0052 !important;
-}
-
-a.bg-app-totaldat:hover, a.bg-app-totaldat:focus,
-button.bg-app-totaldat:hover,
-button.bg-app-totaldat:focus {
-  background-color: #690037 !important;
-}
-
 .bg-app-administracion {
   background-color: #663366 !important;
 }
@@ -8615,36 +8595,6 @@ a.bg-app-administracion:hover, a.bg-app-administracion:focus,
 button.bg-app-administracion:hover,
 button.bg-app-administracion:focus {
   background-color: #442244 !important;
-}
-
-.bg-app-formacion {
-  background-color: #FFB200 !important;
-}
-
-a.bg-app-formacion:hover, a.bg-app-formacion:focus,
-button.bg-app-formacion:hover,
-button.bg-app-formacion:focus {
-  background-color: #cc8e00 !important;
-}
-
-.bg-app-directorio {
-  background-color: #A40353 !important;
-}
-
-a.bg-app-directorio:hover, a.bg-app-directorio:focus,
-button.bg-app-directorio:hover,
-button.bg-app-directorio:focus {
-  background-color: #72023a !important;
-}
-
-.bg-app-crm {
-  background-color: #004451 !important;
-}
-
-a.bg-app-crm:hover, a.bg-app-crm:focus,
-button.bg-app-crm:hover,
-button.bg-app-crm:focus {
-  background-color: #00191e !important;
 }
 
 .bg-app-analitica {
@@ -8687,14 +8637,44 @@ button.bg-app-cobros:focus {
   background-color: #a35229 !important;
 }
 
-.bg-app-reclamaciones {
-  background-color: #E1AD0F !important;
+.bg-app-crm {
+  background-color: #004451 !important;
 }
 
-a.bg-app-reclamaciones:hover, a.bg-app-reclamaciones:focus,
-button.bg-app-reclamaciones:hover,
-button.bg-app-reclamaciones:focus {
-  background-color: #b1880c !important;
+a.bg-app-crm:hover, a.bg-app-crm:focus,
+button.bg-app-crm:hover,
+button.bg-app-crm:focus {
+  background-color: #00191e !important;
+}
+
+.bg-app-directorio {
+  background-color: #A40353 !important;
+}
+
+a.bg-app-directorio:hover, a.bg-app-directorio:focus,
+button.bg-app-directorio:hover,
+button.bg-app-directorio:focus {
+  background-color: #72023a !important;
+}
+
+.bg-app-formacion {
+  background-color: #FFB200 !important;
+}
+
+a.bg-app-formacion:hover, a.bg-app-formacion:focus,
+button.bg-app-formacion:hover,
+button.bg-app-formacion:focus {
+  background-color: #cc8e00 !important;
+}
+
+.bg-app-juridico {
+  background-color: #572364 !important;
+}
+
+a.bg-app-juridico:hover, a.bg-app-juridico:focus,
+button.bg-app-juridico:hover,
+button.bg-app-juridico:focus {
+  background-color: #36163e !important;
 }
 
 .bg-app-higiene {
@@ -8717,16 +8697,6 @@ button.bg-app-it:focus {
   background-color: #868c04 !important;
 }
 
-.bg-app-vitaly {
-  background-color: #029968 !important;
-}
-
-a.bg-app-vitaly:hover, a.bg-app-vitaly:focus,
-button.bg-app-vitaly:hover,
-button.bg-app-vitaly:focus {
-  background-color: #016746 !important;
-}
-
 .bg-app-opetec {
   background-color: #0103E4 !important;
 }
@@ -8747,14 +8717,44 @@ button.bg-app-prevencion:focus {
   background-color: #285f8f !important;
 }
 
-.bg-app-juridico {
-  background-color: #572364 !important;
+.bg-app-reclamaciones {
+  background-color: #E1AD0F !important;
 }
 
-a.bg-app-juridico:hover, a.bg-app-juridico:focus,
-button.bg-app-juridico:hover,
-button.bg-app-juridico:focus {
-  background-color: #36163e !important;
+a.bg-app-reclamaciones:hover, a.bg-app-reclamaciones:focus,
+button.bg-app-reclamaciones:hover,
+button.bg-app-reclamaciones:focus {
+  background-color: #b1880c !important;
+}
+
+.bg-app-totaldat {
+  background-color: #9C0052 !important;
+}
+
+a.bg-app-totaldat:hover, a.bg-app-totaldat:focus,
+button.bg-app-totaldat:hover,
+button.bg-app-totaldat:focus {
+  background-color: #690037 !important;
+}
+
+.bg-app-vigilancia {
+  background-color: #56c056 !important;
+}
+
+a.bg-app-vigilancia:hover, a.bg-app-vigilancia:focus,
+button.bg-app-vigilancia:hover,
+button.bg-app-vigilancia:focus {
+  background-color: #3ea53e !important;
+}
+
+.bg-app-vitaly {
+  background-color: #029968 !important;
+}
+
+a.bg-app-vitaly:hover, a.bg-app-vitaly:focus,
+button.bg-app-vitaly:hover,
+button.bg-app-vitaly:focus {
+  background-color: #016746 !important;
 }
 
 .bg-white {
@@ -8837,28 +8837,8 @@ button.bg-app-juridico:focus {
   border-color: #343a40 !important;
 }
 
-.border-app-vigilancia {
-  border-color: #56c056 !important;
-}
-
-.border-app-totaldat {
-  border-color: #9C0052 !important;
-}
-
 .border-app-administracion {
   border-color: #663366 !important;
-}
-
-.border-app-formacion {
-  border-color: #FFB200 !important;
-}
-
-.border-app-directorio {
-  border-color: #A40353 !important;
-}
-
-.border-app-crm {
-  border-color: #004451 !important;
 }
 
 .border-app-analitica {
@@ -8877,8 +8857,20 @@ button.bg-app-juridico:focus {
   border-color: #CC6633 !important;
 }
 
-.border-app-reclamaciones {
-  border-color: #E1AD0F !important;
+.border-app-crm {
+  border-color: #004451 !important;
+}
+
+.border-app-directorio {
+  border-color: #A40353 !important;
+}
+
+.border-app-formacion {
+  border-color: #FFB200 !important;
+}
+
+.border-app-juridico {
+  border-color: #572364 !important;
 }
 
 .border-app-higiene {
@@ -8889,10 +8881,6 @@ button.bg-app-juridico:focus {
   border-color: #B5BE05 !important;
 }
 
-.border-app-vitaly {
-  border-color: #029968 !important;
-}
-
 .border-app-opetec {
   border-color: #0103E4 !important;
 }
@@ -8901,8 +8889,20 @@ button.bg-app-juridico:focus {
   border-color: #337ab7 !important;
 }
 
-.border-app-juridico {
-  border-color: #572364 !important;
+.border-app-reclamaciones {
+  border-color: #E1AD0F !important;
+}
+
+.border-app-totaldat {
+  border-color: #9C0052 !important;
+}
+
+.border-app-vigilancia {
+  border-color: #56c056 !important;
+}
+
+.border-app-vitaly {
+  border-color: #029968 !important;
 }
 
 .border-white {
@@ -13168,52 +13168,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important;
 }
 
-.text-app-vigilancia {
-  color: #56c056 !important;
-}
-
-a.text-app-vigilancia:hover, a.text-app-vigilancia:focus {
-  color: #379337 !important;
-}
-
-.text-app-totaldat {
-  color: #9C0052 !important;
-}
-
-a.text-app-totaldat:hover, a.text-app-totaldat:focus {
-  color: #50002a !important;
-}
-
 .text-app-administracion {
   color: #663366 !important;
 }
 
 a.text-app-administracion:hover, a.text-app-administracion:focus {
   color: #331a33 !important;
-}
-
-.text-app-formacion {
-  color: #FFB200 !important;
-}
-
-a.text-app-formacion:hover, a.text-app-formacion:focus {
-  color: #b37d00 !important;
-}
-
-.text-app-directorio {
-  color: #A40353 !important;
-}
-
-a.text-app-directorio:hover, a.text-app-directorio:focus {
-  color: #59022d !important;
-}
-
-.text-app-crm {
-  color: #004451 !important;
-}
-
-a.text-app-crm:hover, a.text-app-crm:focus {
-  color: #000405 !important;
 }
 
 .text-app-analitica {
@@ -13248,12 +13208,36 @@ a.text-app-cobros:hover, a.text-app-cobros:focus {
   color: #8f4724 !important;
 }
 
-.text-app-reclamaciones {
-  color: #E1AD0F !important;
+.text-app-crm {
+  color: #004451 !important;
 }
 
-a.text-app-reclamaciones:hover, a.text-app-reclamaciones:focus {
-  color: #99760a !important;
+a.text-app-crm:hover, a.text-app-crm:focus {
+  color: #000405 !important;
+}
+
+.text-app-directorio {
+  color: #A40353 !important;
+}
+
+a.text-app-directorio:hover, a.text-app-directorio:focus {
+  color: #59022d !important;
+}
+
+.text-app-formacion {
+  color: #FFB200 !important;
+}
+
+a.text-app-formacion:hover, a.text-app-formacion:focus {
+  color: #b37d00 !important;
+}
+
+.text-app-juridico {
+  color: #572364 !important;
+}
+
+a.text-app-juridico:hover, a.text-app-juridico:focus {
+  color: #260f2b !important;
 }
 
 .text-app-higiene {
@@ -13272,14 +13256,6 @@ a.text-app-it:hover, a.text-app-it:focus {
   color: #6e7303 !important;
 }
 
-.text-app-vitaly {
-  color: #029968 !important;
-}
-
-a.text-app-vitaly:hover, a.text-app-vitaly:focus {
-  color: #014d35 !important;
-}
-
 .text-app-opetec {
   color: #0103E4 !important;
 }
@@ -13296,12 +13272,36 @@ a.text-app-prevencion:hover, a.text-app-prevencion:focus {
   color: #22527b !important;
 }
 
-.text-app-juridico {
-  color: #572364 !important;
+.text-app-reclamaciones {
+  color: #E1AD0F !important;
 }
 
-a.text-app-juridico:hover, a.text-app-juridico:focus {
-  color: #260f2b !important;
+a.text-app-reclamaciones:hover, a.text-app-reclamaciones:focus {
+  color: #99760a !important;
+}
+
+.text-app-totaldat {
+  color: #9C0052 !important;
+}
+
+a.text-app-totaldat:hover, a.text-app-totaldat:focus {
+  color: #50002a !important;
+}
+
+.text-app-vigilancia {
+  color: #56c056 !important;
+}
+
+a.text-app-vigilancia:hover, a.text-app-vigilancia:focus {
+  color: #379337 !important;
+}
+
+.text-app-vitaly {
+  color: #029968 !important;
+}
+
+a.text-app-vitaly:hover, a.text-app-vitaly:focus {
+  color: #014d35 !important;
 }
 
 .text-body {
