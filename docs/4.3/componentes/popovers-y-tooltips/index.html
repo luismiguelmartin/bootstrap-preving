@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.">
+<meta name="description" content="Documentación y ejemplos de tooltips (ayudas sobre herramientas) y popovers (llamadas emergentes).">
 <meta name="author" content="Luis Miguel Martín @ Grupo Preving. Basado en el trabajo del equipo Bootstrap">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="es">
 <meta name="docsearch:version" content="4.3">
 
-<title>Tooltips · Preving Bootstrap</title>
+<title>Popovers y Tooltips · Preving Bootstrap</title>
 
-<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/components/tooltips/">
+<link rel="canonical" href="https://luismiguelmartin.github.io/docs/4.3/componentes/popovers-y-tooltips/">
 
 <!-- Bootstrap core CSS -->
 <link href="/preving-bootstrap/docs/4.3/dist/css/bootstrap.css" rel="stylesheet">
@@ -62,7 +62,7 @@
   </div>
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/components/tooltips/">English</a></li>-->
+    <!--<li class="nav-item"><a class="nav-item nav-link" href="http://translate.google.com/translate?js=n&sl=es&tl=en&u=https://luismiguelmartin.github.io/preving-bootstrap/docs/4.3/componentes/popovers-y-tooltips/">English</a></li>-->
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
         v4.3
@@ -317,7 +317,7 @@
               Servicios Jurídicos
             </a>
           </li></ul>
-    </div><div class="bd-toc-item">
+    </div><div class="bd-toc-item active">
       <a class="bd-toc-link" href="/preving-bootstrap/docs/4.3/componentes/formularios/">
         Componentes
       </a>
@@ -346,7 +346,7 @@
             <a href="/preving-bootstrap/docs/4.3/componentes/iconos/">
               Iconos
             </a>
-          </li><li>
+          </li><li class="active bd-sidenav-active">
             <a href="/preving-bootstrap/docs/4.3/componentes/popovers-y-tooltips/">
               Popovers y Tooltips
             </a>
@@ -358,8 +358,17 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</a></li>
+<li class="toc-entry toc-h2"><a href="#popovers">Popovers</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#posición">Posición</a></li>
+<li class="toc-entry toc-h3"><a href="#descartar-al-siguiente-click">Descartar al siguiente click</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#tooltips">Tooltips</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#examples">Examples</a></li>
 <li class="toc-entry toc-h2"><a href="#usage">Usage</a>
 <ul>
@@ -387,32 +396,89 @@
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Tooltips</h1>
-          <p class="bd-lead">Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.</p>
-          <h2 id="overview">Overview</h2>
+          <h1 class="bd-title" id="content">Popovers y Tooltips</h1>
+          <p class="bd-lead">Documentación y ejemplos de tooltips (ayudas sobre herramientas) y popovers (llamadas emergentes).</p>
+          <h2 id="popovers">Popovers</h2>
+
+<p>Por defecto, se muestran (y ocultan) pulsando el elemento -botón, normalmente- que  los invoca.</p>
+
+<ul>
+  <li>Los popovers se basan en la librería <a href="https://popper.js.org/">Popper.js</a> para el posicionamiento. Por ello, <strong>se debe incluir <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">popper.min.js</a> antes <code class="highlighter-rouge">bootstrap.js</code> o emplear <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> que ya contiene Popper.js para que funcionen correctamente.</strong></li>
+  <li>Los popovers requieren que el componente tooltip esté incluido, pues es se construyen a partir de estos como dependencia.</li>
+  <li>Activarlos desde elementos ocultos no funciona.</li>
+</ul>
+
+<div class="bd-example">
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Mostrar/Ocultar</button>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-danger"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">title=</span><span class="s">"Popover title"</span> <span class="na">data-content=</span><span class="s">"And here's some amazing content. It's very engaging. Right?"</span><span class="nt">&gt;</span>Mostrar/Ocultar<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="posición">Posición</h3>
+
+<p>Es posible disponer el componente a los cuatro lados de un elemento: alienado arriba, a la derecha, abajo o a la izquierda.</p>
+
+<div class="bd-example">
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover arriba
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover a la derecha
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover abajo
+</button>
+
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover a la izquierda
+</button>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
+  Popover arriba
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
+  Popover a la derecha
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">data-content=</span><span class="s">"Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
+  Popover abajo
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-container=</span><span class="s">"body"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
+  Popover a la izquierda
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h3 id="descartar-al-siguiente-click">Descartar al siguiente click</h3>
+
+<p>Estos popovers deben estar construidos sobre un enlace <code class="highlighter-rouge">&lt;a&gt;</code>, en lugar de un botón <code class="highlighter-rouge">&lt;button&gt;</code>, para que funcionen en todos los navegadores y plataformas. De igual modo, un atributo <code class="highlighter-rouge">tabindex</code>.</p>
+
+<div class="bd-example">
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="Y aquí un contenido muy cholo. Increible, ¿
+verdad?">Popover descartable</a>
+
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-danger"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">title=</span><span class="s">"Dismissible popover"</span> <span class="na">data-content=</span><span class="s">"Y aquí un contenido muy cholo. Increible, ¿
+verdad?"</span><span class="nt">&gt;</span>Popover descartable<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<h2 id="tooltips">Tooltips</h2>
 
 <p>Things to know when using the tooltip plugin:</p>
 
 <ul>
-  <li>Tooltips rely on the 3rd party library <a href="https://popper.js.org/">Popper.js</a> for positioning. You must include <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">popper.min.js</a> before bootstrap.js or use <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> which contains Popper.js in order for tooltips to work!</li>
-  <li>If you’re building our JavaScript from source, it <a href="/preving-bootstrap/docs/4.3/getting-started/javascript/#util">requires <code class="highlighter-rouge">util.js</code></a>.</li>
-  <li>Tooltips are opt-in for performance reasons, so <strong>you must initialize them yourself</strong>.</li>
-  <li>Tooltips with zero-length titles are never displayed.</li>
-  <li>Specify <code class="highlighter-rouge">container: 'body'</code> to avoid rendering problems in more complex components (like our input groups, button groups, etc).</li>
-  <li>Triggering tooltips on hidden elements will not work.</li>
-  <li>Tooltips for <code class="highlighter-rouge">.disabled</code> or <code class="highlighter-rouge">disabled</code> elements must be triggered on a wrapper element.</li>
-  <li>When triggered from hyperlinks that span multiple lines, tooltips will be centered. Use <code class="highlighter-rouge">white-space: nowrap;</code> on your <code class="highlighter-rouge">&lt;a&gt;</code>s to avoid this behavior.</li>
-  <li>Tooltips must be hidden before their corresponding elements have been removed from the DOM.</li>
-  <li>Tooltips can be triggered thanks to an element inside a shadow DOM.</li>
+  <li>Los tooltips se basan en la librería <a href="https://popper.js.org/">Popper.js</a> para el posicionamiento. Por ello, <strong>se debe incluir <a href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">popper.min.js</a> antes <code class="highlighter-rouge">bootstrap.js</code> o emplear <code class="highlighter-rouge">bootstrap.bundle.min.js</code> / <code class="highlighter-rouge">bootstrap.bundle.js</code> que ya contiene Popper.js para que funcionen correctamente.</strong></li>
+  <li>Activarlos desde elementos ocultos no funciona.</li>
 </ul>
 
-<div class="bd-callout bd-callout-info">
-<p>The animation effect of this component is dependent on the <code class="highlighter-rouge">prefers-reduced-motion</code> media query. See the <a href="/preving-bootstrap/docs/4.3/getting-started/accessibility/#reduced-motion">reduced motion section of our accessibility documentation</a>.</p>
-</div>
-
-<p>Got all that? Great, let’s see how they work with some examples.</p>
-
-<h2 id="example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</h2>
+<h3 id="example-enable-tooltips-everywhere">Example: Enable tooltips everywhere</h3>
 
 <p>One way to initialize all tooltips on a page would be to select them by their <code class="highlighter-rouge">data-toggle</code> attribute:</p>
 
@@ -441,23 +507,23 @@
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip on top"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip arriba"</span><span class="nt">&gt;</span>
   Tooltip on top
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip on right"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip a la derecha"</span><span class="nt">&gt;</span>
   Tooltip on right
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip debajo"</span><span class="nt">&gt;</span>
   Tooltip on bottom
 <span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip on left"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip a la izquierda"</span><span class="nt">&gt;</span>
   Tooltip on left
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
-<p>And with custom HTML added:</p>
+<p>Con HTML incluido:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">"&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;with&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;"</span><span class="nt">&gt;</span>
-  Tooltip with HTML
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">"&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;con&lt;/u&gt; &lt;b&gt;HTML&lt;/b&gt;"</span><span class="nt">&gt;</span>
+  Tooltip con HTML
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <h2 id="usage">Usage</h2>
