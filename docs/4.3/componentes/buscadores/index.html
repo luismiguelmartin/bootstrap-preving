@@ -96,7 +96,7 @@
 -->
   </ul>
 
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/preving-bootstrap/docs/4.3/getting-started/download/">Descargar</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/preving-bootstrap/preving-boostrap.zip">Descargar</a>
 
 </header>
 
@@ -361,6 +361,8 @@
 <li class="toc-entry toc-h2"><a href="#buscador-básico">Buscador básico</a></li>
 <li class="toc-entry toc-h2"><a href="#buscador-con-criterio">Buscador con criterio</a></li>
 <li class="toc-entry toc-h2"><a href="#buscador-con-criterio-y-opciones">Buscador con criterio y opciones</a></li>
+<li class="toc-entry toc-h2"><a href="#con-cabecera">Con cabecera</a></li>
+<li class="toc-entry toc-h2"><a href="#con-cabecera-y-filtros">Con cabecera y filtros</a></li>
 </ul>
           </div>
         
@@ -534,6 +536,326 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span>
 <span class="c">&lt;!-- /Buscador --&gt;</span></code></pre></figure>
+
+<h2 id="con-cabecera">Con cabecera</h2>
+
+<div class="bd-example">
+  <div class="card">
+    <div class="card-header record">
+      <!-- TitleSection-->
+      <h5 class="py-3 mb-0">Clientes / Búsqueda de Clientes</h5>
+      <!-- /TitleSection-->
+    </div>
+    <div class="card-body">
+    <!-- Buscador -->
+    <form>
+      <div class="row">
+        <div class="col-9">
+          <div class="form-row">
+            <div class="col-9">
+              <input type="text" class="form-control" id="buscadorClientes3" placeholder="Nombre, NIF/CIF o ID cliente" />
+            </div>
+            <div class="col-3">
+              <button type="submit" class="btn btn-primary w-100"><i class="fas fa-search"></i> BUSCAR</button> </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- /Buscador -->
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header record"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- TitleSection--&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"py-3 mb-0"</span><span class="nt">&gt;</span>Clientes / Búsqueda de Clientes<span class="nt">&lt;/h5&gt;</span>
+    <span class="c">&lt;!-- /TitleSection--&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Buscador --&gt;</span>
+    <span class="nt">&lt;form&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"buscadorClientes3"</span> <span class="na">placeholder=</span><span class="s">"Nombre, NIF/CIF o ID cliente"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary w-100"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span> BUSCAR<span class="nt">&lt;/button&gt;</span> <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="c">&lt;!-- /Buscador --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="con-cabecera-y-filtros">Con cabecera y filtros</h2>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-header">
+    <!-- TitleSection-->
+    <h5 class="w-50 py-3 mb-0">Clientes / Búsqueda de Clientes</h5>
+    <!-- /TitleSection-->
+  </div>
+  <div class="card-body">
+    <!-- Buscador -->
+    <div class="row">
+      <div class="col-md-9">
+        <form class="">
+      <div class="row mb-3">
+        <div class="col form-inline">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterClientes" id="filterClientes1" value="clientesActivos" checked="checked" />
+            <label class="form-check-label" for="filterClientes1"><b>Clientes Activos</b></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterClientes" id="filterClientes2" value="clientesBaja" />
+            <label class="form-check-label" for="filterClientes2"><b>Clientes de Baja</b></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterClientes" id="filterClientes3" value="clientesTodos" />
+            <label class="form-check-label" for="filterClientes3"><b>Todos</b></label>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col form-inline">
+          <div class="form-check-inline">
+            CONSULTAS:
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterConsultas" id="fiterConsultas1" value="consultasTodas" checked="checked" />
+            <label class="form-check-label" for="fiterConsultas1">Todos</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterConsultas" id="filterConsultas2" value="consultasAbiertas" />
+            <label class="form-check-label" for="filterConsultas2">Con consultas abiertas</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="filterConsultas" id="filterConsultas3" value="consultasCerradas" />
+            <label class="form-check-label" for="filterConsultas3">Sin consultas abiertas</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-inline form-row">
+        <div class="col-9">
+          <input type="text" class="form-control" style="width:100%" id="buscadorClientes" placeholder="Nombre, NIF/CIF o ID cliente" />
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-primary" style="width:100%"><i class="fas fa-filter"></i> Filtrar</button>
+        </div>
+      </div>
+
+    </form>
+    </div>
+    </div>
+    <!-- /Buscador -->
+  </div>
+</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- TitleSection--&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"w-50 py-3 mb-0"</span><span class="nt">&gt;</span>Clientes / Búsqueda de Clientes<span class="nt">&lt;/h5&gt;</span>
+    <span class="c">&lt;!-- /TitleSection--&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Buscador --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-9"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col form-inline"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterClientes"</span> <span class="na">id=</span><span class="s">"filterClientes1"</span> <span class="na">value=</span><span class="s">"clientesActivos"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterClientes1"</span><span class="nt">&gt;&lt;b&gt;</span>Clientes Activos<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterClientes"</span> <span class="na">id=</span><span class="s">"filterClientes2"</span> <span class="na">value=</span><span class="s">"clientesBaja"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterClientes2"</span><span class="nt">&gt;&lt;b&gt;</span>Clientes de Baja<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterClientes"</span> <span class="na">id=</span><span class="s">"filterClientes3"</span> <span class="na">value=</span><span class="s">"clientesTodos"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterClientes3"</span><span class="nt">&gt;&lt;b&gt;</span>Todos<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col form-inline"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check-inline"</span><span class="nt">&gt;</span>
+            CONSULTAS:
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterConsultas"</span> <span class="na">id=</span><span class="s">"fiterConsultas1"</span> <span class="na">value=</span><span class="s">"consultasTodas"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"fiterConsultas1"</span><span class="nt">&gt;</span>Todos<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterConsultas"</span> <span class="na">id=</span><span class="s">"filterConsultas2"</span> <span class="na">value=</span><span class="s">"consultasAbiertas"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterConsultas2"</span><span class="nt">&gt;</span>Con consultas abiertas<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterConsultas"</span> <span class="na">id=</span><span class="s">"filterConsultas3"</span> <span class="na">value=</span><span class="s">"consultasCerradas"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterConsultas3"</span><span class="nt">&gt;</span>Sin consultas abiertas<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-inline form-row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">style=</span><span class="s">"width:100%"</span> <span class="na">id=</span><span class="s">"buscadorClientes"</span> <span class="na">placeholder=</span><span class="s">"Nombre, NIF/CIF o ID cliente"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">style=</span><span class="s">"width:100%"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-filter"</span><span class="nt">&gt;&lt;/i&gt;</span> Filtrar<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+    <span class="c">&lt;!-- /Buscador --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-header">
+    <!-- TitleSection-->
+    <h5 class="w-50 py-3 mb-0">Jornadas y Cursos / Búsqueda de Actividades</h5>
+    <!-- /TitleSection-->
+  </div>
+  <div class="card-body">
+    <!-- Buscador -->
+    <div class="row">
+      <div class="col-md-9">
+        <form class="">
+          <div class="form-row">
+            <div class="col">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="filterActividad" id="filterActividad1" value="actividadesTodas" checked="checked" />
+                <label class="form-check-label" for="filterActividad1"><b>Todas</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="filterActividad" id="filterActividad2" value="actividadesJornadas" />
+                <label class="form-check-label" for="filterActividad2"><b>Jornadas/Cursos</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="filterActividad" id="filterActividad3" value="actividadesPildoras" />
+                <label class="form-check-label" for="filterActividad3"><b>Píldoras</b></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="filterActividad" id="filterActividad4" value="actividadesOtras" />
+                <label class="form-check-label" for="filterActividad4"><b>Otras</b></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row mt-3">
+            <div class="col form-inline mb-4">
+              <label for="fechaInicio" class="col-form-label pr-3">Inicio de la actividad entre </label>
+              <div class="input-group date" style="width:130px;">
+                <input type="text" class="form-control" id="fechaInicio" value="23-11-2018" />
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                </div>
+              </div>
+              <label for="fechaFin" class="col-form-label px-3"> y </label>
+              <div class="input-group date" style="width:130px;">
+                <input type="text" class="form-control" id="fechaFin" value="25-01-2019" />
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                </div>
+              </div>
+              <a href="#" class="col-form-label pl-3 font-weight-bold">Borrar fechas</a>
+            </div>
+          </div>
+
+          <div class="form-inline form-row">
+            <div class="col-9">
+              <input type="text" class="form-control" style="width:100%" id="inlineFormInputName2" placeholder="Nombre de la actividad..." />
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-primary" style="width:100%"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <!-- /Buscador -->
+  </div>
+</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- TitleSection--&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"w-50 py-3 mb-0"</span><span class="nt">&gt;</span>Jornadas y Cursos / Búsqueda de Actividades<span class="nt">&lt;/h5&gt;</span>
+    <span class="c">&lt;!-- /TitleSection--&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Buscador --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-9"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterActividad"</span> <span class="na">id=</span><span class="s">"filterActividad1"</span> <span class="na">value=</span><span class="s">"actividadesTodas"</span> <span class="na">checked=</span><span class="s">"checked"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterActividad1"</span><span class="nt">&gt;&lt;b&gt;</span>Todas<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterActividad"</span> <span class="na">id=</span><span class="s">"filterActividad2"</span> <span class="na">value=</span><span class="s">"actividadesJornadas"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterActividad2"</span><span class="nt">&gt;&lt;b&gt;</span>Jornadas/Cursos<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterActividad"</span> <span class="na">id=</span><span class="s">"filterActividad3"</span> <span class="na">value=</span><span class="s">"actividadesPildoras"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterActividad3"</span><span class="nt">&gt;&lt;b&gt;</span>Píldoras<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"filterActividad"</span> <span class="na">id=</span><span class="s">"filterActividad4"</span> <span class="na">value=</span><span class="s">"actividadesOtras"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"filterActividad4"</span><span class="nt">&gt;&lt;b&gt;</span>Otras<span class="nt">&lt;/b&gt;&lt;/label&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row mt-3"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col form-inline mb-4"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fechaInicio"</span> <span class="na">class=</span><span class="s">"col-form-label pr-3"</span><span class="nt">&gt;</span>Inicio de la actividad entre <span class="nt">&lt;/label&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group date"</span> <span class="na">style=</span><span class="s">"width:130px;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"fechaInicio"</span> <span class="na">value=</span><span class="s">"23-11-2018"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fechaFin"</span> <span class="na">class=</span><span class="s">"col-form-label px-3"</span><span class="nt">&gt;</span> y <span class="nt">&lt;/label&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group date"</span> <span class="na">style=</span><span class="s">"width:130px;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"fechaFin"</span> <span class="na">value=</span><span class="s">"25-01-2019"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"far fa-calendar-alt"</span><span class="nt">&gt;&lt;/i&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"col-form-label pl-3 font-weight-bold"</span><span class="nt">&gt;</span>Borrar fechas<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-inline form-row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-9"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">style=</span><span class="s">"width:100%"</span> <span class="na">id=</span><span class="s">"inlineFormInputName2"</span> <span class="na">placeholder=</span><span class="s">"Nombre de la actividad..."</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">style=</span><span class="s">"width:100%"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fas fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span> Buscar<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="c">&lt;!-- /Buscador --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
         </main>
