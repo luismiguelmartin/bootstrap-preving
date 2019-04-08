@@ -361,6 +361,7 @@
 <li class="toc-entry toc-h2"><a href="#layouts">Layouts</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#contenedores">Contenedores</a></li>
+<li class="toc-entry toc-h3"><a href="#opciones-de-cuadrícula">Opciones de cuadrícula</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#ejemplos">Ejemplos</a></li>
@@ -501,6 +502,74 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>4 de 4 (.col)<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="opciones-de-cuadrícula">Opciones de cuadrícula</h3>
+
+<p>Mientras que Bootstrap emplea unidades como <code class="highlighter-rouge">em</code> o <code class="highlighter-rouge">rem</code>(relativas) para definir la mayoría de los tamaños, se emplean los <code class="highlighter-rouge">px</code> para los punto de corte de la retícula y los anchos de los contenedores. Esto es así, porque el ancho de la ventana gráfica está en píxeles y no cambia con el tamaño de fuente .</p>
+
+<p>A continuación se resumen algunos aspectos de la retícula de Bootstrap y su funcionamiento en varios tamaños de pantalla (y como orientar la maquetación a estos):</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra pequeño<br />
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Pequeño<br />
+        <small>&ge;576px</small>
+      </th>
+      <th class="text-center">
+        Medio<br />
+        <small>&ge;768px</small>
+      </th>
+      <th class="text-center">
+        Grande<br />
+        <small>&ge;992px</small>
+      </th>
+      <th class="text-center">
+        Extra grande<br />
+        <small>&ge;1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Ancho máximo del contenedor</th>
+      <td>None (auto)</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Prefijo de clase</th>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Nº de columnas</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Espaciado entre columnas</th>
+      <td colspan="5">30px (15px en cada columna)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Anidables</th>
+      <td colspan="5">Sí</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Ordenación de columnas</th>
+      <td colspan="5">Sí</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="ejemplos">Ejemplos</h2>
 
