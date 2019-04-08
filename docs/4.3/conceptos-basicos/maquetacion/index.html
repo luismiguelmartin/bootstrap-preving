@@ -374,53 +374,29 @@
 <p>El sistema de retícula (o cuadrícula) de Bootstrap utiliza una serie de contenedores (<code class="highlighter-rouge">.container</code> o <code class="highlighter-rouge">.container-fluid</code>), filas (<code class="highlighter-rouge">.rows</code>) y columnas (<code class="highlighter-rouge">.col</code>, <code class="highlighter-rouge">.col-sm</code>, <code class="highlighter-rouge">col-lg-2</code>, <code class="highlighter-rouge">.col-6</code>,…) para disponer y alinear el contenido de manera totalmente <em>responsive</em>.</p>
 
 <div class="bd-example">
-<h4>.container</h4>
-<div class="container ejemplo">
-  <div class="row">
-    <div class="col">1 de 2 (.col)</div>
-    <div class="col">2 de 2 (.col)</div>
+  <h4>.container</h4>
+  <div class="container ejemplo" style="width:600px;">
+    <div class="row">
+      <div class="col">1 de 2 (.col)</div>
+      <div class="col">2 de 2 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col">1 de 3 (.col)</div>
+      <div class="col">2 de 3 (.col)</div>
+      <div class="col">3 de 3 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col-7">1 de 3 (.col-7)</div>
+      <div class="col">2 de 3 (.col)</div>
+      <div class="col">3 de 3 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col-7">1 de 4 (.col-7)</div>
+      <div class="col">2 de 4 (.col)</div>
+      <div class="col">3 de 4 (.col)</div>
+      <div class="col">4 de 4 (.col)</div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col">1 de 3 (.col)</div>
-    <div class="col">2 de 3 (.col)</div>
-    <div class="col">3 de 3 (.col)</div>
-  </div>
-  <div class="row">
-    <div class="col-7">1 de 3 (.col-7)</div>
-    <div class="col">2 de 3 (.col)</div>
-    <div class="col">3 de 3 (.col)</div>
-  </div>
-  <div class="row">
-    <div class="col-7">1 de 4 (.col-7)</div>
-    <div class="col">2 de 4 (.col)</div>
-    <div class="col">3 de 4 (.col)</div>
-    <div class="col">4 de 4 (.col)</div>
-  </div>
-</div>
-
-<h4 class="pt-5">.container_fluid</h4>
-<div class="container-fluid ejemplo">
-  <div class="row">
-    <div class="col">1 de 2 (.col)</div>
-    <div class="col">2 de 2 (.col)</div>
-  </div>
-  <div class="row">
-    <div class="col">1 de 3 (.col)</div>
-    <div class="col">2 de 3 (.col)</div>
-    <div class="col">3 de 3 (.col)</div>
-  </div>
-  <div class="row">
-    <div class="col-7">1 de 3 (.col-7)</div>
-    <div class="col">2 de 3 (.col)</div>
-    <div class="col">3 de 3 (.col)</div>
-  </div>
-  <div class="row">
-    <div class="col-7">1 de 4 (.col-7)</div>
-    <div class="col">2 de 4 (.col)</div>
-    <div class="col">3 de 4 (.col)</div>
-    <div class="col">4 de 4 (.col)</div>
-  </div>
-</div>
 
 <!--SOLO PARA MAQUETAR EL CÓDIGO ANTERIOR-->
 <style type="text/css">
@@ -432,8 +408,9 @@
   }
 </style>
 </div>
+
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h4&gt;</span>.container<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container ejemplo"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>1 de 2 (.col)<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>2 de 2 (.col)<span class="nt">&lt;/div&gt;</span>
@@ -454,10 +431,45 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>3 de 4 (.col)<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>4 de 4 (.col)<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"pt-5"</span><span class="nt">&gt;</span>.container_fluid<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid ejemplo"</span><span class="nt">&gt;</span>
+<div class="bd-example">
+  <h4 class="pt-5">.container_fluid</h4>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">1 de 2 (.col)</div>
+      <div class="col">2 de 2 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col">1 de 3 (.col)</div>
+      <div class="col">2 de 3 (.col)</div>
+      <div class="col">3 de 3 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col-7">1 de 3 (.col-7)</div>
+      <div class="col">2 de 3 (.col)</div>
+      <div class="col">3 de 3 (.col)</div>
+    </div>
+    <div class="row">
+      <div class="col-7">1 de 4 (.col-7)</div>
+      <div class="col">2 de 4 (.col)</div>
+      <div class="col">3 de 4 (.col)</div>
+      <div class="col">4 de 4 (.col)</div>
+    </div>
+  </div>
+
+  <!--SOLO PARA MAQUETAR EL CÓDIGO ANTERIOR-->
+  <style type="text/css">
+    .ejemplo .col,
+    .ejemplo .col-7 {
+      background: #FDE4C7;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  </style>
+  </div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>1 de 2 (.col)<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>2 de 2 (.col)<span class="nt">&lt;/div&gt;</span>
@@ -478,17 +490,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>3 de 4 (.col)<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>4 de 4 (.col)<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="c">&lt;!--SOLO PARA MAQUETAR EL CÓDIGO ANTERIOR--&gt;</span>
-<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-  <span class="nc">.ejemplo</span> <span class="nc">.col</span><span class="o">,</span>
-  <span class="nc">.ejemplo</span> <span class="nc">.col-7</span> <span class="p">{</span>
-    <span class="nl">background</span><span class="p">:</span> <span class="m">#FDE4C7</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
-    <span class="nl">margin</span><span class="p">:</span> <span class="m">0.5rem</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="nt">&lt;/style&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="ejemplos">Ejemplos</h2>
 
