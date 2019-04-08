@@ -358,7 +358,11 @@
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#layouts">Layouts</a></li>
+<li class="toc-entry toc-h2"><a href="#layouts">Layouts</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#contenedores">Contenedores</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#ejemplos">Ejemplos</a></li>
 </ul>
           </div>
@@ -372,6 +376,10 @@
 <p><strong>Bootstrap 4</strong> dispone de un modelo simplificado (a la vez que ampliado) de cuadrícula flexible para maquetación (https://getbootstrap.com/docs/4.1/layout/grid/).</p>
 
 <p>El sistema de retícula (o cuadrícula) de Bootstrap utiliza una serie de contenedores (<code class="highlighter-rouge">.container</code> o <code class="highlighter-rouge">.container-fluid</code>), filas (<code class="highlighter-rouge">.rows</code>) y columnas (<code class="highlighter-rouge">.col</code>, <code class="highlighter-rouge">.col-sm</code>, <code class="highlighter-rouge">col-lg-2</code>, <code class="highlighter-rouge">.col-6</code>,…) para disponer y alinear el contenido de manera totalmente <em>responsive</em>.</p>
+
+<h3 id="contenedores">Contenedores</h3>
+
+<p>Los contenedores son el elemento de diseño más básico en Bootras, y son necesarios cuando se utiliza el sistema de retícula. Se puede optar por dos contenedores, uno fluido que se ajusta al ancho del contenedor padre (<code class="highlighter-rouge">width:100%</code>) y otro fijo en el que su anchura máxima (<code class="highlighter-rouge">max-width</code>) está determinada.</p>
 
 <div class="bd-example">
   <h4>.container</h4>
@@ -433,9 +441,11 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
+<p>Del mismo modo, podemos emplear un contenedor fluido (<code class="highlighter-rouge">.container-fluid</code>):</p>
+
 <div class="bd-example">
-  <h4 class="pt-5">.container_fluid</h4>
-  <div class="container-fluid">
+  <h4>.container_fluid</h4>
+  <div class="container-fluid ejemplo">
     <div class="row">
       <div class="col">1 de 2 (.col)</div>
       <div class="col">2 de 2 (.col)</div>
